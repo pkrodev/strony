@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>WarsztatCRM – CRM for workshops and service businesses</title>
+  <meta name="description" content="WarsztatCRM is a general-purpose CRM tailored for workshops: work orders, vehicle history, customers, scheduling, parts inventory, photos, SMS/email notifications and reports." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0b1020" />
+  <link rel="canonical" href="https://twojadomena.pl/warsztatcrm/index-en.html" />
+
+  <link rel="alternate" hreflang="pl" href="https://twojadomena.pl/warsztatcrm/index.html" />
+  <link rel="alternate" hreflang="en" href="https://twojadomena.pl/warsztatcrm/index-en.html" />
+  <link rel="alternate" hreflang="es" href="https://twojadomena.pl/warsztatcrm/index-es.html" />
+  <link rel="alternate" hreflang="ru" href="https://twojadomena.pl/warsztatcrm/index-ru.html" />
+  <link rel="alternate" hreflang="x-default" href="https://twojadomena.pl/warsztatcrm/index.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="WarsztatCRM – CRM for workshops" />
+  <meta property="og:description" content="Work orders, customers, vehicle history, scheduling, inventory, photos, SMS/email and reports." />
+  <meta property="og:url" content="https://twojadomena.pl/warsztatcrm/index-en.html" />
+  <meta property="og:image" content="pic1.png" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="top" id="top">
+    <div class="wrap top__inner">
+      <a class="brand" href="#top" aria-label="WarsztatCRM – top">
+        <img class="brand__logo" src="logo.png" alt="WarsztatCRM" />
+        <span class="brand__name">Warsztat<span class="accent">CRM</span></span>
+        <span class="brand__tag">clean work orders</span>
+      </a>
+
+      <nav class="nav" aria-label="Navigation">
+        <button class="nav__btn" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav__bars" aria-hidden="true"></span>
+          <span class="sr-only">Open menu</span>
+        </button>
+
+        <ul class="nav__menu" id="navMenu">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#workflow">Workflow</a></li>
+          <li><a href="#screens">Screens</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a class="btn btn--primary btn--small" href="#contact">Request a demo</a></li>
+
+          <li class="lang" aria-label="Languages">
+            <a class="lang__a" href="index.html">PL</a>
+            <a class="lang__a is-active" href="index-en.html" aria-current="page">EN</a>
+            <a class="lang__a" href="index-es.html">ES</a>
+            <a class="lang__a" href="index-ru.html">RU</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-label="Intro">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__veil" aria-hidden="true"></div>
+      <div class="hero__grid" aria-hidden="true"></div>
+
+      <div class="wrap hero__content">
+        <p class="kicker"><span class="dot"></span> Workshop CRM • web • tablet • mobile</p>
+
+        <h1 class="hero__title">
+          A CRM that feels like a well-built workflow.
+          <span class="hero__title2">Work orders → parts → photos → SMS → report.</span>
+        </h1>
+
+        <p class="hero__lead">
+          WarsztatCRM is a general-purpose CRM optimized for real workshop operations:
+          vehicle history, repair stages, inventory, scheduling, before/after photos, automated notifications and reporting.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#contact">Get a demo</a>
+          <a class="btn btn--ghost" href="#screens">See screens</a>
+          <a class="btn btn--ghost" href="#workflow">How it works</a>
+        </div>
+
+        <div class="badges">
+          <span class="badge">Work orders</span>
+          <span class="badge">Customers</span>
+          <span class="badge">Vehicle history</span>
+          <span class="badge">Parts inventory</span>
+          <span class="badge">SMS/email</span>
+          <span class="badge">Reports</span>
+        </div>
+
+        <div class="terminal reveal" aria-label="Data example">
+          <div class="terminal__top">
+            <span class="terminal__lamp r"></span>
+            <span class="terminal__lamp y"></span>
+            <span class="terminal__lamp g"></span>
+            <span class="terminal__title">workorder.json</span>
+          </div>
+          <pre class="terminal__code"><code>{
+  "plate": "PO 12345",
+  "vehicle": { "brand": "Skoda", "model": "Octavia", "year": 2018 },
+  "status": "Ready for pickup",
+  "tasks": ["oil+filters", "brake check", "tire storage"],
+  "photos": ["before", "after"],
+  "notify": ["sms", "email"]
+}</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="wrap">
+        <header class="head">
+          <h2>Features that keep the workshop in sync</h2>
+          <p>Not “another system”. Just fast tools for work orders and customer communication.</p>
+        </header>
+
+        <div class="cards reveal">
+          <article class="card"><h3>Work orders + statuses</h3><p>Create jobs, manage stages (received / in progress / parts / ready), keep deadlines.</p><ul class="list"><li>Service checklists</li><li>Priorities</li><li>Today / tomorrow views</li></ul></article>
+          <article class="card"><h3>Customers & vehicles</h3><p>One customer, many cars. History and recurring issues in seconds.</p><ul class="list"><li>VIN / plate</li><li>Notes & consents</li><li>Document archive</li></ul></article>
+          <article class="card"><h3>Parts inventory</h3><p>Stock, reservations per job, low-stock alerts, fast issuing.</p><ul class="list"><li>Reservations</li><li>Low-stock alerts</li><li>Usage reports</li></ul></article>
+          <article class="card"><h3>Photos + customer report</h3><p>Add before/after photos and generate a PDF or shareable link report.</p><ul class="list"><li>Proof of work</li><li>Fewer disputes</li><li>More trust</li></ul></article>
+          <article class="card"><h3>Automated SMS/email</h3><p>Notify customers: “parts ordered”, “ready for pickup”, “please collect”.</p><ul class="list"><li>Templates</li><li>Delivery history</li><li>Status-based automations</li></ul></article>
+          <article class="card"><h3>Reports & KPIs</h3><p>Revenue, repair time, returns, job count, bay utilization — without spreadsheets.</p><ul class="list"><li>Dashboard</li><li>CSV export</li><li>Filters</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="workflow">
+      <div class="wrap">
+        <header class="head">
+          <h2>From intake to pickup</h2>
+          <p>A clear flow so everyone knows what’s next.</p>
+        </header>
+
+        <ol class="flow reveal">
+          <li class="flow__item"><span class="flow__n">01</span><div><h3>Intake</h3><p>Add customer/vehicle, describe the issue, take initial photos, set a date.</p></div></li>
+          <li class="flow__item"><span class="flow__n">02</span><div><h3>Estimate & approval</h3><p>Build an estimate, get approval, reserve parts.</p></div></li>
+          <li class="flow__item"><span class="flow__n">03</span><div><h3>Repair</h3><p>Checklists, notes, after-photos, status updates.</p></div></li>
+          <li class="flow__item"><span class="flow__n">04</span><div><h3>Pickup & report</h3><p>Generate a report, send “ready” SMS, close the job and archive.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="screens">
+      <div class="wrap">
+        <header class="head">
+          <h2>Product screens</h2>
+          <p>Using your images: <strong>pic2.png</strong> and <strong>pic3.png</strong>.</p>
+        </header>
+
+        <div class="screens reveal">
+          <figure class="shot">
+            <img src="pic2.png" alt="Work orders board in WarsztatCRM" loading="lazy" />
+            <figcaption>Work order board: statuses, deadlines, priorities.</figcaption>
+          </figure>
+
+          <figure class="shot">
+            <img src="pic3.png" alt="Customer and vehicle profile in WarsztatCRM" loading="lazy" />
+            <figcaption>Customer/vehicle profile: history, notes, photos, documents.</figcaption>
+          </figure>
+        </div>
+
+        <div class="ctaBar reveal">
+          <div>
+            <strong>Want the CRM to match your process?</strong>
+            <p class="muted">We’ll configure statuses, templates and reports.</p>
+          </div>
+          <a class="btn btn--primary btn--small" href="#contact">Book a demo</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="faq">
+      <div class="wrap">
+        <header class="head"><h2>FAQ</h2><p>Common questions before you start.</p></header>
+
+        <div class="faq reveal">
+          <details class="faq__item"><summary>Does it work on tablets and phones?</summary><div class="faq__body"><p>Yes. It’s web-based and responsive.</p></div></details>
+          <details class="faq__item"><summary>Can I customize work order statuses?</summary><div class="faq__body"><p>Yes. Statuses and checklists are configurable.</p></div></details>
+          <details class="faq__item"><summary>Can I send photo reports to customers?</summary><div class="faq__body"><p>Yes. Reports can be shared as a link or exported as PDF.</p></div></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-label="Contact">
+      <div class="wrap">
+        <header class="head head--invert">
+          <h2>Request a demo</h2>
+          <p>Tell us your daily job count and workflow — we’ll tailor the CRM.</p>
+        </header>
+
+        <div class="contact__grid reveal">
+          <form class="form" id="leadForm" novalidate>
+            <div class="row">
+              <label><span>Full name</span><input name="name" type="text" autocomplete="name" placeholder="John Smith" required /></label>
+              <label><span>Email</span><input name="email" type="email" autocomplete="email" placeholder="john@workshop.com" required /></label>
+            </div>
+
+            <div class="row">
+              <label>
+                <span>Business type</span>
+                <select name="type" required>
+                  <option value="" selected disabled>Select…</option>
+                  <option>Workshop / service</option>
+                  <option>Body & paint</option>
+                  <option>Tires</option>
+                  <option>Fleet / services</option>
+                  <option>Other</option>
+                </select>
+              </label>
+              <label><span>Phone (optional)</span><input name="phone" type="tel" autocomplete="tel" placeholder="+48 123 456 789" /></label>
+            </div>
+
+            <label><span>Message</span><textarea name="message" rows="5" placeholder="E.g. 25 jobs/day, statuses: diagnostics/parts/repair/test/pickup. Need SMS + photo reports." required></textarea></label>
+
+            <div class="actions">
+              <button class="btn btn--primary" type="submit">Send</button>
+              <p class="hint" id="formHint" role="status" aria-live="polite"></p>
+            </div>
+            <p class="legal">Demo form — connect sending in `scripts.js`.</p>
+          </form>
+
+          <aside class="side">
+            <div class="side__card">
+              <h3>Demo covers</h3>
+              <ul class="ticks">
+                <li>Work order board</li>
+                <li>Customer + vehicle history</li>
+                <li>Inventory reservations</li>
+                <li>SMS/email automation</li>
+              </ul>
+            </div>
+            <div class="side__card">
+              <h3>Contact</h3>
+              <p class="muted">Replace with your details:</p>
+              <p><strong>Email:</strong> contact@twojadomena.pl<br /><strong>Phone:</strong> +48 000 000 000</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__inner">
+      <p>© <span id="year"></span> WarsztatCRM. All rights reserved.</p>
+      <div class="foot__links"><a href="#top">Top</a><a href="#contact">Contact</a></div>
+    </div>
+  </footer>
+
+  <script src="scripts.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>FotoNaprawa – zdjęcia napraw, raporty i dowód wykonania dla warsztatu</title>
+  <meta name="description" content="FotoNaprawa to software dla mechaników: zdjęcia naprawionych aut na tablecie, opis i checklisty → raport PDF/link dla klienta. Porządek w dokumentacji, mniej telefonów, więcej zaufania." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0b0f14" />
+
+  <!-- TODO: podmień domenę -->
+  <link rel="canonical" href="https://twojadomena.pl/fotonaprawa/index.html" />
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="pl" href="https://twojadomena.pl/fotonaprawa/index.html" />
+  <link rel="alternate" hreflang="en" href="https://twojadomena.pl/fotonaprawa/index-en.html" />
+  <link rel="alternate" hreflang="es" href="https://twojadomena.pl/fotonaprawa/index-es.html" />
+  <link rel="alternate" hreflang="ru" href="https://twojadomena.pl/fotonaprawa/index-ru.html" />
+  <link rel="alternate" hreflang="x-default" href="https://twojadomena.pl/fotonaprawa/index.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pl_PL" />
+  <meta property="og:title" content="FotoNaprawa – zdjęcia napraw i raport dla klienta w minutę" />
+  <meta property="og:description" content="Mechanik robi zdjęcia napraw na tablecie, dodaje opis i wysyła klientowi raport. Dowód wykonania, porządek, spokój." />
+  <meta property="og:url" content="https://twojadomena.pl/fotonaprawa/index.html" />
+  <meta property="og:image" content="pic1.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FotoNaprawa – zdjęcia napraw i raport dla klienta" />
+  <meta name="twitter:description" content="Prosta dokumentacja napraw: zdjęcia + opis + raport dla klienta." />
+  <meta name="twitter:image" content="pic1.png" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip" href="#main">Przejdź do treści</a>
+
+  <header class="top" id="top">
+    <div class="wrap top__inner">
+      <a class="brand" href="#top" aria-label="FotoNaprawa – góra strony">
+        <img class="brand__logo" src="logo.png" alt="FotoNaprawa" />
+        <span class="brand__word">Foto<span class="brand__accent">Naprawa</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Nawigacja">
+        <button class="nav__btn" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav__bars" aria-hidden="true"></span>
+          <span class="sr-only">Otwórz menu</span>
+        </button>
+
+        <ul class="nav__menu" id="navMenu">
+          <li><a href="#how">Jak działa</a></li>
+          <li><a href="#features">Funkcje</a></li>
+          <li><a href="#videos">Wideo</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a class="btn btn--primary btn--small" href="#contact">Poproś o demo</a></li>
+
+          <li class="lang" aria-label="Wersje językowe">
+            <a class="lang__a is-active" href="index.html" aria-current="page">PL</a>
+            <a class="lang__a" href="index-en.html">EN</a>
+            <a class="lang__a" href="index-es.html">ES</a>
+            <a class="lang__a" href="index-ru.html">RU</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-label="Wprowadzenie">
+      <div class="hero__bg" aria-hidden="true"></div>
+
+      <div class="wrap hero__content">
+        <p class="tagline">software dla warsztatów • zdjęcia napraw • raport dla klienta</p>
+
+        <h1 class="hero__title">
+          Zrób zdjęcie naprawionego auta.
+          <span class="hero__title2">Wyślij raport. Zamknij temat.</span>
+        </h1>
+
+        <p class="hero__lead">
+          FotoNaprawa pomaga mechanikowi dokumentować naprawy w 30–60 sekund:
+          zdjęcia + opis + checklisty → gotowy raport dla klienta (PDF / link).
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#contact">Chcę demo</a>
+          <a class="btn btn--ghost" href="#videos">Zobacz wideo</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><div class="stat__kpi">+Zaufanie</div><div class="stat__txt">klient widzi, co zrobiono</div></div>
+          <div class="stat"><div class="stat__kpi">-Telefony</div><div class="stat__txt">mniej pytań „czy już gotowe?”</div></div>
+          <div class="stat"><div class="stat__kpi">Porządek</div><div class="stat__txt">historia zdjęć per auto/zlecenie</div></div>
+        </div>
+
+        <p class="hero__note">Tip: raport możesz dodać do zlecenia lub wysłać klientowi po odbiór auta.</p>
+      </div>
+
+      <div class="hero__stripe" aria-hidden="true"></div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="wrap">
+        <header class="head">
+          <h2>Jak działa FotoNaprawa</h2>
+          <p>Krótki, powtarzalny proces. Każdy mechanik ogarnie po 5 minutach.</p>
+        </header>
+
+        <ol class="steps reveal">
+          <li class="step"><span class="step__n">1</span><div class="step__b"><h3>Wybierasz zlecenie / auto</h3><p>Po numerze rejestracyjnym, VIN lub nazwisku klienta. Albo skanujesz kod.</p></div></li>
+          <li class="step"><span class="step__n">2</span><div class="step__b"><h3>Robisz zdjęcia „po naprawie”</h3><p>Tablet w ręku, zdjęcia w serii. Dodajesz opis, części i checklistę wykonania.</p></div></li>
+          <li class="step"><span class="step__n">3</span><div class="step__b"><h3>Generujesz raport i wysyłasz</h3><p>PDF lub link z galerią + opisem. Wysyłka SMS/e-mail lub do panelu klienta.</p></div></li>
+        </ol>
+
+        <div class="callout reveal">
+          <div><strong>Najczęstsze użycia:</strong> blacharka/lakiernia, serwis okresowy, opony, diagnostyka, protokoły „przed/po”.</div>
+          <a class="btn btn--primary btn--small" href="#contact">Umów demo</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="features">
+      <div class="wrap">
+        <header class="head">
+          <h2>Funkcje, które robią różnicę</h2>
+          <p>Nie “apka do zdjęć”. Narzędzie do domykania zleceń i porządku w dokumentacji.</p>
+        </header>
+
+        <div class="grid reveal">
+          <article class="card">
+            <h3>Checklisty i podpis klienta</h3>
+            <p>Wykonane czynności, uwagi i podpis (odbiór auta / zgoda na koszt).</p>
+            <ul class="list"><li>Wymuszone pola</li><li>Szablony usług</li><li>Powtarzalność</li></ul>
+          </article>
+
+          <article class="card">
+            <h3>Zdjęcia “przed/po” + komentarze</h3>
+            <p>Opis zdjęcia: co było uszkodzone, co naprawiono, jakie części.</p>
+            <ul class="list"><li>Serie zdjęć</li><li>Spójny format</li><li>Szybkie notatki</li></ul>
+          </article>
+
+          <article class="card">
+            <h3>Raport dla klienta w 1 klik</h3>
+            <p>PDF lub link. Klient widzi wykonanie → mniej dyskusji.</p>
+            <ul class="list"><li>PDF / link</li><li>Wysyłka e-mail/SMS</li><li>Archiwum</li></ul>
+          </article>
+
+          <article class="card">
+            <h3>Historia per auto / zlecenie</h3>
+            <p>Wróć do poprzedniej naprawy, zobacz zdjęcia, opisy i daty.</p>
+            <ul class="list"><li>Filtrowanie</li><li>Wyszukiwarka</li><li>Porządek</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="videos">
+      <div class="wrap">
+        <header class="head">
+          <h2>Wideo: mechanik + tablet</h2>
+          <p>Dwa ujęcia: dokumentacja naprawy i szybkie wysłanie raportu.</p>
+        </header>
+
+        <div class="media reveal">
+          <article class="media__card">
+            <div class="media__videoWrap">
+              <video class="media__video" autoplay muted loop playsinline preload="metadata">
+                <source src="film1.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <h3>Zdjęcia po naprawie – na stanowisku</h3>
+            <p>Seria zdjęć + opis + checklisty. Wszystko w zleceniu.</p>
+            <ul class="ticks"><li>Seria zdjęć w 10 sekund</li><li>Szablony opisów</li><li>Porządek w zleceniu</li></ul>
+          </article>
+
+          <article class="media__card">
+            <div class="media__videoWrap">
+              <video class="media__video" autoplay muted loop playsinline preload="metadata">
+                <source src="film2.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <h3>Raport i wysyłka do klienta</h3>
+            <p>PDF/link + wysyłka. Klient widzi efekt pracy.</p>
+            <ul class="ticks"><li>Mniej telefonów</li><li>Większe zaufanie</li><li>Szybsze domknięcie zlecenia</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="faq">
+      <div class="wrap">
+        <header class="head">
+          <h2>FAQ</h2>
+          <p>Najczęstsze pytania przed startem.</p>
+        </header>
+
+        <div class="faq reveal">
+          <details class="faq__item"><summary>Czy to działa na tablecie i telefonie?</summary><div class="faq__body"><p>Tak. FotoNaprawa jest webowa. Mechanik działa na tablecie, klient otwiera raport na telefonie.</p></div></details>
+          <details class="faq__item"><summary>Czy mogę robić zdjęcia “przed i po”?</summary><div class="faq__body"><p>Tak — dwa zestawy zdjęć i automatyczne ułożenie w raporcie.</p></div></details>
+          <details class="faq__item"><summary>Jak wygląda wdrożenie?</summary><div class="faq__body"><p>Zaczynamy od 1–2 szablonów (np. serwis + opony), potem dokładamy kolejne.</p></div></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--contact" id="contact">
+      <div class="wrap">
+        <header class="head head--invert">
+          <h2>Poproś o demo FotoNaprawa</h2>
+          <p>Napisz, jakie naprawy najczęściej dokumentujesz i na jakich urządzeniach pracuje zespół.</p>
+        </header>
+
+        <div class="contact reveal">
+          <form class="form" id="leadForm" novalidate>
+            <div class="row">
+              <label><span>Imię i nazwisko</span><input name="name" type="text" autocomplete="name" placeholder="Jan Kowalski" required /></label>
+              <label><span>E-mail</span><input name="email" type="email" autocomplete="email" placeholder="jan@warsztat.pl" required /></label>
+            </div>
+
+            <div class="row">
+              <label>
+                <span>Rodzaj warsztatu</span>
+                <select name="type" required>
+                  <option value="" selected disabled>Wybierz…</option>
+                  <option>Mechanika / serwis</option>
+                  <option>Blacharnia / lakiernia</option>
+                  <option>Opony / wulkanizacja</option>
+                  <option>Detailing</option>
+                  <option>Inne</option>
+                </select>
+              </label>
+              <label><span>Telefon (opcjonalnie)</span><input name="phone" type="tel" autocomplete="tel" placeholder="+48 123 456 789" /></label>
+            </div>
+
+            <label><span>Wiadomość</span><textarea name="message" rows="5" placeholder="Np. 15 aut dziennie, zdjęcia po naprawie + raport PDF, tablety 10” na stanowiskach." required></textarea></label>
+
+            <div class="actions">
+              <button class="btn btn--primary" type="submit">Wyślij</button>
+              <p class="hint" id="formHint" role="status" aria-live="polite"></p>
+            </div>
+
+            <p class="legal">Formularz demo — podepnij wysyłkę w `scripts.js`.</p>
+          </form>
+
+          <aside class="side">
+            <div class="side__card">
+              <h3>Co pokażemy na demo?</h3>
+              <ul class="ticks"><li>Proces foto-dokumentacji na tablecie</li><li>Szablony: serwis, opony, blacharka</li><li>Raport PDF/link + archiwum</li></ul>
+            </div>
+            <div class="side__card">
+              <h3>Kontakt</h3>
+              <p class="muted">Podmień dane na swoje:</p>
+              <p><strong>E-mail:</strong> kontakt@twojadomena.pl<br /><strong>Telefon:</strong> +48 000 000 000</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__inner">
+      <p>© <span id="year"></span> FotoNaprawa. Wszelkie prawa zastrzeżone.</p>
+      <div class="foot__links"><a href="#top">Góra</a><a href="#contact">Kontakt</a></div>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {"@type":"Organization","name":"FotoNaprawa","url":"https://twojadomena.pl/fotonaprawa/index.html","logo":"logo.png"},
+      {"@type":"SoftwareApplication","name":"FotoNaprawa","applicationCategory":"BusinessApplication","operatingSystem":"Web",
+       "description":"Software dla warsztatów: zdjęcia naprawionych aut na tablecie, opis i checklisty, raport PDF/link dla klienta. Porządek w dokumentacji i mniej pytań.",
+       "offers":{"@type":"Offer","price":"0","priceCurrency":"PLN","availability":"https://schema.org/InStock","url":"https://twojadomena.pl/fotonaprawa/index.html#contact"}
+      }
+    ]
+  }
+  </script>
+
+  <script src="scripts.js" defer></script>
+</body>
+</html>

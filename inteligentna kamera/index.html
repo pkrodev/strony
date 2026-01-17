@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Inteligentna Kamera ANPR/ALPR – rozpoznawanie tablic, marki i koloru auta</title>
+  <meta name="description" content="Inteligentna kamera do rozpoznawania tablic rejestracyjnych (ANPR/ALPR), marki/modelu i koloru pojazdu. Dla warsztatów oraz instytucji użytku publicznego. Integracje API, logi i raporty." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="canonical" href="https://twojadomena.pl/" />
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="pl" href="https://twojadomena.pl/" />
+  <link rel="alternate" hreflang="en" href="https://twojadomena.pl/index-en.html" />
+  <link rel="alternate" hreflang="es" href="https://twojadomena.pl/index-es.html" />
+  <link rel="alternate" hreflang="ru" href="https://twojadomena.pl/index-ru.html" />
+  <link rel="alternate" hreflang="x-default" href="https://twojadomena.pl/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pl_PL" />
+  <meta property="og:title" content="Inteligentna Kamera ANPR/ALPR – tablice, marka i kolor auta" />
+  <meta property="og:description" content="Rozpoznawanie tablic, marki/modelu i koloru pojazdu dla warsztatów i instytucji publicznych. Automatyzuj wjazdy, ewidencję i bezpieczeństwo." />
+  <meta property="og:url" content="https://twojadomena.pl/" />
+  <meta property="og:image" content="zdjęcie0.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Inteligentna Kamera ANPR/ALPR – tablice, marka i kolor auta" />
+  <meta name="twitter:description" content="Rozpoznawanie tablic, marki/modelu i koloru pojazdu. Dla warsztatów i instytucji." />
+  <meta name="twitter:image" content="zdjęcie0.jpg" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Powrót na górę strony">
+  <img class="brand__img" src="logo.png" alt="SmartCamVision" />
+  <span class="brand__text">Inteligentna<span class="brand__thin">Kamera</span></span>
+</a>
+
+
+      <nav class="nav" aria-label="Główna nawigacja">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav__toggleBars" aria-hidden="true"></span>
+          <span class="sr-only">Otwórz menu</span>
+        </button>
+
+        <ul class="nav__menu" id="navMenu">
+          <li><a href="#funkcje">Funkcje</a></li>
+          <li><a href="#zastosowania">Zastosowania</a></li>
+          <li><a href="#jakdziala">Jak działa</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a class="btn btn--primary btn--small" href="#kontakt">Wyceń wdrożenie</a></li>
+          <li class="lang">
+            <a class="lang__link is-active" href="/" aria-current="page">PL</a>
+            <a class="lang__link" href="index-en.html">EN</a>
+            <a class="lang__link" href="index-es.html">ES</a>
+            <a class="lang__link" href="index-ru.html">RU</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO z filmem w tle -->
+    <section class="hero" aria-label="Wprowadzenie produktu">
+      <div class="hero__media" aria-hidden="true">
+        <video class="hero__video" autoplay muted loop playsinline preload="metadata" poster="zdjęcie0.jpg" id="bgVideo">
+          <source src="film.mp4" type="video/mp4" />
+        </video>
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="container hero__content">
+        <div class="hero__badge">
+          <span class="pill">ANPR/ALPR</span>
+          <span class="pill">Marka + Kolor</span>
+          <span class="pill">Raporty i API</span>
+        </div>
+
+        <h1 class="hero__title">
+          Inteligentna kamera do rozpoznawania
+          <span class="hero__accent">tablic, marki i koloru pojazdu</span>
+        </h1>
+
+        <p class="hero__subtitle">
+          Automatyczna identyfikacja aut przy wjeździe na teren warsztatu lub instytucji publicznej.
+          Szybkie wyszukiwanie, ewidencja i bezpieczeństwo – bez ręcznego spisywania danych.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#kontakt">Poproś o wycenę</a>
+          <a class="btn btn--ghost" href="#jakdziala">Zobacz jak działa</a>
+        </div>
+
+        <dl class="hero__stats" aria-label="Najważniejsze korzyści">
+          <div class="stat"><dt>Rozpoznawanie</dt><dd>Tablica + marka + kolor</dd></div>
+          <div class="stat"><dt>Wdrożenie</dt><dd>One-day setup*</dd></div>
+          <div class="stat"><dt>Integracje</dt><dd>API / eksport CSV</dd></div>
+        </dl>
+        <p class="hero__note">*Zależnie od infrastruktury i wymagań.</p>
+      </div>
+    </section>
+
+    <!-- Funkcje -->
+    <section class="section" id="funkcje">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Funkcje, które realnie oszczędzają czas</h2>
+          <p class="section__lead">
+            Dla warsztatów i instytucji, które muszą szybko identyfikować pojazdy oraz prowadzić ewidencję wjazdów.
+          </p>
+        </header>
+
+        <div class="grid grid--3 reveal">
+          <article class="card">
+            <h3>Odczyt tablic rejestracyjnych (ANPR/ALPR)</h3>
+            <p>Automatyczne wykrycie i zapis numeru tablicy – bez ręcznego przepisywania.</p>
+            <ul class="list">
+              <li>Historia zdarzeń</li>
+              <li>Filtry i wyszukiwanie</li>
+              <li>Eksport danych</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Rozpoznawanie marki i modelu</h3>
+            <p>Identyfikuj pojazdy po cechach wizualnych, aby przyspieszyć obsługę.</p>
+            <ul class="list">
+              <li>Ułatwiona identyfikacja klienta</li>
+              <li>Lepsza ewidencja floty</li>
+              <li>Automatyczne tagowanie</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Detekcja koloru pojazdu</h3>
+            <p>Przydatne w bezpieczeństwie i logistyce – zwłaszcza przy dużym ruchu.</p>
+            <ul class="list">
+              <li>Spójne raporty</li>
+              <li>Szybsze wyszukiwanie</li>
+              <li>Wsparcie kontroli dostępu</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="callout reveal">
+          <div>
+            <h3>Gotowe pod instytucje publiczne</h3>
+            <p>Monitoring wjazdów, rejestr zdarzeń, integracje z kontrolą dostępu i archiwizacją.</p>
+          </div>
+          <a class="btn btn--primary" href="#kontakt">Porozmawiajmy</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Zastosowania -->
+    <section class="section section--alt" id="zastosowania">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Dla kogo jest ta kamera?</h2>
+          <p class="section__lead">Dwa najczęstsze scenariusze wdrożeń – i dlaczego działają.</p>
+        </header>
+
+        <div class="split reveal">
+          <div class="panel">
+            <h3>Warsztaty i serwisy (mechanicy)</h3>
+            <p>Automatyzuj identyfikację pojazdów i ogranicz pomyłki.</p>
+            <ul class="check">
+              <li>Szybkie „kto wjechał?” – bez wychodzenia z biura</li>
+              <li>Łatwiejsze dopasowanie zlecenia do auta</li>
+              <li>Raporty dzienne/tygodniowe</li>
+            </ul>
+          </div>
+
+          <div class="panel">
+            <h3>Instytucje użytku publicznego</h3>
+            <p>Wsparcie bezpieczeństwa, ewidencji oraz audytu.</p>
+            <ul class="check">
+              <li>Rejestr wjazdów/wyjazdów</li>
+              <li>Lista zaufanych/wykluczonych pojazdów</li>
+              <li>Integracja z bramą / szlabanem</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Jak działa -->
+    <section class="section" id="jakdziala">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Jak to działa?</h2>
+          <p class="section__lead">Obraz → rozpoznanie → zapis → raport / integracja.</p>
+        </header>
+
+        <ol class="steps reveal">
+          <li class="step">
+            <span class="step__num">1</span>
+            <div class="step__body">
+              <h3>Rejestracja obrazu</h3>
+              <p>Kamera przechwytuje pojazd w strefie wjazdu i stabilizuje kadr.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">2</span>
+            <div class="step__body">
+              <h3>Analiza AI</h3>
+              <p>Rozpoznanie tablicy, marki/modelu i koloru auta, a następnie zapis zdarzenia.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">3</span>
+            <div class="step__body">
+              <h3>Panel i integracje</h3>
+              <p>Historia, filtry, eksport i API do połączenia z Twoim systemem.</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="integration reveal" role="note" aria-label="Integracje">
+          <h3>Integracje</h3>
+          <p>REST API, webhooki i eksport CSV. Integracja z CRM, parkingiem, kontrolą dostępu lub własną aplikacją.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">FAQ</h2>
+          <p class="section__lead">Najczęstsze pytania od warsztatów i instytucji.</p>
+        </header>
+
+        <div class="faq reveal">
+          <details class="faq__item">
+            <summary>Czy to działa w nocy?</summary>
+            <div class="faq__content">
+              <p>Tak – zależnie od konfiguracji (oświetlenie, ustawienie, parametry kamery).</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary>Czy mogę zintegrować kamerę z moim systemem?</summary>
+            <div class="faq__content">
+              <p>Tak. Dostępne jest API oraz eksport danych. Webhooki mogą uruchamiać akcje (np. otwarcie szlabanu).</p>
+            </div>
+          </details>
+          <details class="faq__item">
+            <summary>Co z RODO i archiwizacją?</summary>
+            <div class="faq__content">
+              <p>Konfigurujemy retencję danych i zakres zapisu zgodnie z potrzebami oraz polityką organizacji.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section class="section section--alt" id="kontakt">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Wycena i wdrożenie</h2>
+          <p class="section__lead">Napisz, gdzie ma działać system – odezwiemy się z propozycją.</p>
+        </header>
+
+        <div class="contact reveal">
+          <form class="form" id="leadForm" novalidate>
+            <div class="form__row">
+              <label><span>Imię i nazwisko</span><input name="name" type="text" autocomplete="name" placeholder="Jan Kowalski" required /></label>
+              <label><span>E-mail</span><input name="email" type="email" autocomplete="email" placeholder="jan@firma.pl" required /></label>
+            </div>
+
+            <div class="form__row">
+              <label>
+                <span>Typ klienta</span>
+                <select name="type" required>
+                  <option value="" selected disabled>Wybierz…</option>
+                  <option>Warsztat / serwis</option>
+                  <option>Instytucja publiczna</option>
+                  <option>Inne</option>
+                </select>
+              </label>
+              <label><span>Telefon (opcjonalnie)</span><input name="phone" type="tel" autocomplete="tel" placeholder="+48 123 456 789" /></label>
+            </div>
+
+            <label><span>Wiadomość</span><textarea name="message" rows="5" placeholder="Opisz lokalizację, liczbę wjazdów, oczekiwane integracje…" required></textarea></label>
+
+            <div class="form__actions">
+              <button class="btn btn--primary" type="submit">Wyślij zapytanie</button>
+              <p class="form__hint" id="formHint" role="status" aria-live="polite"></p>
+            </div>
+
+            <p class="legal">Wysyłając formularz, zgadzasz się na kontakt w sprawie oferty. (Dodaj link do polityki prywatności.)</p>
+          </form>
+
+          <aside class="contact__side" aria-label="Dane kontaktowe">
+            <div class="card card--soft">
+              <h3>Kontakt</h3>
+              <p class="muted">Podmień dane na swoje:</p>
+              <ul class="contactList">
+                <li><strong>Telefon:</strong> +48 000 000 000</li>
+                <li><strong>E-mail:</strong> kontakt@twojadomena.pl</li>
+                <li><strong>Obszar:</strong> Polska / EU</li>
+              </ul>
+              <div class="chips">
+                <span class="chip">ANPR/ALPR</span>
+                <span class="chip">Rozpoznawanie marki</span>
+                <span class="chip">Detekcja koloru</span>
+              </div>
+            </div>
+
+            <div class="card card--soft">
+              <h3>Dlaczego my?</h3>
+              <ul class="check">
+                <li>Nowoczesny panel + API</li>
+                <li>Wdrożenia dla warsztatów i instytucji</li>
+                <li>Konfiguracja pod warunki lokalne</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> SmartCamVision. Wszelkie prawa zastrzeżone.</p>
+      <div class="footer__links">
+        <a href="#top">Do góry</a>
+        <a href="#kontakt">Kontakt</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "SmartCamVision",
+        "url": "https://twojadomena.pl/",
+        "logo": "zdjęcie0.jpg",
+        "sameAs": []
+      },
+      {
+        "@type": "Product",
+        "name": "Inteligentna kamera ANPR/ALPR",
+        "description": "Inteligentna kamera do rozpoznawania tablic rejestracyjnych (ANPR/ALPR), marki/modelu i koloru pojazdu. Dla warsztatów oraz instytucji użytku publicznego.",
+        "image": ["zdjęcie0.jpg","zdjęcie1.jpg","zdjęcie2.jpg","zdjęcie3.jpg","zdjęcie4.jpg","zdjęcie5.jpg"],
+        "brand": { "@type": "Brand", "name": "SmartCamVision" },
+        "category": "Security & Access Control",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PLN",
+          "price": "0",
+          "availability": "https://schema.org/InStock",
+          "url": "https://twojadomena.pl/#kontakt"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script src="scripts.js" defer></script>
+</body>
+</html>
