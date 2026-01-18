@@ -4,42 +4,45 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Cámara inteligente ANPR/ALPR – matrículas, marca y color del vehículo</title>
-  <meta name="description" content="Cámara inteligente para reconocimiento de matrículas (ANPR/ALPR), marca/modelo y detección de color. Ideal para talleres y entidades públicas. Integración rápida, registros y reportes." />
+  <title>Cámara inteligente (sistema ANPR/ALPR on‑premise) – matrículas y color | nightcode.pl</title>
+  <meta name="description" content="Sistema ANPR/ALPR on‑premise instalado en tus instalaciones: detección de vehículo, detección de matrícula, OCR de matrícula y detección del color. Implantación única + servicio de por vida. Cámaras opcionales y personalización." />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#ffffff" />
-  <link rel="canonical" href="https://twojadomena.pl/index-es.html" />
+  <link rel="canonical" href="https://nightcode.pl/index-es.html" />
 
   <!-- Hreflang -->
-  <link rel="alternate" hreflang="pl" href="https://twojadomena.pl/" />
-  <link rel="alternate" hreflang="en" href="https://twojadomena.pl/index-en.html" />
-  <link rel="alternate" hreflang="es" href="https://twojadomena.pl/index-es.html" />
-  <link rel="alternate" hreflang="ru" href="https://twojadomena.pl/index-ru.html" />
-  <link rel="alternate" hreflang="x-default" href="https://twojadomena.pl/" />
+  <link rel="alternate" hreflang="pl" href="https://nightcode.pl/index.html" />
+  <link rel="alternate" hreflang="en" href="https://nightcode.pl/index-en.html" />
+  <link rel="alternate" hreflang="es" href="https://nightcode.pl/index-es.html" />
+  <link rel="alternate" hreflang="ru" href="https://nightcode.pl/index-ru.html" />
+  <link rel="alternate" hreflang="x-default" href="https://nightcode.pl/index.html" />
 
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_ES" />
-  <meta property="og:title" content="Cámara inteligente ANPR/ALPR – matrículas, marca y color" />
-  <meta property="og:description" content="Reconoce matrículas, marca/modelo y color del vehículo para talleres y entidades públicas. Automatiza registros de entrada y seguridad." />
-  <meta property="og:url" content="https://twojadomena.pl/index-es.html" />
-  <meta property="og:image" content="zdjęcie0.jpg" />
+  <meta property="og:title" content="Cámara inteligente – sistema ANPR/ALPR on‑premise" />
+  <meta property="og:description" content="Reconocimiento de vehículo, matrícula y color — localmente en tus instalaciones. Implantación única + servicio de por vida. Personalizable." />
+  <meta property="og:url" content="https://nightcode.pl/index-es.html" />
+  <meta property="og:image" content="assets/og.png" />
 
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Cámara inteligente ANPR/ALPR – matrículas, marca y color" />
-  <meta name="twitter:description" content="Reconocimiento de matrículas + marca/modelo y color para talleres e instituciones." />
-  <meta name="twitter:image" content="zdjęcie0.jpg" />
+  <meta name="twitter:title" content="Cámara inteligente – sistema ANPR/ALPR on‑premise" />
+  <meta name="twitter:description" content="Reconocimiento de vehículo, matrícula y color — localmente en tus instalaciones. Implantación única + servicio de por vida." />
+  <meta name="twitter:image" content="assets/og.png" />
 
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <a class="skip-link" href="#main">Ir al contenido</a>
 
   <header class="header" id="top">
     <div class="container header__inner">
       <a class="brand" href="#top" aria-label="Volver arriba">
-        <span class="brand__mark" aria-hidden="true">◎</span>
-        <span class="brand__text">SmartCam<span class="brand__thin">Vision</span></span>
+        <img class="brand__img" src="assets/logo.svg" alt="nightcode.pl" />
+        <span class="brand__text">nightcode<span class="brand__thin">.pl</span></span>
       </a>
 
       <nav class="nav" aria-label="Navegación principal">
@@ -49,13 +52,14 @@
         </button>
 
         <ul class="nav__menu" id="navMenu">
-          <li><a href="#features">Funciones</a></li>
-          <li><a href="#usecases">Casos de uso</a></li>
-          <li><a href="#how">Cómo funciona</a></li>
+          <li><a href="#funkcje">Funciones</a></li>
+          <li><a href="#zastosowania">Usos</a></li>
+          <li><a href="#wdrozenie">Implantación</a></li>
+          <li><a href="#jakdziala">Cómo funciona</a></li>
           <li><a href="#faq">FAQ</a></li>
-          <li><a class="btn btn--primary btn--small" href="#contact">Solicitar presupuesto</a></li>
+          <li><a class="btn btn--primary btn--small" href="#kontakt">Solicitar presupuesto</a></li>
           <li class="lang">
-            <a class="lang__link" href="/">PL</a>
+            <a class="lang__link" href="index.html">PL</a>
             <a class="lang__link" href="index-en.html">EN</a>
             <a class="lang__link is-active" href="index-es.html" aria-current="page">ES</a>
             <a class="lang__link" href="index-ru.html">RU</a>
@@ -66,219 +70,372 @@
   </header>
 
   <main id="main">
-    <section class="hero" aria-label="Introducción del producto">
+    <!-- HERO -->
+    <section class="hero" aria-label="Introducción">
       <div class="hero__media" aria-hidden="true">
-        <video class="hero__video" autoplay muted loop playsinline preload="metadata" poster="zdjęcie0.jpg" id="bgVideo">
-          <source src="film.mp4" type="video/mp4" />
+        <video class="hero__video" autoplay muted loop playsinline preload="metadata" poster="assets/poster.jpg" id="bgVideo">
+          <source src="assets/film.mp4" type="video/mp4" />
         </video>
         <div class="hero__overlay"></div>
       </div>
 
       <div class="container hero__content">
         <div class="hero__badge">
-          <span class="pill">ANPR/ALPR</span>
-          <span class="pill">Marca + Color</span>
-          <span class="pill">Reportes y API</span>
+          <span class="pill">On‑premise</span>
+          <span class="pill">Implantación única</span>
+          <span class="pill">Servicio de por vida</span>
+          <span class="pill">Custom</span>
         </div>
 
         <h1 class="hero__title">
-          Cámara inteligente para reconocer
-          <span class="hero__accent">matrículas, marca y color del vehículo</span>
+          Cámara inteligente:
+          <span class="hero__accent">ANPR/ALPR on‑premise</span>
         </h1>
 
         <p class="hero__subtitle">
-          Identificación automática de vehículos en la entrada para talleres y entidades públicas.
-          Búsqueda rápida, registro de accesos y mayor seguridad—sin teclear.
+          Software instalado en tu infraestructura: detección de vehículo, detección y OCR de matrículas y detección del color del coche.
+          Sin suscripciones. Y si lo necesitas, también podemos suministrar cámaras.
         </p>
 
         <div class="hero__cta">
-          <a class="btn btn--primary" href="#contact">Solicitar presupuesto</a>
-          <a class="btn btn--ghost" href="#how">Ver cómo funciona</a>
+          <a class="btn btn--primary" href="#kontakt">Solicitar presupuesto</a>
+          <a class="btn btn--ghost" href="#jakdziala">Ver cómo funciona</a>
         </div>
 
-        <dl class="hero__stats" aria-label="Beneficios clave">
-          <div class="stat"><dt>Reconocimiento</dt><dd>Matrícula + marca + color</dd></div>
-          <div class="stat"><dt>Implementación</dt><dd>Instalación en 1 día*</dd></div>
-          <div class="stat"><dt>Integraciones</dt><dd>API / exportación CSV</dd></div>
+        <dl class="hero__stats" aria-label="Puntos clave">
+          <div class="stat"><dt>Datos</dt><dd>locales, bajo tu control</dd></div>
+          <div class="stat"><dt>Modelo</dt><dd>pago único (sin abono)</dd></div>
+          <div class="stat"><dt>Personalización</dt><dd>adaptado a tu proceso</dd></div>
         </dl>
-        <p class="hero__note">*Depende de la infraestructura y requisitos.</p>
+        <p class="hero__note">*El alcance depende del número de cámaras, condiciones e integraciones.</p>
       </div>
     </section>
 
-    <section class="section" id="features">
+    <!-- Funciones -->
+    <section class="section" id="funkcje">
       <div class="container">
         <header class="section__header">
-          <h2 class="section__title">Funciones que ahorran tiempo</h2>
-          <p class="section__lead">Para talleres e instituciones que necesitan identificar vehículos y mantener registros fiables.</p>
+          <h2 class="section__title">Funciones que realmente importan</h2>
+          <p class="section__lead">
+            Entregamos software que reconoce eventos de entrada/salida y los guarda en un panel local.
+            Podemos ajustarlo a tu infraestructura y forma de trabajo.
+          </p>
         </header>
 
-        <div class="grid grid--3 reveal">
+        <div class="grid grid--4 reveal">
           <article class="card">
-            <h3>Reconocimiento de matrículas (ANPR/ALPR)</h3>
-            <p>Detección y registro automático—sin transcripción manual.</p>
+            <h3>Detección de vehículo</h3>
+            <p>El sistema detecta el coche en el encuadre y analiza sólo cuando tiene sentido.</p>
             <ul class="list">
-              <li>Historial de eventos</li>
-              <li>Filtros y búsqueda</li>
-              <li>Exportación de datos</li>
+              <li>menos falsos eventos</li>
+              <li>registros más limpios</li>
+              <li>funcionamiento estable 24/7</li>
             </ul>
           </article>
 
           <article class="card">
-            <h3>Reconocimiento de marca y modelo</h3>
-            <p>Identifica vehículos por características visuales para acelerar procesos.</p>
+            <h3>Detección de matrícula</h3>
+            <p>Localiza la zona de la matrícula y la prepara para OCR.</p>
             <ul class="list">
-              <li>Identificación más rápida</li>
-              <li>Mejor control de flotas</li>
-              <li>Etiquetado automático</li>
+              <li>distintos ángulos y distancias</li>
+              <li>adaptación al punto de montaje</li>
+              <li>calibración según condiciones</li>
             </ul>
           </article>
 
           <article class="card">
-            <h3>Detección de color</h3>
-            <p>Útil para seguridad y logística, especialmente con tráfico alto.</p>
+            <h3>OCR de matrículas (ANPR/ALPR)</h3>
+            <p>Lee los caracteres y guarda el número en el historial.</p>
             <ul class="list">
-              <li>Reportes consistentes</li>
-              <li>Búsquedas más rápidas</li>
-              <li>Soporte para control de acceso</li>
+              <li>búsqueda rápida</li>
+              <li>vista de la imagen del evento</li>
+              <li>exportación / informes bajo demanda</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Detección del color</h3>
+            <p>Acelera el filtrado y la verificación en escenarios con mucho tráfico.</p>
+            <ul class="list">
+              <li>color como atributo adicional</li>
+              <li>historial más fácil de filtrar</li>
+              <li>apoyo para seguridad</li>
             </ul>
           </article>
         </div>
 
         <div class="callout reveal">
           <div>
-            <h3>Preparado para entidades públicas</h3>
-            <p>Monitoreo de entradas, registros y posibles integraciones con control de acceso y archivado.</p>
+            <h3>Opcional: cámaras y módulos extra</h3>
+            <p>
+              Si lo deseas, elegimos el hardware y hacemos una implantación completa. Como parte de la personalización,
+              podemos añadir atributos, integraciones o automatizaciones (barrera/portón, sistemas internos).
+            </p>
           </div>
-          <a class="btn btn--primary" href="#contact">Hablemos</a>
+          <a class="btn btn--primary" href="#kontakt">Consultar alcance</a>
         </div>
       </div>
     </section>
 
-    <section class="section section--alt" id="usecases">
+    <!-- Por qué on-premise -->
+    <section class="section section--alt" id="onpremise">
       <div class="container">
         <header class="section__header">
-          <h2 class="section__title">¿Para quién es?</h2>
-          <p class="section__lead">Dos escenarios típicos de despliegue.</p>
+          <h2 class="section__title">¿Por qué on‑premise?</h2>
+          <p class="section__lead">Porque no todo el mundo quiere enviar vídeo y datos a la nube.</p>
         </header>
 
-        <div class="split reveal">
-          <div class="panel">
-            <h3>Talleres y servicios</h3>
-            <p>Automatiza la identificación y reduce errores.</p>
-            <ul class="check">
-              <li>“¿Quién entró?” al instante</li>
-              <li>Mejor asociación trabajo-vehículo</li>
-              <li>Reportes diarios/semanales</li>
-            </ul>
-          </div>
-
-          <div class="panel">
-            <h3>Instituciones públicas</h3>
-            <p>Apoyo a seguridad, auditoría y trazabilidad.</p>
-            <ul class="check">
-              <li>Registro de entradas/salidas</li>
-              <li>Listas de confianza/bloqueo</li>
-              <li>Integración con barrera/puerta</li>
-            </ul>
-          </div>
+        <div class="grid grid--3 reveal">
+          <article class="card card--soft">
+            <h3>Control de datos</h3>
+            <p>El sistema funciona localmente. Tú decides qué se guarda y durante cuánto tiempo.</p>
+          </article>
+          <article class="card card--soft">
+            <h3>Sin Internet</h3>
+            <p>En escenarios típicos puede funcionar en la red local, sin servicios externos.</p>
+          </article>
+          <article class="card card--soft">
+            <h3>Sin suscripción</h3>
+            <p>Pagas por la implantación. Después lo usas, y nosotros damos servicio de por vida y mejoras en la colaboración.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="how">
+    <!-- Usos -->
+    <section class="section" id="zastosowania">
       <div class="container">
         <header class="section__header">
-          <h2 class="section__title">Cómo funciona</h2>
-          <p class="section__lead">Imagen → reconocimiento → registro → reportes / integración.</p>
+          <h2 class="section__title">Usos</h2>
+          <p class="section__lead">Funciona allí donde importa identificar rápido un vehículo y mantener un historial ordenado.</p>
+        </header>
+
+        <div class="grid grid--4 reveal">
+          <article class="card">
+            <h3>Portón / barrera</h3>
+            <p>Reconocimiento automático de entrada, verificación y registro de eventos.</p>
+          </article>
+          <article class="card">
+            <h3>Empresas y almacenes</h3>
+            <p>Registro de entregas, control de tráfico y filtrado rápido del historial.</p>
+          </article>
+          <article class="card">
+            <h3>Urbanizaciones y comunidades</h3>
+            <p>Orden en los accesos y material de verificación en caso de incidentes.</p>
+          </article>
+          <article class="card">
+            <h3>Talleres y servicios</h3>
+            <p>“¿Quién entró?” en segundos, menos errores y mejor asociación con órdenes.</p>
+          </article>
+        </div>
+
+        <p class="note">¿Otro caso? Para eso está la personalización: lo adaptamos a tu proceso.</p>
+      </div>
+    </section>
+
+    <!-- Implantación -->
+    <section class="section section--alt" id="wdrozenie">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Implantación + servicio de por vida</h2>
+          <p class="section__lead">No te dejamos con un “instalador”. Tiene que funcionar y mantenerse.</p>
         </header>
 
         <ol class="steps reveal">
-          <li class="step"><span class="step__num">1</span><div class="step__body"><h3>Captura</h3><p>La cámara captura el vehículo y estabiliza el encuadre.</p></div></li>
-          <li class="step"><span class="step__num">2</span><div class="step__body"><h3>Análisis con IA</h3><p>Reconoce matrícula, marca/modelo y color, y guarda el evento.</p></div></li>
-          <li class="step"><span class="step__num">3</span><div class="step__body"><h3>Panel e integraciones</h3><p>Historial, filtros, exportación y API para tu sistema.</p></div></li>
+          <li class="step">
+            <span class="step__num">1</span>
+            <div class="step__body">
+              <h3>Análisis rápido</h3>
+              <p>Definimos punto de montaje, número de cámaras, atributos e integraciones.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">2</span>
+            <div class="step__body">
+              <h3>Instalación on‑premise</h3>
+              <p>Montamos el sistema localmente, configuramos cámaras/streams y panel.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">3</span>
+            <div class="step__body">
+              <h3>Calibración</h3>
+              <p>Ajustamos parámetros a iluminación real, ángulo, distancia y tráfico.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">4</span>
+            <div class="step__body">
+              <h3>Servicio de por vida</h3>
+              <p>Soporte, correcciones y mejoras dentro de la colaboración para mantener el sistema útil.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Cómo funciona -->
+    <section class="section" id="jakdziala">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">¿Cómo funciona?</h2>
+          <p class="section__lead">Imagen → reconocimiento → registro → búsqueda / informe.</p>
+        </header>
+
+        <ol class="steps reveal">
+          <li class="step">
+            <span class="step__num">A</span>
+            <div class="step__body">
+              <h3>Vídeo de la cámara</h3>
+              <p>Trabajamos sobre el stream de una cámara (o un kit de cámaras suministrado por nosotros).</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">B</span>
+            <div class="step__body">
+              <h3>Análisis local</h3>
+              <p>Detección de vehículo y matrícula, OCR y detección de color — todo localmente.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">C</span>
+            <div class="step__body">
+              <h3>Panel y datos</h3>
+              <p>Historial, buscador, filtros y exportes/informes (según el alcance de la implantación).</p>
+            </div>
+          </li>
         </ol>
 
         <div class="integration reveal" role="note" aria-label="Integraciones">
-          <h3>Integraciones</h3>
-          <p>REST API, webhooks y exportación CSV. Integración con CRM, parking, control de acceso o tu app.</p>
+          <h3>Integraciones (opcional)</h3>
+          <p>
+            Si necesitas conectar el sistema a una barrera/portón, CRM/ERP o tu propia app — lo hacemos como custom.
+            Lo más habitual: REST API, webhooks o exportación de archivos.
+          </p>
         </div>
       </div>
     </section>
 
+    <!-- FAQ -->
     <section class="section" id="faq">
       <div class="container">
         <header class="section__header">
           <h2 class="section__title">FAQ</h2>
-          <p class="section__lead">Preguntas frecuentes.</p>
+          <p class="section__lead">Preguntas frecuentes antes de una implantación.</p>
         </header>
 
         <div class="faq reveal">
-          <details class="faq__item"><summary>¿Funciona de noche?</summary><div class="faq__content"><p>Sí, según iluminación, instalación y especificaciones.</p></div></details>
-          <details class="faq__item"><summary>¿Puedo integrarla con mi sistema?</summary><div class="faq__content"><p>Sí. Hay API y exportación. Webhooks pueden ejecutar acciones (p. ej. abrir una barrera).</p></div></details>
-          <details class="faq__item"><summary>¿Privacidad y retención (RGPD)?</summary><div class="faq__content"><p>Configuramos la retención y los datos guardados según tus políticas y requisitos.</p></div></details>
+          <details class="faq__item">
+            <summary>¿Necesito Internet para que funcione?</summary>
+            <div class="faq__content"><p>Normalmente no. El sistema puede trabajar en la red local.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>¿Dónde se guardan los datos e imágenes?</summary>
+            <div class="faq__content"><p>Localmente en tu infraestructura. Tú controlas retención y acceso.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>¿Funciona de noche?</summary>
+            <div class="faq__content"><p>Sí, dependiendo de la cámara, iluminación y calibración del punto.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>¿Puedo usar mis propias cámaras?</summary>
+            <div class="faq__content"><p>En muchos casos sí. También podemos proponer/suministrar un kit.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>¿Cuántas cámaras puedo conectar?</summary>
+            <div class="faq__content"><p>Depende del hardware local y del alcance. Lo definimos en la propuesta.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>¿Puedo ajustar la retención (cuánto tiempo se guarda)?</summary>
+            <div class="faq__content"><p>Sí, configuramos retención según tus reglas.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>¿Puedo personalizar el panel e informes?</summary>
+            <div class="faq__content"><p>Sí. La personalización es una ventaja clave: vistas, filtros, campos y exportes.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>¿Hay integraciones (barrera/portón, API)?</summary>
+            <div class="faq__content"><p>Sí, como custom: API / webhooks / exportes y acciones automáticas.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>¿Qué incluye exactamente el “servicio de por vida”?</summary>
+            <div class="faq__content"><p>Soporte, correcciones y actualizaciones para que la implantación se mantenga estable y útil.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>¿Cómo se calcula el precio?</summary>
+            <div class="faq__content"><p>Según número de cámaras, condiciones, panel e integraciones. Cuéntanos el caso.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>¿Puedo añadir funciones más adelante?</summary>
+            <div class="faq__content"><p>Sí. Podemos ampliar el sistema con módulos adicionales cuando lo necesites.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>¿Es “cámara” o “software”?</summary>
+            <div class="faq__content"><p>Principalmente software on‑premise que trabaja con cámaras. Hardware es opcional.</p></div>
+          </details>
         </div>
       </div>
     </section>
 
-    <section class="section section--alt" id="contact">
+    <!-- Contacto -->
+    <section class="section section--alt" id="kontakt">
       <div class="container">
         <header class="section__header">
-          <h2 class="section__title">Presupuesto e implementación</h2>
-          <p class="section__lead">Cuéntanos dónde debe funcionar el sistema y te enviaremos una propuesta.</p>
+          <h2 class="section__title">Presupuesto e implantación</h2>
+          <p class="section__lead">Escribe unas líneas sobre el lugar, cámaras y el resultado que buscas.</p>
         </header>
 
         <div class="contact reveal">
           <form class="form" id="leadForm" novalidate>
             <div class="form__row">
-              <label><span>Nombre y apellidos</span><input name="name" type="text" autocomplete="name" placeholder="Juan Pérez" required /></label>
+              <label><span>Nombre</span><input name="name" type="text" autocomplete="name" placeholder="Juan Pérez" required /></label>
               <label><span>Email</span><input name="email" type="email" autocomplete="email" placeholder="juan@empresa.com" required /></label>
             </div>
 
             <div class="form__row">
               <label>
-                <span>Tipo de cliente</span>
+                <span>Tipo de implantación</span>
                 <select name="type" required>
-                  <option value="" selected disabled>Seleccionar…</option>
-                  <option>Taller / servicio</option>
-                  <option>Institución pública</option>
+                  <option value="" selected disabled>Elige…</option>
+                  <option>Portón / barrera</option>
+                  <option>Empresa / almacén</option>
+                  <option>Comunidad</option>
+                  <option>Taller</option>
                   <option>Otro</option>
                 </select>
               </label>
-              <label><span>Teléfono (opcional)</span><input name="phone" type="tel" autocomplete="tel" placeholder="+34 600 000 000" /></label>
+              <label><span>Teléfono (opcional)</span><input name="phone" type="tel" autocomplete="tel" placeholder="+48 519 096 947" /></label>
             </div>
 
-            <label><span>Mensaje</span><textarea name="message" rows="5" placeholder="Describe ubicación, volumen de entradas e integraciones…" required></textarea></label>
+            <label><span>Mensaje</span><textarea name="message" rows="5" placeholder="¿Cuántas entradas/cámaras? ¿Condiciones nocturnas? ¿Integración con barrera/portón o sistemas internos?" required></textarea></label>
 
             <div class="form__actions">
               <button class="btn btn--primary" type="submit">Enviar</button>
               <p class="form__hint" id="formHint" role="status" aria-live="polite"></p>
             </div>
 
-            <p class="legal">Al enviar el formulario aceptas que te contactemos. (Añade el enlace a tu política de privacidad.)</p>
+            <p class="legal">Formulario de demostración. La forma más rápida es por email o teléfono. Datos: <a class="link" href="privacy.html">Política de privacidad</a>.</p>
           </form>
 
           <aside class="contact__side" aria-label="Datos de contacto">
             <div class="card card--soft">
               <h3>Contacto</h3>
-              <p class="muted">Sustituye por tus datos:</p>
               <ul class="contactList">
-                <li><strong>Teléfono:</strong> +48 000 000 000</li>
-                <li><strong>Email:</strong> contacto@twojadomena.pl</li>
-                <li><strong>Región:</strong> EU</li>
+                <li><strong>Web:</strong> <a class="link" href="https://nightcode.pl">nightcode.pl</a></li>
+                <li><strong>Teléfono:</strong> <a class="link" href="tel:+48519096947">519 096 947</a></li>
+                <li><strong>Email:</strong> <a class="link" href="mailto:kontakt@nightcode.pl">kontakt@nightcode.pl</a></li>
               </ul>
-              <div class="chips">
-                <span class="chip">ANPR/ALPR</span>
-                <span class="chip">Marca/modelo</span>
-                <span class="chip">Color</span>
-              </div>
+              <p class="muted" style="margin-top:.8rem">¿Quieres una demo rápida? Escribe dónde debe funcionar y con cuántas cámaras.</p>
             </div>
 
             <div class="card card--soft">
-              <h3>¿Por qué nosotros?</h3>
+              <h3>Qué obtienes</h3>
               <ul class="check">
-                <li>Panel moderno + API</li>
-                <li>Despliegues para talleres e instituciones</li>
-                <li>Configuración según el sitio</li>
+                <li>Instalación on‑premise</li>
+                <li>Calibración según condiciones</li>
+                <li>Panel con historial y filtros</li>
+                <li>Posibilidad de ampliación (custom)</li>
+                <li>Servicio de por vida</li>
               </ul>
             </div>
           </aside>
@@ -289,20 +446,41 @@
 
   <footer class="footer">
     <div class="container footer__inner">
-      <p>© <span id="year"></span> SmartCamVision. Todos los derechos reservados.</p>
+      <p>© <span id="year"></span> nightcode.pl</p>
       <div class="footer__links">
-        <a href="#top">Arriba</a>
-        <a href="#contact">Contacto</a>
+        <a href="#kontakt">Contacto</a>
+        <a href="privacy.html">Política de privacidad</a>
       </div>
     </div>
   </footer>
 
+  <!-- JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@graph":[
-      {"@type":"Organization","name":"SmartCamVision","url":"https://twojadomena.pl/","logo":"zdjęcie0.jpg","sameAs":[]},
-      {"@type":"Product","name":"Cámara inteligente ANPR/ALPR","description":"Cámara inteligente para reconocimiento de matrículas (ANPR/ALPR), marca/modelo y detección de color. Ideal para talleres y entidades públicas.","image":["zdjęcie0.jpg","zdjęcie1.jpg","zdjęcie2.jpg","zdjęcie3.jpg","zdjęcie4.jpg","zdjęcie5.jpg"],"brand":{"@type":"Brand","name":"SmartCamVision"},"category":"Security & Access Control","offers":{"@type":"Offer","priceCurrency":"PLN","price":"0","availability":"https://schema.org/InStock","url":"https://twojadomena.pl/index-es.html#contact"}}
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "nightcode.pl",
+        "url": "https://nightcode.pl/",
+        "logo": "https://nightcode.pl/assets/logo.svg",
+        "contactPoint": [{
+          "@type": "ContactPoint",
+          "telephone": "+48-519-096-947",
+          "contactType": "sales",
+          "email": "kontakt@nightcode.pl",
+          "availableLanguage": ["pl", "en", "es", "ru"]
+        }]
+      },
+      {
+        "@type": "Service",
+        "name": "Smart camera (on‑premise ANPR/ALPR system)",
+        "serviceType": "ANPR/ALPR on‑premise",
+        "provider": {"@type": "Organization", "name": "nightcode.pl"},
+        "areaServed": "PL",
+        "description": "On‑premise ANPR/ALPR system installed on your site: vehicle detection, plate detection, plate OCR and vehicle color detection. One‑time deployment + lifetime service.",
+        "url": "https://nightcode.pl/index-es.html"
+      }
     ]
   }
   </script>

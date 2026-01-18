@@ -4,31 +4,34 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Интеллектуальная камера ANPR/ALPR — номера, марка и цвет автомобиля</title>
-  <meta name="description" content="Интеллектуальная камера для распознавания госномеров (ANPR/ALPR), марки/модели и цвета автомобиля. Для автосервисов и государственных учреждений. Быстрая интеграция, журналы и отчёты." />
+  <title>Интеллектуальная камера (on‑premise ANPR/ALPR) — номера и цвет авто | nightcode.pl</title>
+  <meta name="description" content="Локальная (on‑premise) система ANPR/ALPR на вашем объекте: детекция автомобиля и номера, распознавание номера (OCR) и определение цвета. Разовое внедрение + пожизненный сервис. По желанию — камеры и кастомизация." />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#ffffff" />
-  <link rel="canonical" href="https://twojadomena.pl/index-ru.html" />
+  <link rel="canonical" href="https://nightcode.pl/index-ru.html" />
 
   <!-- Hreflang -->
-  <link rel="alternate" hreflang="pl" href="https://twojadomena.pl/" />
-  <link rel="alternate" hreflang="en" href="https://twojadomena.pl/index-en.html" />
-  <link rel="alternate" hreflang="es" href="https://twojadomena.pl/index-es.html" />
-  <link rel="alternate" hreflang="ru" href="https://twojadomena.pl/index-ru.html" />
-  <link rel="alternate" hreflang="x-default" href="https://twojadomena.pl/" />
+  <link rel="alternate" hreflang="pl" href="https://nightcode.pl/index.html" />
+  <link rel="alternate" hreflang="en" href="https://nightcode.pl/index-en.html" />
+  <link rel="alternate" hreflang="es" href="https://nightcode.pl/index-es.html" />
+  <link rel="alternate" hreflang="ru" href="https://nightcode.pl/index-ru.html" />
+  <link rel="alternate" hreflang="x-default" href="https://nightcode.pl/index.html" />
 
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="ru_RU" />
-  <meta property="og:title" content="Камера ANPR/ALPR — номера, марка и цвет автомобиля" />
-  <meta property="og:description" content="Распознавание номеров, марки/модели и цвета для автосервисов и учреждений. Автоматизируйте учёт въездов и безопасность." />
-  <meta property="og:url" content="https://twojadomena.pl/index-ru.html" />
-  <meta property="og:image" content="zdjęcie0.jpg" />
+  <meta property="og:title" content="Интеллектуальная камера — on‑premise ANPR/ALPR" />
+  <meta property="og:description" content="Распознавание авто, номера и цвета — локально на вашем объекте. Разовое внедрение + пожизненный сервис. Кастомизация под ваш процесс." />
+  <meta property="og:url" content="https://nightcode.pl/index-ru.html" />
+  <meta property="og:image" content="assets/og.png" />
 
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Камера ANPR/ALPR — номера, марка и цвет автомобиля" />
-  <meta name="twitter:description" content="Распознавание номеров + марка/модель и цвет. Для сервисов и учреждений." />
-  <meta name="twitter:image" content="zdjęcie0.jpg" />
+  <meta name="twitter:title" content="Интеллектуальная камера — on‑premise ANPR/ALPR" />
+  <meta name="twitter:description" content="Распознавание авто, номера и цвета — локально на вашем объекте. Разовое внедрение + пожизненный сервис." />
+  <meta name="twitter:image" content="assets/og.png" />
 
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -38,24 +41,25 @@
   <header class="header" id="top">
     <div class="container header__inner">
       <a class="brand" href="#top" aria-label="Наверх">
-        <span class="brand__mark" aria-hidden="true">◎</span>
-        <span class="brand__text">SmartCam<span class="brand__thin">Vision</span></span>
+        <img class="brand__img" src="assets/logo.svg" alt="nightcode.pl" />
+        <span class="brand__text">nightcode<span class="brand__thin">.pl</span></span>
       </a>
 
-      <nav class="nav" aria-label="Основная навигация">
+      <nav class="nav" aria-label="Главная навигация">
         <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
           <span class="nav__toggleBars" aria-hidden="true"></span>
           <span class="sr-only">Открыть меню</span>
         </button>
 
         <ul class="nav__menu" id="navMenu">
-          <li><a href="#features">Функции</a></li>
-          <li><a href="#usecases">Сценарии</a></li>
-          <li><a href="#how">Как работает</a></li>
+          <li><a href="#funkcje">Функции</a></li>
+          <li><a href="#zastosowania">Сценарии</a></li>
+          <li><a href="#wdrozenie">Внедрение</a></li>
+          <li><a href="#jakdziala">Как это работает</a></li>
           <li><a href="#faq">FAQ</a></li>
-          <li><a class="btn btn--primary btn--small" href="#contact">Запросить расчёт</a></li>
+          <li><a class="btn btn--primary btn--small" href="#kontakt">Запросить расчёт</a></li>
           <li class="lang">
-            <a class="lang__link" href="/">PL</a>
+            <a class="lang__link" href="index.html">PL</a>
             <a class="lang__link" href="index-en.html">EN</a>
             <a class="lang__link" href="index-es.html">ES</a>
             <a class="lang__link is-active" href="index-ru.html" aria-current="page">RU</a>
@@ -66,219 +70,400 @@
   </header>
 
   <main id="main">
-    <section class="hero" aria-label="Введение">
+    <!-- HERO with background video -->
+    <section class="hero" aria-label="Вводная о продукте">
       <div class="hero__media" aria-hidden="true">
-        <video class="hero__video" autoplay muted loop playsinline preload="metadata" poster="zdjęcie0.jpg" id="bgVideo">
-          <source src="film.mp4" type="video/mp4" />
+        <video class="hero__video" autoplay muted loop playsinline preload="metadata" poster="assets/poster.jpg" id="bgVideo">
+          <source src="assets/film.mp4" type="video/mp4" />
         </video>
         <div class="hero__overlay"></div>
       </div>
 
       <div class="container hero__content">
         <div class="hero__badge">
-          <span class="pill">ANPR/ALPR</span>
-          <span class="pill">Марка + Цвет</span>
-          <span class="pill">Отчёты и API</span>
+          <span class="pill">On‑premise</span>
+          <span class="pill">Разовое внедрение</span>
+          <span class="pill">Пожизненный сервис</span>
+          <span class="pill">Кастомизация</span>
         </div>
 
         <h1 class="hero__title">
           Интеллектуальная камера для
-          <span class="hero__accent">распознавания номера, марки и цвета авто</span>
+          <span class="hero__accent">распознавания номеров и цвета авто</span>
         </h1>
 
         <p class="hero__subtitle">
-          Автоматическая идентификация автомобилей на въезде для автосервисов и учреждений.
-          Быстрый поиск, журналирование и повышение безопасности — без ручного ввода.
+          Локальная (on‑premise) система ANPR/ALPR, устанавливаемая на вашем объекте: детекция авто, детекция номера, OCR номера и определение цвета.
+          Без подписки. По желанию — камеры и интеграции.
         </p>
 
         <div class="hero__cta">
-          <a class="btn btn--primary" href="#contact">Запросить расчёт</a>
-          <a class="btn btn--ghost" href="#how">Как это работает</a>
+          <a class="btn btn--primary" href="#kontakt">Получить расчёт</a>
+          <a class="btn btn--ghost" href="#jakdziala">Как это работает</a>
         </div>
 
-        <dl class="hero__stats" aria-label="Преимущества">
-          <div class="stat"><dt>Распознавание</dt><dd>Номер + марка + цвет</dd></div>
-          <div class="stat"><dt>Внедрение</dt><dd>Установка за 1 день*</dd></div>
-          <div class="stat"><dt>Интеграции</dt><dd>API / CSV экспорт</dd></div>
+        <dl class="hero__stats" aria-label="Ключевые моменты">
+          <div class="stat"><dt>Данные</dt><dd>Остаются у вас</dd></div>
+          <div class="stat"><dt>Внедрение</dt><dd>Разовая настройка</dd></div>
+          <div class="stat"><dt>Поддержка</dt><dd>Пожизненный сервис</dd></div>
         </dl>
-        <p class="hero__note">*Зависит от инфраструктуры и требований.</p>
+        <p class="hero__note">*Сроки зависят от количества камер и вашей локальной инфраструктуры.</p>
       </div>
     </section>
 
-    <section class="section" id="features">
+    <!-- Features -->
+    <section class="section" id="funkcje">
       <div class="container">
         <header class="section__header">
-          <h2 class="section__title">Функции, которые экономят время</h2>
-          <p class="section__lead">Для сервисов и организаций, которым нужен быстрый учёт и идентификация.</p>
+          <h2 class="section__title">Функции, которые реально важны</h2>
+          <p class="section__lead">
+            Мы поставляем ПО, которое распознаёт события въезда/выезда и сохраняет их в локальной панели.
+            Систему можно адаптировать под вашу инфраструктуру и процесс.
+          </p>
         </header>
 
-        <div class="grid grid--3 reveal">
+        <div class="grid grid--4 reveal">
           <article class="card">
-            <h3>Распознавание госномеров (ANPR/ALPR)</h3>
-            <p>Автоматическое обнаружение и запись — без ручного переписывания.</p>
+            <h3>Детекция автомобиля</h3>
+            <p>Система фиксирует автомобиль в кадре и запускает анализ только тогда, когда это действительно нужно.</p>
             <ul class="list">
-              <li>История событий</li>
-              <li>Фильтры и поиск</li>
-              <li>Экспорт данных</li>
+              <li>меньше ложных срабатываний</li>
+              <li>чище журнал событий</li>
+              <li>стабильная работа 24/7</li>
             </ul>
           </article>
 
           <article class="card">
-            <h3>Распознавание марки и модели</h3>
-            <p>Идентификация по визуальным признакам для ускорения процессов.</p>
+            <h3>Детекция номера</h3>
+            <p>Находит область номерного знака и подготавливает её для OCR.</p>
             <ul class="list">
-              <li>Быстрее найти клиента/машину</li>
-              <li>Учет автопарка</li>
-              <li>Автоматические метки</li>
+              <li>разные углы и дистанции</li>
+              <li>адаптация под место установки</li>
+              <li>калибровка под ваши условия</li>
             </ul>
           </article>
 
           <article class="card">
-            <h3>Определение цвета автомобиля</h3>
-            <p>Полезно для безопасности и логистики при большом трафике.</p>
+            <h3>OCR номера (ANPR/ALPR)</h3>
+            <p>Считывает символы и сохраняет номер в истории — без ручного ввода.</p>
             <ul class="list">
-              <li>Единые отчёты</li>
-              <li>Быстрый поиск</li>
-              <li>Поддержка контроля доступа</li>
+              <li>быстрый поиск по событиям</li>
+              <li>превью кадра въезда</li>
+              <li>экспорт / отчёты по запросу</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Определение цвета авто</h3>
+            <p>Ускоряет фильтрацию и проверку, особенно при большом потоке.</p>
+            <ul class="list">
+              <li>цвет как дополнительный атрибут</li>
+              <li>удобнее просматривать историю</li>
+              <li>помощь службе безопасности</li>
             </ul>
           </article>
         </div>
 
         <div class="callout reveal">
           <div>
-            <h3>Подходит для государственных учреждений</h3>
-            <p>Учёт въездов, журнал событий, интеграции с СКУД и архивированием.</p>
+            <h3>Опционально: камеры и дополнительные модули</h3>
+            <p>
+              При необходимости мы подберём оборудование и сделаем внедрение «под ключ». В рамках кастомизации можем добавить дополнительные атрибуты,
+              интеграции или автоматизации (шлагбаум/ворота, внутренние системы).
+            </p>
           </div>
-          <a class="btn btn--primary" href="#contact">Обсудить</a>
+          <a class="btn btn--primary" href="#kontakt">Уточнить объём</a>
         </div>
       </div>
     </section>
 
-    <section class="section section--alt" id="usecases">
+    <!-- Why on-premise -->
+    <section class="section section--alt" id="onpremise">
       <div class="container">
         <header class="section__header">
-          <h2 class="section__title">Для кого это?</h2>
-          <p class="section__lead">Два типовых сценария внедрения.</p>
+          <h2 class="section__title">Почему on‑premise?</h2>
+          <p class="section__lead">Потому что не всем подходит отправка видео и данных об авто в облако.</p>
         </header>
 
-        <div class="split reveal">
-          <div class="panel">
-            <h3>Автосервисы и СТО</h3>
-            <p>Автоматизация идентификации и снижение ошибок.</p>
-            <ul class="check">
-              <li>Сразу видно «кто въехал»</li>
-              <li>Проще связать заказ с машиной</li>
-              <li>Дневные/недельные отчёты</li>
-            </ul>
-          </div>
-
-          <div class="panel">
-            <h3>Учреждения и общественные объекты</h3>
-            <p>Безопасность, аудит и прозрачный учёт въездов.</p>
-            <ul class="check">
-              <li>Журнал въезд/выезд</li>
-              <li>Списки доверенных/запрещённых</li>
-              <li>Интеграция со шлагбаумом</li>
-            </ul>
-          </div>
+        <div class="grid grid--3 reveal">
+          <article class="card card--soft">
+            <h3>Контроль данных</h3>
+            <p>Система работает локально. Вы сами решаете, что хранить и как долго.</p>
+          </article>
+          <article class="card card--soft">
+            <h3>Работает без интернета</h3>
+            <p>В типовой установке всё работает внутри вашей сети LAN — без зависимости от внешних сервисов.</p>
+          </article>
+          <article class="card card--soft">
+            <h3>Без подписки</h3>
+            <p>Вы оплачиваете внедрение один раз. Дальше пользуетесь системой, а мы обеспечиваем пожизненный сервис и исправления в рамках сотрудничества.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="how">
+    <!-- Use cases -->
+    <section class="section" id="zastosowania">
       <div class="container">
         <header class="section__header">
-          <h2 class="section__title">Как работает</h2>
-          <p class="section__lead">Изображение → распознавание → запись → отчёты / интеграция.</p>
+          <h2 class="section__title">Сценарии использования</h2>
+          <p class="section__lead">Везде, где важны быстрые проверки авто и аккуратная история событий.</p>
+        </header>
+
+        <div class="grid grid--4 reveal">
+          <article class="card">
+            <h3>Шлагбаум / ворота</h3>
+            <p>Автоматическое распознавание въезда, проверка и логирование событий.</p>
+          </article>
+          <article class="card">
+            <h3>Companies & warehouses</h3>
+            <p>Учёт поставок, контроль трафика на территории, быстрые фильтры по истории.</p>
+          </article>
+          <article class="card">
+            <h3>Estates & communities</h3>
+            <p>Более чистые журналы доступа и доказательная база при инцидентах.</p>
+          </article>
+          <article class="card">
+            <h3>Workshops & service</h3>
+            <p>Быстрое «кто приехал?», меньше ошибок и проще привязка к заказ-наряду.</p>
+          </article>
+        </div>
+
+        <p class="note">Нужен другой сценарий? Для этого и есть кастомизация — подстроим систему под ваш процесс.</p>
+      </div>
+    </section>
+
+    <!-- Deployment -->
+    <section class="section section--alt" id="wdrozenie">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Внедрение + пожизненный сервис</h2>
+          <p class="section__lead">Мы не оставляем вас один на один с инсталлятором. Система должна работать — и оставаться поддерживаемой.</p>
         </header>
 
         <ol class="steps reveal">
-          <li class="step"><span class="step__num">1</span><div class="step__body"><h3>Съёмка</h3><p>Камера фиксирует автомобиль на въезде и стабилизирует кадр.</p></div></li>
-          <li class="step"><span class="step__num">2</span><div class="step__body"><h3>AI-анализ</h3><p>Распознаёт номер, марку/модель и цвет и сохраняет событие.</p></div></li>
-          <li class="step"><span class="step__num">3</span><div class="step__body"><h3>Панель и интеграции</h3><p>История, фильтры, экспорт и API для вашего ПО.</p></div></li>
+          <li class="step">
+            <span class="step__num">1</span>
+            <div class="step__body">
+              <h3>Быстрый сбор требований</h3>
+              <p>Согласуем точки установки, количество камер, нужные атрибуты и интеграции.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">2</span>
+            <div class="step__body">
+              <h3>Установка на объекте</h3>
+              <p>Разворачиваем систему локально, настраиваем потоки камер и панель истории событий.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">3</span>
+            <div class="step__body">
+              <h3>Калибровка</h3>
+              <p>Подстраиваем параметры под реальное освещение, угол, дистанцию и поток на въезде.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">4</span>
+            <div class="step__body">
+              <h3>Пожизненный сервис</h3>
+              <p>Поддержка, исправления и улучшения в рамках сотрудничества, чтобы система оставалась полезной со временем.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="section" id="jakdziala">
+      <div class="container">
+        <header class="section__header">
+          <h2 class="section__title">Как это работает</h2>
+          <p class="section__lead">Видео → распознавание → хранение → быстрый поиск / отчёты.</p>
+        </header>
+
+        <ol class="steps reveal">
+          <li class="step">
+            <span class="step__num">A</span>
+            <div class="step__body">
+              <h3>Видеопоток с камеры</h3>
+              <p>Система работает с видеопотоком с камеры (или с комплектом камер, который поставим мы).</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">B</span>
+            <div class="step__body">
+              <h3>Локальная аналитика</h3>
+              <p>Детекция авто, детекция номера, OCR и определение цвета — всё локально.</p>
+            </div>
+          </li>
+          <li class="step">
+            <span class="step__num">C</span>
+            <div class="step__body">
+              <h3>Panel & data</h3>
+              <p>История событий, поиск, фильтры и экспорт/отчёты (объём зависит от внедрения).</p>
+            </div>
+          </li>
         </ol>
 
-        <div class="integration reveal" role="note" aria-label="Интеграции">
-          <h3>Интеграции</h3>
-          <p>REST API, webhook и CSV экспорт. Интеграция с CRM, парковкой, СКУД или вашим приложением.</p>
+        <div class="integration reveal" role="note" aria-label="Integrations">
+          <h3>Интеграции (опционально)</h3>
+          <p>
+            Если нужно связать систему со шлагбаумом/воротами, CRM/ERP или вашим приложением — делаем это как кастомизацию.
+            Чаще всего: REST API, webhooks или выгрузки в файл.
+          </p>
         </div>
       </div>
     </section>
 
+    <!-- FAQ -->
     <section class="section" id="faq">
       <div class="container">
         <header class="section__header">
           <h2 class="section__title">FAQ</h2>
-          <p class="section__lead">Частые вопросы.</p>
+          <p class="section__lead">Самые частые вопросы перед внедрением.</p>
         </header>
 
         <div class="faq reveal">
-          <details class="faq__item"><summary>Работает ли ночью?</summary><div class="faq__content"><p>Да, зависит от освещения, установки и характеристик камеры.</p></div></details>
-          <details class="faq__item"><summary>Можно интегрировать с моим ПО?</summary><div class="faq__content"><p>Да. Есть API и экспорт. Webhook может запускать действия (например, открыть шлагбаум).</p></div></details>
-          <details class="faq__item"><summary>Конфиденциальность и хранение данных (GDPR)?</summary><div class="faq__content"><p>Настраиваем срок хранения и состав данных под вашу политику и требования.</p></div></details>
+          <details class="faq__item">
+            <summary>Нужен ли интернет?</summary>
+            <div class="faq__content">
+              <p>Нет — типовая установка работает в локальной сети. Интернет может пригодиться для удалённого обслуживания, но для распознавания он не обязателен.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Где хранятся данные?</summary>
+            <div class="faq__content">
+              <p>У вас. Система разворачивается on‑premise, а вы задаёте сроки хранения и набор сохраняемых данных.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Работает ли ночью?</summary>
+            <div class="faq__content">
+              <p>Да — зависит от камер, ИК/подсветки и места установки. Мы калибруем систему под ваши условия.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Вы предоставляете камеры?</summary>
+            <div class="faq__content">
+              <p>По желанию — да. Можем работать с вашими камерами или поставить комплект «под ключ».</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Поддерживаются ли несколько камер?</summary>
+            <div class="faq__content">
+              <p>Да. Конкретный масштаб зависит от вашей инфраструктуры и железа. Подбираем конфигурацию под задачу.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Можно ли настроить интерфейс и отчёты?</summary>
+            <div class="faq__content">
+              <p>Да. Кастомизация — ключевое преимущество: подстроим экраны, фильтры, поля и экспорты под ваш процесс.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Есть ли интеграции (шлагбаум/ворота, API)?</summary>
+            <div class="faq__content">
+              <p>Да — как кастомизация. Обычно это API/webhooks/выгрузки и автоматические действия после распознавания номера.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Что означает «пожизненный сервис»?</summary>
+            <div class="faq__content">
+              <p>Поддержка внедрённой системы, исправления и обновления в рамках сотрудничества — чтобы всё оставалось стабильным и полезным со временем.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Как формируется цена?</summary>
+            <div class="faq__content">
+              <p>Цена зависит от количества камер, условий установки, требований к панели и интеграций. Опишите вашу задачу — и мы дадим конкретный расчёт.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Можно ли добавить функции позже?</summary>
+            <div class="faq__content">
+              <p>Да. Можно расширять систему дополнительными модулями по мере необходимости.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Это «камера» или «программа»?</summary>
+            <div class="faq__content">
+              <p>В первую очередь это ПО, которое локально работает с видеопотоком. Железо (камеры) можем поставить опционально.</p>
+            </div>
+          </details>
         </div>
       </div>
     </section>
 
-    <section class="section section--alt" id="contact">
+    <!-- Contact -->
+    <section class="section section--alt" id="kontakt">
       <div class="container">
         <header class="section__header">
           <h2 class="section__title">Расчёт и внедрение</h2>
-          <p class="section__lead">Опишите объект — мы пришлём предложение.</p>
+          <p class="section__lead">Расскажите про объект (въезд/выезд), камеры и ожидаемый результат — мы вернёмся с предложением.</p>
         </header>
 
         <div class="contact reveal">
           <form class="form" id="leadForm" novalidate>
             <div class="form__row">
-              <label><span>Имя и фамилия</span><input name="name" type="text" autocomplete="name" placeholder="Иван Иванов" required /></label>
+              <label><span>Имя</span><input name="name" type="text" autocomplete="name" placeholder="Иван Иванов" required /></label>
               <label><span>Email</span><input name="email" type="email" autocomplete="email" placeholder="ivan@company.com" required /></label>
             </div>
 
             <div class="form__row">
               <label>
-                <span>Тип клиента</span>
+                <span>Тип внедрения</span>
                 <select name="type" required>
                   <option value="" selected disabled>Выберите…</option>
-                  <option>Автосервис</option>
-                  <option>Госучреждение</option>
+                  <option>Шлагбаум / ворота</option>
+                  <option>Компания / склад</option>
+                  <option>ЖК / сообщество</option>
+                  <option>СТО / сервис</option>
                   <option>Другое</option>
                 </select>
               </label>
-              <label><span>Телефон (необязательно)</span><input name="phone" type="tel" autocomplete="tel" placeholder="+7 900 000 00 00" /></label>
+              <label><span>Телефон (необязательно)</span><input name="phone" type="tel" autocomplete="tel" placeholder="+48 519 096 947" /></label>
             </div>
 
-            <label><span>Сообщение</span><textarea name="message" rows="5" placeholder="Опишите локацию, интенсивность въездов и нужные интеграции…" required></textarea></label>
+            <label><span>Сообщение</span><textarea name="message" rows="5" placeholder="Сколько въездов/камер? Условия ночью? Нужна интеграция со шлагбаумом/воротами или внутренними системами?" required></textarea></label>
 
             <div class="form__actions">
               <button class="btn btn--primary" type="submit">Отправить</button>
               <p class="form__hint" id="formHint" role="status" aria-live="polite"></p>
             </div>
 
-            <p class="legal">Отправляя форму, вы соглашаетесь на связь по вопросу предложения. (Добавьте ссылку на политику конфиденциальности.)</p>
+            <p class="legal">Эта форма демонстрационная. Быстрее всего — email или телефон. Правила обработки данных: <a class="link" href="privacy.html">Политика конфиденциальности</a>.</p>
           </form>
 
-          <aside class="contact__side" aria-label="Контакты">
+          <aside class="contact__side" aria-label="Контактные данные">
             <div class="card card--soft">
               <h3>Контакты</h3>
-              <p class="muted">Замените на ваши данные:</p>
               <ul class="contactList">
-                <li><strong>Телефон:</strong> +48 000 000 000</li>
-                <li><strong>Email:</strong> contact@twojadomena.pl</li>
-                <li><strong>Регион:</strong> EU</li>
+                <li><strong>Сайт:</strong> <a class="link" href="https://nightcode.pl">nightcode.pl</a></li>
+                <li><strong>Телефон:</strong> <a class="link" href="tel:+48519096947">519 096 947</a></li>
+                <li><strong>Email:</strong> <a class="link" href="mailto:kontakt@nightcode.pl">kontakt@nightcode.pl</a></li>
               </ul>
-              <div class="chips">
-                <span class="chip">ANPR/ALPR</span>
-                <span class="chip">Марка/модель</span>
-                <span class="chip">Цвет</span>
-              </div>
+              <p class="muted" style="margin-top:.8rem">Хотите быстрый демо-показ? Напишите, где это должно работать и сколько камер планируется.</p>
             </div>
 
             <div class="card card--soft">
-              <h3>Почему мы?</h3>
+              <h3>Что вы получаете</h3>
               <ul class="check">
-                <li>Современная панель + API</li>
-                <li>Внедрения для сервисов и учреждений</li>
-                <li>Настройка под условия на месте</li>
+                <li>On‑premise внедрение</li>
+                <li>Калибровка под ваши условия</li>
+                <li>Панель истории с фильтрами</li>
+                <li>Возможности кастомизации</li>
+                <li>Пожизненный сервис</li>
               </ul>
             </div>
           </aside>
@@ -289,20 +474,41 @@
 
   <footer class="footer">
     <div class="container footer__inner">
-      <p>© <span id="year"></span> SmartCamVision. Все права защищены.</p>
+      <p>© <span id="year"></span> nightcode.pl</p>
       <div class="footer__links">
-        <a href="#top">Наверх</a>
-        <a href="#contact">Контакты</a>
+        <a href="#kontakt">Контакты</a>
+        <a href="privacy.html">Политика конфиденциальности</a>
       </div>
     </div>
   </footer>
 
+  <!-- JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@graph":[
-      {"@type":"Organization","name":"SmartCamVision","url":"https://twojadomena.pl/","logo":"zdjęcie0.jpg","sameAs":[]},
-      {"@type":"Product","name":"Интеллектуальная камера ANPR/ALPR","description":"Интеллектуальная камера для распознавания госномеров (ANPR/ALPR), марки/модели и цвета автомобиля. Для автосервисов и государственных учреждений.","image":["zdjęcie0.jpg","zdjęcie1.jpg","zdjęcie2.jpg","zdjęcie3.jpg","zdjęcie4.jpg","zdjęcie5.jpg"],"brand":{"@type":"Brand","name":"SmartCamVision"},"category":"Security & Access Control","offers":{"@type":"Offer","priceCurrency":"PLN","price":"0","availability":"https://schema.org/InStock","url":"https://twojadomena.pl/index-ru.html#contact"}}
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "nightcode.pl",
+        "url": "https://nightcode.pl/",
+        "logo": "https://nightcode.pl/assets/logo.svg",
+        "contactPoint": [{
+          "@type": "ContactPoint",
+          "telephone": "+48-519-096-947",
+          "contactType": "sales",
+          "email": "kontakt@nightcode.pl",
+          "availableLanguage": ["pl", "en", "es", "ru"]
+        }]
+      },
+      {
+        "@type": "Service",
+        "name": "Интеллектуальная камера (on‑premise ANPR/ALPR)",
+        "serviceType": "On‑premise ANPR/ALPR",
+        "provider": {"@type": "Organization", "name": "nightcode.pl"},
+        "areaServed": "PL",
+        "description": "Локальная (on‑premise) система ANPR/ALPR: детекция авто и номера, OCR номера и определение цвета. Разовое внедрение + пожизненный сервис.",
+        "url": "https://nightcode.pl/index-ru.html"
+      }
     ]
   }
   </script>
