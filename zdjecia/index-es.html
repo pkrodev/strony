@@ -3,62 +3,55 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>FotoNaprawa – fotos de reparación, informes y prueba de trabajo para talleres</title>
-  <meta name="description" content="FotoNaprawa es un software para mecánicos: fotos tras la reparación en tablet, notas y checklist → informe PDF/enlace para el cliente. Documentación clara, menos llamadas, más confianza." />
+  <title>FotoNaprawa – protocolo fotográfico de recepción del vehículo</title>
+  <meta name="description" content="App para tablet/móvil que documenta el estado del vehículo antes de la recepción: fotos, checklist, notas y reporte (PDF o enlace). Integración con sistemas de taller e implementación in‑situ." />
   <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#0b0f14" />
-  <link rel="canonical" href="https://twojadomena.pl/fotonaprawa/index-es.html" />
+  <meta name="theme-color" content="#0b1020" />
+  <link rel="canonical" href="./index-es.html" />
 
-  <link rel="alternate" hreflang="pl" href="https://twojadomena.pl/fotonaprawa/index.html" />
-  <link rel="alternate" hreflang="en" href="https://twojadomena.pl/fotonaprawa/index-en.html" />
-  <link rel="alternate" hreflang="es" href="https://twojadomena.pl/fotonaprawa/index-es.html" />
-  <link rel="alternate" hreflang="ru" href="https://twojadomena.pl/fotonaprawa/index-ru.html" />
-  <link rel="alternate" hreflang="x-default" href="https://twojadomena.pl/fotonaprawa/index.html" />
+  <link rel="alternate" hreflang="pl" href="./index.html" />
+<link rel="alternate" hreflang="en" href="./index-en.html" />
+<link rel="alternate" hreflang="es" href="./index-es.html" />
+<link rel="alternate" hreflang="ru" href="./index-ru.html" />
+<link rel="alternate" hreflang="x-default" href="./index.html" />
 
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_ES" />
-  <meta property="og:title" content="FotoNaprawa – fotos de reparación e informe para el cliente" />
-  <meta property="og:description" content="El mecánico hace fotos en la tablet, añade notas y envía un informe. Prueba de trabajo y orden." />
-  <meta property="og:url" content="https://twojadomena.pl/fotonaprawa/index-es.html" />
-  <meta property="og:image" content="pic1.jpg" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="FotoNaprawa – informe para el cliente" />
-  <meta name="twitter:description" content="Documentación sencilla: fotos + notas + informe." />
-  <meta name="twitter:image" content="pic1.jpg" />
+  <meta property="og:title" content="FotoNaprawa – protocolo fotográfico de recepción del vehículo" />
+  <meta property="og:description" content="App para tablet/móvil que documenta el estado del vehículo antes de la recepción: fotos, checklist, notas y reporte (PDF o enlace). Integración con sistemas de taller e implementación in‑situ." />
+  <meta property="og:image" content="assets/pic1.png" />
 
   <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Organization", "name": "Nightcode", "url": "https://www.nightcode.pl", "email": "kontakt@nightcode.pl", "telephone": "+48 519 096 947"}, {"@context": "https://schema.org", "@type": "Service", "name": "FotoNaprawa", "serviceType": "Workshop vehicle intake photo protocol", "provider": {"@type": "Organization", "name": "Nightcode", "url": "https://www.nightcode.pl"}, "areaServed": "PL", "description": "App para tablet/móvil que documenta el estado del vehículo antes de la recepción: fotos, checklist, notas y reporte (PDF o enlace). Integración con sistemas de taller e implementación in‑situ."}]</script>
 </head>
 
 <body>
-  <a class="skip" href="#main">Saltar al contenido</a>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <header class="top" id="top">
+  <header class="top">
     <div class="wrap top__inner">
-      <a class="brand" href="#top" aria-label="FotoNaprawa – arriba">
-        <img class="brand__logo" src="logo.png" alt="FotoNaprawa" />
-        <span class="brand__word">Foto<span class="brand__accent">Naprawa</span></span>
+      <a class="brand" href="./index.html" aria-label="FotoNaprawa">
+        <img class="brand__logo" src="assets/logo.png" alt="FotoNaprawa" />
+        <div>
+          <div class="brand__name">Foto<span class="accent">Naprawa</span></div>
+          <div class="brand__tag">protocolo fotográfico de recepción</div>
+        </div>
       </a>
 
-      <nav class="nav" aria-label="Navegación">
-        <button class="nav__btn" id="navToggle" aria-expanded="false" aria-controls="navMenu">
-          <span class="nav__bars" aria-hidden="true"></span>
-          <span class="sr-only">Abrir menú</span>
+      <nav class="nav" aria-label="Navigation">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav__toggleBars" aria-hidden="true"></span>
         </button>
 
         <ul class="nav__menu" id="navMenu">
-          <li><a href="#how">Cómo funciona</a></li>
           <li><a href="#features">Funciones</a></li>
-          <li><a href="#videos">Vídeos</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a class="btn btn--primary btn--small" href="#contact">Pedir demo</a></li>
-
-          <li class="lang" aria-label="Idiomas">
-            <a class="lang__a" href="index.html">PL</a>
-            <a class="lang__a" href="index-en.html">EN</a>
-            <a class="lang__a is-active" href="index-es.html" aria-current="page">ES</a>
-            <a class="lang__a" href="index-ru.html">RU</a>
+<li><a href="#how">Cómo funciona</a></li>
+<li><a href="#integrations">Integraciones</a></li>
+<li><a href="#security">Seguridad</a></li>
+<li><a href="#faq">FAQ</a></li>
+          <li><a class="btn btn--primary btn--small" href="#contact">Solicitar demo</a></li>
+          <li class="lang" aria-label="Language switcher">
+            <a class="lang__link" href="index.html">PL</a><a class="lang__link" href="index-en.html">EN</a><a class="lang__link is-active" href="index-es.html">ES</a><a class="lang__link" href="index-ru.html">RU</a>
           </li>
         </ul>
       </nav>
@@ -66,165 +59,364 @@
   </header>
 
   <main id="main">
-    <section class="hero" aria-label="Introducción">
-      <div class="hero__bg" aria-hidden="true"></div>
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__card">
+          <div class="hero__media" aria-hidden="true"></div>
+          <div class="hero__overlay" aria-hidden="true"></div>
+          <div class="hero__content">
+            <div class="hero__kicker"><span class="tag">Fotos “antes”</span><span class="tag">Nº de orden del CRM</span><span class="tag">Reporte al cliente</span></div>
+            <h1 class="hero__title">Protege tu taller.<br/>Documenta el estado del coche<br/>antes de recibirlo.</h1>
+            <p class="hero__subtitle">FotoNaprawa es una app para tablet/móvil que te permite hacer fotos, checklist y notas y generar un reporte claro. Menos disputas, más transparencia.</p>
 
-      <div class="wrap hero__content">
-        <p class="tagline">software para talleres • fotos de reparación • informe al cliente</p>
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#kontakt">Solicitar demo</a>
+              <a class="btn btn--ghost" href="#jakdziala">Ver cómo funciona</a>
+            </div>
 
-        <h1 class="hero__title">
-          Haz una foto tras la reparación.
-          <span class="hero__title2">Envía un informe. Cierra el trabajo.</span>
-        </h1>
-
-        <p class="hero__lead">
-          FotoNaprawa ayuda a documentar reparaciones en 30–60 segundos:
-          fotos + notas + checklist → informe listo (PDF / enlace).
-        </p>
-
-        <div class="hero__cta">
-          <a class="btn btn--primary" href="#contact">Quiero demo</a>
-          <a class="btn btn--ghost" href="#videos">Ver vídeos</a>
+            <dl class="stats">
+              <div class="stat"><dt>Capturas</dt><dd>Fotos + checklist</dd></div>
+<div class="stat"><dt>Reporte</dt><dd>PDF / enlace (a elección)</dd></div>
+<div class="stat"><dt>Implementación</dt><dd>En el taller + integración</dd></div>
+            </dl>
+          </div>
         </div>
 
-        <div class="stats">
-          <div class="stat"><div class="stat__kpi">Más confianza</div><div class="stat__txt">el cliente ve lo realizado</div></div>
-          <div class="stat"><div class="stat__kpi">Menos llamadas</div><div class="stat__txt">menos “¿ya está listo?”</div></div>
-          <div class="stat"><div class="stat__kpi">Orden</div><div class="stat__txt">historial por coche/trabajo</div></div>
-        </div>
+        <aside class="hero__side">
+          <h3>Por qué funciona</h3>
+          <ul>
+            <li>El cliente ve lo que ya estaba antes — menos reclamaciones.</li>
+<li>Fotos vinculadas a la orden (tras la integración) — todo ordenado y fácil de encontrar.</li>
+<li>Firma y anotaciones opcionales cuando necesitas máxima seguridad.</li>
+          </ul>
+          <div class="small" style="margin-top:12px">
+            Nightcode · <a href="https://www.nightcode.pl" target="_blank" rel="noopener">www.nightcode.pl</a>
+          </div>
+        </aside>
       </div>
-
-      <div class="hero__stripe" aria-hidden="true"></div>
     </section>
 
-    <section class="section" id="how">
+    <section class="section" id="features">
       <div class="wrap">
-        <header class="head">
-          <h2>Cómo funciona FotoNaprawa</h2>
-          <p>Un flujo corto y repetible. El equipo lo aprende en minutos.</p>
-        </header>
+        <h2 class="h2">Funciones pensadas para el taller</h2>
+        <p class="lead">Principalmente para documentar “antes de la recepción”, con opción de fotos “después” en la entrega.</p>
 
-        <ol class="steps reveal">
-          <li class="step"><span class="step__n">1</span><div class="step__b"><h3>Selecciona el trabajo / vehículo</h3><p>Por matrícula, VIN o cliente. O escanea un código.</p></div></li>
-          <li class="step"><span class="step__n">2</span><div class="step__b"><h3>Fotos “después”</h3><p>Serie rápida en tablet. Añade notas, piezas y checklist.</p></div></li>
-          <li class="step"><span class="step__n">3</span><div class="step__b"><h3>Genera y envía el informe</h3><p>PDF o enlace con galería + notas. Envío por email/SMS.</p></div></li>
+        <div class="grid grid--3" style="margin-top:18px">
+          
+          <article class="card reveal">
+            <h3>Fotos rápidas en tablet/móvil</h3>
+            <p>Realiza una serie completa en minutos y asígnala al caso.</p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Checklists y notas</h3>
+            <p>Marca arañazos/golpes, faltantes, estado de neumáticos/interior y añade comentarios.</p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Reporte para el cliente</h3>
+            <p>Genera PDF o un enlace compartible — según lo que prefiera el taller.</p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Integración con la orden</h3>
+            <p>La app puede traer automáticamente datos de la orden/cliente — tras la integración in‑situ.</p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Firma opcional</h3>
+            <p>Activa la firma en pantalla si quieres una confirmación formal.</p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Podemos proporcionar la tablet</h3>
+            <p>¿No tienes hardware? Podemos suministrar y configurar una tablet lista para usar.</p>
+          </article>
+        </div>
+
+        <div class="callout reveal">
+          <div>
+            <h3>Implementación en el taller = menos sorpresas</h3>
+            <p>Revisamos el proceso de recepción, configuramos campos, integración y plantillas de reporte, y formamos al equipo. Luego trabajas con normalidad — con soporte cuando lo necesites.</p>
+          </div>
+          <a class="btn btn--primary" href="#kontakt">Solicitar demo</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="how">
+      <div class="wrap">
+        <h2 class="h2">Cómo se usa FotoNaprawa en el día a día</h2>
+        <p class="lead">Flujo simple: orden → fotos → protocolo → reporte. Implementamos y adaptamos la integración en el taller.</p>
+
+        <ol class="steps">
+          
+          <li class="step reveal">
+            <div class="step__num">1</div>
+            <div>
+              <h3>Seleccionas la orden</h3>
+              <p>Con integración: se cargan datos desde tu sistema. Sin integración: introduces datos básicos.</p>
+            </div>
+          </li>
+
+          <li class="step reveal">
+            <div class="step__num">2</div>
+            <div>
+              <h3>Haces fotos “antes”</h3>
+              <p>Serie rápida en tablet/móvil + checklist y notas cortas.</p>
+            </div>
+          </li>
+
+          <li class="step reveal">
+            <div class="step__num">3</div>
+            <div>
+              <h3>Generas el protocolo</h3>
+              <p>Anotaciones, observaciones y firma opcional del cliente.</p>
+            </div>
+          </li>
+
+          <li class="step reveal">
+            <div class="step__num">4</div>
+            <div>
+              <h3>Entregas el reporte</h3>
+              <p>PDF o enlace para el cliente + archivo del taller (almacenamiento híbrido).</p>
+            </div>
+          </li>
         </ol>
       </div>
     </section>
 
-    <section class="section section--alt" id="features">
+    <section class="section" id="integrations">
       <div class="wrap">
-        <header class="head">
-          <h2>Funciones que importan</h2>
-          <p>No es solo una app de fotos: es documentación y cierre de trabajos.</p>
-        </header>
+        <h2 class="h2">Integraciones con sistemas de taller</h2>
+        <p class="lead">Hacemos la implementación in‑situ y conectamos FotoNaprawa con tu software. Ejemplos:</p>
 
-        <div class="grid reveal">
-          <article class="card"><h3>Checklist y firma</h3><p>Marca tareas, añade notas y firma (recogida / aprobación de coste).</p><ul class="list"><li>Campos obligatorios</li><li>Plantillas</li><li>Consistencia</li></ul></article>
-          <article class="card"><h3>Fotos antes/después + notas</h3><p>Explica daños, reparación y piezas utilizadas.</p><ul class="list"><li>Series</li><li>Formato unificado</li><li>Notas rápidas</li></ul></article>
-          <article class="card"><h3>Informe en 1 clic</h3><p>PDF o enlace. Prueba de trabajo → menos disputas.</p><ul class="list"><li>PDF / enlace</li><li>Email/SMS</li><li>Archivo</li></ul></article>
-          <article class="card"><h3>Historial por vehículo</h3><p>Vuelve a reparaciones anteriores con fotos y fechas.</p><ul class="list"><li>Filtros</li><li>Búsqueda</li><li>Orden</li></ul></article>
+        <div class="grid grid--2" style="margin-top:18px">
+          <div class="card reveal">
+            <h3>Implementación en el taller = menos sorpresas</h3>
+            <p>Revisamos el proceso de recepción, configuramos campos, integración y plantillas de reporte, y formamos al equipo. Luego trabajas con normalidad — con soporte cuando lo necesites.</p>
+          </div>
+          <div class="card reveal">
+            <h3>Przykłady / Examples</h3>
+            <ul class="list">
+              <li>Integra Car 7</li>
+<li>eSowa</li>
+<li>ASCO</li>
+<li>Warsztat24</li>
+<li>…y otros (integración a medida)</li>
+            </ul>
+            <p class="small" style="margin-top:10px">* Nazwy systemów podane jako przykłady. Integrujemy się również z innymi rozwiązaniami.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="videos">
+    <section class="section section--alt" id="security">
       <div class="wrap">
-        <header class="head">
-          <h2>Vídeos: mecánico + tablet</h2>
-          <p>Dos escenas: documentar y enviar el informe.</p>
-        </header>
+        <h2 class="h2">Seguridad y privacidad</h2>
+        <p class="lead">Las fotos pueden ser datos sensibles. Por eso priorizamos el control del taller.</p>
 
-        <div class="media reveal">
-          <article class="media__card">
-            <div class="media__videoWrap">
-              <video class="media__video" autoplay muted loop playsinline preload="metadata">
-                <source src="film1.mp4" type="video/mp4" />
-              </video>
-            </div>
-            <h3>Fotos tras la reparación</h3>
-            <p>Serie + notas + checklist dentro del trabajo.</p>
-            <ul class="ticks"><li>Rápido</li><li>Plantillas</li><li>Registro limpio</li></ul>
+        <div class="grid grid--3" style="margin-top:18px">
+          
+          <article class="card reveal">
+            <h3>Modelo híbrido</h3>
+            <p>Los datos pueden quedarse del lado del cliente con opción de compartir un enlace al reporte — según configuración.</p>
           </article>
 
-          <article class="media__card">
-            <div class="media__videoWrap">
-              <video class="media__video" autoplay muted loop playsinline preload="metadata">
-                <source src="film2.mp4" type="video/mp4" />
-              </video>
-            </div>
-            <h3>Informe y entrega al cliente</h3>
-            <p>Genera PDF/enlace y envía.</p>
-            <ul class="ticks"><li>Menos llamadas</li><li>Más confianza</li><li>Cierre más rápido</li></ul>
+          <article class="card reveal">
+            <h3>Acceso y auditoría</h3>
+            <p>Quién añadió qué y cuándo, y a qué orden. Roles/permisos configurables.</p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Configuración compatible con GDPR</h3>
+            <p>Retención, consentimiento y borrado — ajustado durante la implementación a tus procedimientos.</p>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section class="section" id="wideo">
+      <div class="wrap">
+        <h2 class="h2">Vídeo: mecánico con tablet/móvil</h2>
+        <p class="lead">Dejamos referencias a film1.mp4 y film2.mp4 para que puedas añadirlos luego en GitHub Pages. En la demo mostramos los vídeos en directo.</p>
+
+        <div class="mediaGrid">
+          <article class="videoBox reveal">
+            <div class="videoBox__head">
+              <h3>Recepción del vehículo – fotos “antes”</h3>
+              <p>Sesión rápida + checklist y notas.</p>
+            </div>
+            <div class="videoBox__body">
+              <video class="js-video" controls preload="metadata" poster="assets/pic1.png">
+                <source src="film1.mp4" type="video/mp4" />
+              </video>
+              <div class="videoFallback" aria-hidden="true">
+                <span class="videoFallback__badge">film1.mp4</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="videoBox reveal">
+            <div class="videoBox__head">
+              <h3>Reporte al cliente</h3>
+              <p>Generación de PDF/enlace y archivado en el taller.</p>
+            </div>
+            <div class="videoBox__body">
+              <video class="js-video" controls preload="metadata" poster="assets/pic1.png">
+                <source src="film2.mp4" type="video/mp4" />
+              </video>
+              <div class="videoFallback" aria-hidden="true">
+                <span class="videoFallback__badge">film2.mp4</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="small" style="margin-top:10px">
+          Uwaga: jeśli pliki wideo nie są dodane do repozytorium, strona pokaże bezpieczny podgląd (miniaturę) zamiast pustego playera.
+        </p>
       </div>
     </section>
 
     <section class="section section--alt" id="faq">
       <div class="wrap">
-        <header class="head"><h2>FAQ</h2><p>Preguntas frecuentes.</p></header>
-        <div class="faq reveal">
-          <details class="faq__item"><summary>¿Funciona en tablet y móvil?</summary><div class="faq__body"><p>Sí. Es web. El mecánico usa tablet y el cliente abre el informe en el móvil.</p></div></details>
-          <details class="faq__item"><summary>¿Puedo hacer sets antes/después?</summary><div class="faq__body"><p>Sí, dos sets con orden automático en el informe.</p></div></details>
+        <h2 class="h2">FAQ</h2>
+        <p class="lead">Preguntas frecuentes antes de la implementación.</p>
+
+        <div class="faq">
+          
+            <details class="reveal">
+              <summary>¿Sustituye mi CRM/sistema de taller?</summary>
+              <p>No. FotoNaprawa complementa la recepción con fotos y protocolo. Puede integrarse para obtener el nº de orden y datos del cliente.</p>
+            </details>
+
+            <details class="reveal">
+              <summary>¿Es obligatoria la firma del cliente?</summary>
+              <p>No. La firma es opcional y se puede activar si lo deseas.</p>
+            </details>
+
+            <details class="reveal">
+              <summary>¿Puedo hacer fotos “después de la reparación”?</summary>
+              <p>Sí. El enfoque principal es “antes”, pero también puedes documentar en la entrega.</p>
+            </details>
+
+            <details class="reveal">
+              <summary>¿En qué formato recibe el cliente el reporte?</summary>
+              <p>Según lo que necesites: PDF, enlace o ambos. Se define en la implementación.</p>
+            </details>
+
+            <details class="reveal">
+              <summary>¿Funciona sin internet?</summary>
+              <p>Podemos preparar una configuración que no requiera internet constante. Depende de la integración y del entorno.</p>
+            </details>
+
+            <details class="reveal">
+              <summary>¿Dónde se guardan las fotos?</summary>
+              <p>Híbrido — del lado del taller con opción de compartir el reporte. Se ajusta a tus procedimientos.</p>
+            </details>
+
+            <details class="reveal">
+              <summary>¿Puedo tener mis propias checklists?</summary>
+              <p>Sí. Adaptamos checklists y campos al tipo de taller.</p>
+            </details>
+
+            <details class="reveal">
+              <summary>¿Cuánto tarda la implementación?</summary>
+              <p>Normalmente de unas horas a unos días, según integraciones y puestos.</p>
+            </details>
+
+            <details class="reveal">
+              <summary>¿Podéis proporcionar la tablet?</summary>
+              <p>Sí. Podemos suministrar y configurar el dispositivo.</p>
+            </details>
+
+            <details class="reveal">
+              <summary>¿Se pueden definir roles/permisos?</summary>
+              <p>Sí. Por ejemplo, solo personal de recepción o responsables.</p>
+            </details>
+
+            <details class="reveal">
+              <summary>¿Se puede automatizar la numeración del protocolo?</summary>
+              <p>Sí. Con integración el protocolo puede vincularse automáticamente a la orden y al vehículo.</p>
+            </details>
+
+            <details class="reveal">
+              <summary>¿Qué soporte ofrecéis?</summary>
+              <p>Servicio y ajustes después de la puesta en marcha — según necesidades.</p>
+            </details>
         </div>
       </div>
     </section>
 
-    <section class="section section--contact" id="contact">
+    <section class="section" id="kontakt">
       <div class="wrap">
-        <header class="head head--invert">
-          <h2>Pedir demo de FotoNaprawa</h2>
-          <p>Cuéntanos qué reparaciones documentas y qué dispositivos usáis.</p>
-        </header>
+        <h2 class="h2">Contacto / demo</h2>
+        <p class="lead">El formulario es de ejemplo — contáctanos y programamos una demo e implementación en tu taller.</p>
 
-        <div class="contact reveal">
-          <form class="form" id="leadForm" novalidate>
-            <div class="row">
-              <label><span>Nombre</span><input name="name" type="text" autocomplete="name" placeholder="Juan Pérez" required /></label>
-              <label><span>Email</span><input name="email" type="email" autocomplete="email" placeholder="juan@taller.com" required /></label>
+        <div class="contactGrid">
+          <div class="contactCard reveal">
+            <h3>Nightcode</h3>
+            <div class="kv">
+              <div><strong>WWW:</strong> <a href="https://www.nightcode.pl" target="_blank" rel="noopener">www.nightcode.pl</a></div>
+<div><strong>Teléfono:</strong> <a href="tel:+48519096947">+48 519 096 947</a></div>
+<div><strong>Email:</strong> <a href="mailto:kontakt@nightcode.pl">kontakt@nightcode.pl</a></div>
             </div>
+            <p class="small" style="margin-top:12px">
+              Wdrożenia i integracje robimy u klienta. Możemy też zapewnić tablet.
+            </p>
+          </div>
 
-            <div class="row">
-              <label>
-                <span>Tipo de taller</span>
-                <select name="type" required>
-                  <option value="" selected disabled>Seleccionar…</option>
-                  <option>Mecánica / servicio</option>
-                  <option>Chapa y pintura</option>
-                  <option>Neumáticos</option>
-                  <option>Detailing</option>
-                  <option>Otro</option>
+          <div class="contactCard reveal">
+            <h3>Envíanos un mensaje</h3>
+            <form id="contactForm" novalidate>
+              <div class="formRow">
+                <div class="field">
+                  <label for="name">Nombre</label>
+                  <input id="name" name="name" type="text" autocomplete="name" />
+                </div>
+                <div class="field">
+                  <label for="phone">Teléfono</label>
+                  <input id="phone" name="phone" type="tel" autocomplete="tel" />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="type">Tipo de taller</label>
+                <select id="type" name="type">
+                  <option value="">Elige…</option>
+<option value="mechanics">Mecánica / servicio</option>
+<option value="body">Chapa / pintura</option>
+<option value="tires">Neumáticos / vulcanización</option>
+<option value="detailing">Detailing</option>
+<option value="diag">Diagnóstico / electrónica</option>
+<option value="other">Otro</option>
                 </select>
-              </label>
-              <label><span>Teléfono (opcional)</span><input name="phone" type="tel" autocomplete="tel" placeholder="+34 600 000 000" /></label>
-            </div>
+              </div>
 
-            <label><span>Mensaje</span><textarea name="message" rows="5" placeholder="Ej.: 15 coches/día, fotos tras reparación + informe PDF, tablets 10”." required></textarea></label>
+              <div class="field">
+                <label for="msg">Mensaje</label>
+                <textarea id="msg" name="msg"></textarea>
+              </div>
 
-            <div class="actions">
               <button class="btn btn--primary" type="submit">Enviar</button>
-              <p class="hint" id="formHint" role="status" aria-live="polite"></p>
-            </div>
-            <p class="legal">Formulario demo — conecta el envío en `scripts.js`.</p>
-          </form>
-
-          <aside class="side">
-            <div class="side__card"><h3>En la demo</h3><ul class="ticks"><li>Flujo en tablet</li><li>Plantillas</li><li>Informe PDF/enlace</li></ul></div>
-            <div class="side__card"><h3>Contacto</h3><p class="muted">Sustituye por tus datos:</p><p><strong>Email:</strong> contacto@twojadomena.pl<br /><strong>Tel:</strong> +48 000 000 000</p></div>
-          </aside>
+              <div class="notice" id="formNotice" tabindex="-1">¡Gracias! Este formulario es de ejemplo — contáctanos por teléfono o email y programamos una demo.</div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="foot">
-    <div class="wrap foot__inner">
-      <p>© <span id="year"></span> FotoNaprawa. Todos los derechos reservados.</p>
-      <div class="foot__links"><a href="#top">Arriba</a><a href="#contact">Contacto</a></div>
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div>© <span id="year"></span> FotoNaprawa. Implementación e integraciones: <a href="https://www.nightcode.pl" target="_blank" rel="noopener">nightcode.pl</a>.</div>
+      <div class="small">
+        <a href="https://www.nightcode.pl" target="_blank" rel="noopener">www.nightcode.pl</a>
+      </div>
     </div>
   </footer>
 
-  <script src="scripts.js" defer></script>
+  <script src="scripts.js"></script>
 </body>
 </html>

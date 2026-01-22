@@ -1,10 +1,10 @@
 (() => {
-  const $ = (s, r = document) => r.querySelector(s);
-  const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
+  const $ = (sel, root = document) => root.querySelector(sel);
+  const $$ = (sel, root = document) => Array.from(root.querySelectorAll(sel));
 
   // Year
-  const y = $("#year");
-  if (y) y.textContent = String(new Date().getFullYear());
+  const yearEl = $("#year");
+  if (yearEl) yearEl.textContent = String(new Date().getFullYear());
 
   // Mobile nav
   const navToggle = $("#navToggle");
@@ -29,7 +29,7 @@
     });
   }
 
-  // Reveal
+  // Reveal on scroll
   const revealEls = $$(".reveal");
   if (revealEls.length) {
     const io = new IntersectionObserver((entries) => {
@@ -40,36 +40,40 @@
     revealEls.forEach(el => io.observe(el));
   }
 
-  // Localized form messages
-  const M = {
-    pl: { missing: "Uzupełnij wymagane pola (imię, e-mail, typ, wiadomość).", ok: "Dzięki! To formularz demo — podepnij wysyłkę w scripts.js." },
-    en: { missing: "Please fill required fields (name, email, type, message).", ok: "Thanks! Demo form — connect sending in scripts.js." },
-    es: { missing: "Completa los campos obligatorios (nombre, email, tipo, mensaje).", ok: "¡Gracias! Formulario demo — conecta el envío en scripts.js." },
-    ru: { missing: "Заполните обязательные поля (имя, email, тип, сообщение).", ok: "Спасибо! Демо-форма — подключите отправку в scripts.js." }
-  };
-  const lang = (document.documentElement.getAttribute("lang") || "en").slice(0,2);
-  const msg = M[lang] || M.en;
-
-  // Form
-  const form = $("#leadForm");
-  const hint = $("#formHint");
-  if (form) {
+  // Form stub
+  const form = $("#contactForm");
+  const notice = $("#formNotice");
+  if (form && notice) {
     form.addEventListener("submit", (e) => {
       e.preventDefault();
-
-      const name = form.elements["name"]?.value?.trim();
-      const email = form.elements["email"]?.value?.trim();
-      const type = form.elements["type"]?.value?.trim();
-      const message = form.elements["message"]?.value?.trim();
-
-      if (!name || !email || !type || !message) {
-        if (hint) hint.textContent = msg.missing;
-        return;
-      }
-
-      // TODO: fetch(...) do backendu / CRM
-      if (hint) hint.textContent = msg.ok;
+      notice.style.display = "block";
+      notice.focus?.();
       form.reset();
     });
   }
+
+  // Video fallback when mp4 files are missing
+  $$(".js-video").forEach((video) => {
+    const wrap = video.closest(".videoBox__body");
+    const fallback = wrap?.querySelector(".videoFallback");
+    const showFallback = () => {
+      if (fallback) fallback.style.display = "flex";
+      video.style.display = "none";
+    };
+    const hideFallback = () => {
+      if (fallback) fallback.style.display = "none";
+      video.style.display = "block";
+    };
+
+    // If the file doesn't load on GitHub Pages (not uploaded), show fallback.
+    video.addEventListener("error", showFallback);
+    video.addEventListener("loadeddata", hideFallback);
+
+    // If the browser decides not to load immediately, keep fallback visible
+    // until we have enough data to play.
+    video.addEventListener("canplay", hideFallback);
+
+    // Initial state: show fallback, then hide if the video loads.
+    if (fallback) fallback.style.display = "flex";
+  });
 })();

@@ -3,57 +3,55 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>FotoNaprawa — фото ремонта, отчёты и подтверждение работ для сервиса</title>
-  <meta name="description" content="FotoNaprawa — софт для механиков: фото после ремонта на планшете, заметки и чек-листы → отчёт PDF/ссылка для клиента. Порядок в документации, меньше звонков, больше доверия." />
+  <title>FotoNaprawa — фото‑протокол состояния авто при приёме в сервис</title>
+  <meta name="description" content="Приложение для планшета/телефона: фото, чек‑лист, заметки и отчёт (PDF или ссылка) для фиксации состояния авто перед приёмом. Интеграции с программами сервиса и внедрение у клиента." />
   <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#0b0f14" />
-  <link rel="canonical" href="https://twojadomena.pl/fotonaprawa/index-ru.html" />
+  <meta name="theme-color" content="#0b1020" />
+  <link rel="canonical" href="./index-ru.html" />
 
-  <link rel="alternate" hreflang="pl" href="https://twojadomena.pl/fotonaprawa/index.html" />
-  <link rel="alternate" hreflang="en" href="https://twojadomena.pl/fotonaprawa/index-en.html" />
-  <link rel="alternate" hreflang="es" href="https://twojadomena.pl/fotonaprawa/index-es.html" />
-  <link rel="alternate" hreflang="ru" href="https://twojadomena.pl/fotonaprawa/index-ru.html" />
-  <link rel="alternate" hreflang="x-default" href="https://twojadomena.pl/fotonaprawa/index.html" />
+  <link rel="alternate" hreflang="pl" href="./index.html" />
+<link rel="alternate" hreflang="en" href="./index-en.html" />
+<link rel="alternate" hreflang="es" href="./index-es.html" />
+<link rel="alternate" hreflang="ru" href="./index-ru.html" />
+<link rel="alternate" hreflang="x-default" href="./index.html" />
 
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="ru_RU" />
-  <meta property="og:title" content="FotoNaprawa — фото ремонта и отчёт для клиента" />
-  <meta property="og:description" content="Механик делает фото на планшете, добавляет заметки и отправляет отчёт клиенту. Доказательство работ и порядок." />
-  <meta property="og:url" content="https://twojadomena.pl/fotonaprawa/index-ru.html" />
-  <meta property="og:image" content="pic1.jpg" />
+  <meta property="og:title" content="FotoNaprawa — фото‑протокол состояния авто при приёме в сервис" />
+  <meta property="og:description" content="Приложение для планшета/телефона: фото, чек‑лист, заметки и отчёт (PDF или ссылка) для фиксации состояния авто перед приёмом. Интеграции с программами сервиса и внедрение у клиента." />
+  <meta property="og:image" content="assets/pic1.png" />
 
   <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Organization", "name": "Nightcode", "url": "https://www.nightcode.pl", "email": "kontakt@nightcode.pl", "telephone": "+48 519 096 947"}, {"@context": "https://schema.org", "@type": "Service", "name": "FotoNaprawa", "serviceType": "Workshop vehicle intake photo protocol", "provider": {"@type": "Organization", "name": "Nightcode", "url": "https://www.nightcode.pl"}, "areaServed": "PL", "description": "Приложение для планшета/телефона: фото, чек‑лист, заметки и отчёт (PDF или ссылка) для фиксации состояния авто перед приёмом. Интеграции с программами сервиса и внедрение у клиента."}]</script>
 </head>
 
 <body>
-  <a class="skip" href="#main">К содержимому</a>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <header class="top" id="top">
+  <header class="top">
     <div class="wrap top__inner">
-      <a class="brand" href="#top" aria-label="FotoNaprawa — наверх">
-        <img class="brand__logo" src="logo.png" alt="FotoNaprawa" />
-        <span class="brand__word">Foto<span class="brand__accent">Naprawa</span></span>
+      <a class="brand" href="./index.html" aria-label="FotoNaprawa">
+        <img class="brand__logo" src="assets/logo.png" alt="FotoNaprawa" />
+        <div>
+          <div class="brand__name">Foto<span class="accent">Naprawa</span></div>
+          <div class="brand__tag">фото‑протокол приёма автомобиля</div>
+        </div>
       </a>
 
-      <nav class="nav" aria-label="Навигация">
-        <button class="nav__btn" id="navToggle" aria-expanded="false" aria-controls="navMenu">
-          <span class="nav__bars" aria-hidden="true"></span>
-          <span class="sr-only">Открыть меню</span>
+      <nav class="nav" aria-label="Navigation">
+        <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav__toggleBars" aria-hidden="true"></span>
         </button>
 
         <ul class="nav__menu" id="navMenu">
-          <li><a href="#how">Как работает</a></li>
-          <li><a href="#features">Функции</a></li>
-          <li><a href="#videos">Видео</a></li>
-          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#features">Возможности</a></li>
+<li><a href="#how">Как работает</a></li>
+<li><a href="#integrations">Интеграции</a></li>
+<li><a href="#security">Безопасность</a></li>
+<li><a href="#faq">FAQ</a></li>
           <li><a class="btn btn--primary btn--small" href="#contact">Запросить демо</a></li>
-
-          <li class="lang" aria-label="Языки">
-            <a class="lang__a" href="index.html">PL</a>
-            <a class="lang__a" href="index-en.html">EN</a>
-            <a class="lang__a" href="index-es.html">ES</a>
-            <a class="lang__a is-active" href="index-ru.html" aria-current="page">RU</a>
+          <li class="lang" aria-label="Language switcher">
+            <a class="lang__link" href="index.html">PL</a><a class="lang__link" href="index-en.html">EN</a><a class="lang__link" href="index-es.html">ES</a><a class="lang__link is-active" href="index-ru.html">RU</a>
           </li>
         </ul>
       </nav>
@@ -61,165 +59,364 @@
   </header>
 
   <main id="main">
-    <section class="hero" aria-label="Введение">
-      <div class="hero__bg" aria-hidden="true"></div>
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__card">
+          <div class="hero__media" aria-hidden="true"></div>
+          <div class="hero__overlay" aria-hidden="true"></div>
+          <div class="hero__content">
+            <div class="hero__kicker"><span class="tag">Фото «до»</span><span class="tag">Номер заказа из CRM</span><span class="tag">Отчёт для клиента</span></div>
+            <h1 class="hero__title">Защитите сервис.<br/>Фиксируйте состояние авто<br/>до приёма.</h1>
+            <p class="hero__subtitle">FotoNaprawa — приложение для планшета/телефона: быстрые фото, чек‑лист и заметки, а затем понятный отчёт. Меньше споров, больше прозрачности.</p>
 
-      <div class="wrap hero__content">
-        <p class="tagline">софт для сервиса • фото ремонта • отчёт клиенту</p>
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#kontakt">Запросить демо</a>
+              <a class="btn btn--ghost" href="#jakdziala">Смотреть как работает</a>
+            </div>
 
-        <h1 class="hero__title">
-          Сделайте фото после ремонта.
-          <span class="hero__title2">Отправьте отчёт. Закройте заказ.</span>
-        </h1>
-
-        <p class="hero__lead">
-          FotoNaprawa помогает документировать ремонт за 30–60 секунд:
-          фото + заметки + чек-листы → готовый отчёт (PDF / ссылка).
-        </p>
-
-        <div class="hero__cta">
-          <a class="btn btn--primary" href="#contact">Хочу демо</a>
-          <a class="btn btn--ghost" href="#videos">Смотреть видео</a>
+            <dl class="stats">
+              <div class="stat"><dt>Фиксация</dt><dd>Фото + чек‑лист</dd></div>
+<div class="stat"><dt>Отчёт</dt><dd>PDF / ссылка (по желанию)</dd></div>
+<div class="stat"><dt>Внедрение</dt><dd>У клиента + интеграция</dd></div>
+            </dl>
+          </div>
         </div>
 
-        <div class="stats">
-          <div class="stat"><div class="stat__kpi">Больше доверия</div><div class="stat__txt">клиент видит результат</div></div>
-          <div class="stat"><div class="stat__kpi">Меньше звонков</div><div class="stat__txt">меньше “уже готово?”</div></div>
-          <div class="stat"><div class="stat__kpi">Порядок</div><div class="stat__txt">история по авто/заказу</div></div>
-        </div>
+        <aside class="hero__side">
+          <h3>Почему это помогает</h3>
+          <ul>
+            <li>Клиент видит, что было до ремонта — меньше претензий «вы повредили».</li>
+<li>Фото привязаны к заказу (после интеграции) — порядок и быстрый поиск.</li>
+<li>Подпись и отметки — опционально, когда нужна максимальная уверенность.</li>
+          </ul>
+          <div class="small" style="margin-top:12px">
+            Nightcode · <a href="https://www.nightcode.pl" target="_blank" rel="noopener">www.nightcode.pl</a>
+          </div>
+        </aside>
       </div>
-
-      <div class="hero__stripe" aria-hidden="true"></div>
     </section>
 
-    <section class="section" id="how">
+    <section class="section" id="features">
       <div class="wrap">
-        <header class="head">
-          <h2>Как работает FotoNaprawa</h2>
-          <p>Короткий повторяемый процесс — команда освоит за минуты.</p>
-        </header>
+        <h2 class="h2">Функции, которые реально полезны в сервисе</h2>
+        <p class="lead">Основной сценарий — «до приёма», но при желании можно вести фото «после ремонта» при выдаче автомобиля.</p>
 
-        <ol class="steps reveal">
-          <li class="step"><span class="step__n">1</span><div class="step__b"><h3>Выберите заказ / авто</h3><p>По номеру, VIN или клиенту. Или сканируйте код.</p></div></li>
-          <li class="step"><span class="step__n">2</span><div class="step__b"><h3>Сделайте фото “после ремонта”</h3><p>Серия фото на планшете. Добавьте заметки и чек-лист.</p></div></li>
-          <li class="step"><span class="step__n">3</span><div class="step__b"><h3>Сформируйте и отправьте отчёт</h3><p>PDF или ссылка с галереей + описанием. Отправка e-mail/SMS.</p></div></li>
+        <div class="grid grid--3" style="margin-top:18px">
+          
+          <article class="card reveal">
+            <h3>Быстрые фото на планшете/телефоне</h3>
+            <p>Сделайте полный набор снимков за минуты и прикрепите к делу.</p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Чек‑листы и заметки</h3>
+            <p>Отметьте царапины/вмятины, недостающие элементы, состояние шин/салона и добавьте комментарии.</p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Отчёт для клиента</h3>
+            <p>Сформируйте PDF или ссылку — как удобнее вашему сервису.</p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Интеграция с заказом</h3>
+            <p>Приложение может автоматически подтягивать данные заказа/клиента — после внедрения у вас.</p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Подпись — опционально</h3>
+            <p>Можно включить подпись на экране для формального подтверждения протокола.</p>
+          </article>
+
+          <article class="card reveal">
+            <h3>Планшет можем предоставить</h3>
+            <p>Нет устройства? Поставим и настроим готовый планшет.</p>
+          </article>
+        </div>
+
+        <div class="callout reveal">
+          <div>
+            <h3>Внедрение у клиента = меньше сюрпризов</h3>
+            <p>Разбираем процесс приёма, настраиваем поля, интеграцию и шаблоны отчётов, обучаем команду. Дальше вы работаете обычно — с поддержкой при необходимости.</p>
+          </div>
+          <a class="btn btn--primary" href="#kontakt">Запросить демо</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="how">
+      <div class="wrap">
+        <h2 class="h2">Как FotoNaprawa используется на практике</h2>
+        <p class="lead">Простой процесс: заказ → фото → протокол → отчёт. Интеграцию настраиваем у клиента.</p>
+
+        <ol class="steps">
+          
+          <li class="step reveal">
+            <div class="step__num">1</div>
+            <div>
+              <h3>Выбираете заказ</h3>
+              <p>С интеграцией данные подтягиваются из вашей системы. Без интеграции — вводите базовые данные вручную.</p>
+            </div>
+          </li>
+
+          <li class="step reveal">
+            <div class="step__num">2</div>
+            <div>
+              <h3>Делаете фото «до»</h3>
+              <p>Быстрая серия снимков + чек‑лист и краткие заметки.</p>
+            </div>
+          </li>
+
+          <li class="step reveal">
+            <div class="step__num">3</div>
+            <div>
+              <h3>Формируете протокол</h3>
+              <p>Отметки, комментарии и (при необходимости) подпись клиента.</p>
+            </div>
+          </li>
+
+          <li class="step reveal">
+            <div class="step__num">4</div>
+            <div>
+              <h3>Передаёте отчёт</h3>
+              <p>PDF или ссылка для клиента + архив сервиса (гибридное хранение).</p>
+            </div>
+          </li>
         </ol>
       </div>
     </section>
 
-    <section class="section section--alt" id="features">
+    <section class="section" id="integrations">
       <div class="wrap">
-        <header class="head">
-          <h2>Функции, которые реально помогают</h2>
-          <p>Не просто фото. Это документация и быстрое закрытие заказов.</p>
-        </header>
+        <h2 class="h2">Интеграции с программами сервиса</h2>
+        <p class="lead">Внедряем у клиента и подключаем FotoNaprawa к тому, чем вы уже пользуетесь. Примеры систем:</p>
 
-        <div class="grid reveal">
-          <article class="card"><h3>Чек-листы и подпись</h3><p>Отметки, заметки, подпись клиента (выдача / согласие).</p><ul class="list"><li>Обязательные поля</li><li>Шаблоны</li><li>Единый стандарт</li></ul></article>
-          <article class="card"><h3>Фото до/после + комментарии</h3><p>Что было, что сделали, какие детали использовали.</p><ul class="list"><li>Серии фото</li><li>Структура</li><li>Быстрые заметки</li></ul></article>
-          <article class="card"><h3>Отчёт в 1 клик</h3><p>PDF/ссылка. Доказательство работ → меньше споров.</p><ul class="list"><li>PDF / ссылка</li><li>Email/SMS</li><li>Архив</li></ul></article>
-          <article class="card"><h3>История по авто/заказу</h3><p>Фото, заметки, даты — всё находится быстро.</p><ul class="list"><li>Фильтры</li><li>Поиск</li><li>Порядок</li></ul></article>
+        <div class="grid grid--2" style="margin-top:18px">
+          <div class="card reveal">
+            <h3>Внедрение у клиента = меньше сюрпризов</h3>
+            <p>Разбираем процесс приёма, настраиваем поля, интеграцию и шаблоны отчётов, обучаем команду. Дальше вы работаете обычно — с поддержкой при необходимости.</p>
+          </div>
+          <div class="card reveal">
+            <h3>Przykłady / Examples</h3>
+            <ul class="list">
+              <li>Integra Car 7</li>
+<li>eSowa</li>
+<li>ASCO</li>
+<li>Warsztat24</li>
+<li>…и другие (кастомная интеграция)</li>
+            </ul>
+            <p class="small" style="margin-top:10px">* Nazwy systemów podane jako przykłady. Integrujemy się również z innymi rozwiązaniami.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="videos">
+    <section class="section section--alt" id="security">
       <div class="wrap">
-        <header class="head">
-          <h2>Видео: механик + планшет</h2>
-          <p>Два эпизода: фиксация работ и отправка отчёта.</p>
-        </header>
+        <h2 class="h2">Безопасность и конфиденциальность</h2>
+        <p class="lead">Фото — чувствительные данные. Поэтому акцент на контроле со стороны сервиса.</p>
 
-        <div class="media reveal">
-          <article class="media__card">
-            <div class="media__videoWrap">
-              <video class="media__video" autoplay muted loop playsinline preload="metadata">
-                <source src="film1.mp4" type="video/mp4" />
-              </video>
-            </div>
-            <h3>Фото после ремонта</h3>
-            <p>Серия + заметки + чек-лист в заказе.</p>
-            <ul class="ticks"><li>Быстро</li><li>Шаблоны</li><li>Чистая история</li></ul>
+        <div class="grid grid--3" style="margin-top:18px">
+          
+          <article class="card reveal">
+            <h3>Гибридная модель</h3>
+            <p>Данные могут храниться у клиента, с возможностью поделиться ссылкой на отчёт — в зависимости от конфигурации.</p>
           </article>
 
-          <article class="media__card">
-            <div class="media__videoWrap">
-              <video class="media__video" autoplay muted loop playsinline preload="metadata">
-                <source src="film2.mp4" type="video/mp4" />
-              </video>
-            </div>
-            <h3>Отчёт и отправка клиенту</h3>
-            <p>PDF/ссылка и отправка. Клиент видит результат.</p>
-            <ul class="ticks"><li>Меньше звонков</li><li>Больше доверия</li><li>Быстрее закрытие</li></ul>
+          <article class="card reveal">
+            <h3>Доступ и журнал</h3>
+            <p>Кто добавил фото, когда и к какому заказу. Роли и права можно настроить.</p>
+          </article>
+
+          <article class="card reveal">
+            <h3>GDPR‑подход</h3>
+            <p>Сроки хранения, согласия, удаление — настраиваем под ваши процедуры при внедрении.</p>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section class="section" id="wideo">
+      <div class="wrap">
+        <h2 class="h2">Видео: механик с планшетом/телефоном</h2>
+        <p class="lead">На странице оставлены ссылки на film1.mp4 и film2.mp4 — вы добавите файлы позже на GitHub Pages. На демо показываем видео вживую.</p>
+
+        <div class="mediaGrid">
+          <article class="videoBox reveal">
+            <div class="videoBox__head">
+              <h3>Приём авто — фото «до»</h3>
+              <p>Быстрая фотосессия + чек‑лист и заметки.</p>
+            </div>
+            <div class="videoBox__body">
+              <video class="js-video" controls preload="metadata" poster="assets/pic1.png">
+                <source src="film1.mp4" type="video/mp4" />
+              </video>
+              <div class="videoFallback" aria-hidden="true">
+                <span class="videoFallback__badge">film1.mp4</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="videoBox reveal">
+            <div class="videoBox__head">
+              <h3>Отчёт для клиента</h3>
+              <p>Формирование PDF/ссылки и архивирование в сервисе.</p>
+            </div>
+            <div class="videoBox__body">
+              <video class="js-video" controls preload="metadata" poster="assets/pic1.png">
+                <source src="film2.mp4" type="video/mp4" />
+              </video>
+              <div class="videoFallback" aria-hidden="true">
+                <span class="videoFallback__badge">film2.mp4</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="small" style="margin-top:10px">
+          Uwaga: jeśli pliki wideo nie są dodane do repozytorium, strona pokaże bezpieczny podgląd (miniaturę) zamiast pustego playera.
+        </p>
       </div>
     </section>
 
     <section class="section section--alt" id="faq">
       <div class="wrap">
-        <header class="head"><h2>FAQ</h2><p>Частые вопросы.</p></header>
-        <div class="faq reveal">
-          <details class="faq__item"><summary>Работает на планшете и телефоне?</summary><div class="faq__body"><p>Да. Это веб-решение: механик на планшете, клиент открывает отчёт на телефоне.</p></div></details>
-          <details class="faq__item"><summary>Можно делать “до/после”?</summary><div class="faq__body"><p>Да, два набора фото с автоматическим порядком в отчёте.</p></div></details>
+        <h2 class="h2">FAQ</h2>
+        <p class="lead">Частые вопросы перед внедрением FotoNaprawa.</p>
+
+        <div class="faq">
+          
+            <details class="reveal">
+              <summary>Это заменяет мою CRM/программу сервиса?</summary>
+              <p>Нет. FotoNaprawa дополняет приём автомобиля фото‑протоколом. Можно интегрировать, чтобы подтягивать номер заказа и данные клиента.</p>
+            </details>
+
+            <details class="reveal">
+              <summary>Подпись клиента обязательна?</summary>
+              <p>Нет. Подпись — опционально и включается при необходимости.</p>
+            </details>
+
+            <details class="reveal">
+              <summary>Можно делать фото «после ремонта»?</summary>
+              <p>Да. Основной фокус — «до», но можно документировать и при выдаче авто.</p>
+            </details>
+
+            <details class="reveal">
+              <summary>В каком виде клиент получает отчёт?</summary>
+              <p>По вашему выбору: PDF, ссылка или оба варианта. Настраиваем при внедрении.</p>
+            </details>
+
+            <details class="reveal">
+              <summary>Работает ли без интернета?</summary>
+              <p>Можно настроить работу без постоянного интернета. Детали зависят от интеграции и среды.</p>
+            </details>
+
+            <details class="reveal">
+              <summary>Где хранятся фото?</summary>
+              <p>Гибридно — у сервиса, с опцией делиться отчётом. Модель подбираем под ваши требования.</p>
+            </details>
+
+            <details class="reveal">
+              <summary>Можно настроить свои чек‑листы?</summary>
+              <p>Да. Адаптируем чек‑листы и поля под ваш тип сервиса.</p>
+            </details>
+
+            <details class="reveal">
+              <summary>Сколько занимает внедрение?</summary>
+              <p>Обычно от нескольких часов до нескольких дней — зависит от интеграций и количества рабочих мест.</p>
+            </details>
+
+            <details class="reveal">
+              <summary>Можете предоставить планшет?</summary>
+              <p>Да. Поставим и настроим устройство.</p>
+            </details>
+
+            <details class="reveal">
+              <summary>Можно настроить роли/права?</summary>
+              <p>Да — например, доступ только у приёмщиков или только у руководителя.</p>
+            </details>
+
+            <details class="reveal">
+              <summary>Можно автоматизировать нумерацию протокола?</summary>
+              <p>Да. С интеграцией протокол автоматически привязывается к заказу и автомобилю.</p>
+            </details>
+
+            <details class="reveal">
+              <summary>Какая поддержка после запуска?</summary>
+              <p>Обеспечиваем сервис и доработки — объём зависит от потребностей.</p>
+            </details>
         </div>
       </div>
     </section>
 
-    <section class="section section--contact" id="contact">
+    <section class="section" id="kontakt">
       <div class="wrap">
-        <header class="head head--invert">
-          <h2>Запросить демо FotoNaprawa</h2>
-          <p>Опишите тип работ и устройства (планшеты/телефоны).</p>
-        </header>
+        <h2 class="h2">Контакт / демо</h2>
+        <p class="lead">Форма демонстрационная — свяжитесь с нами, и мы согласуем демо и внедрение у вас.</p>
 
-        <div class="contact reveal">
-          <form class="form" id="leadForm" novalidate>
-            <div class="row">
-              <label><span>Имя</span><input name="name" type="text" autocomplete="name" placeholder="Иван Иванов" required /></label>
-              <label><span>Email</span><input name="email" type="email" autocomplete="email" placeholder="ivan@service.com" required /></label>
+        <div class="contactGrid">
+          <div class="contactCard reveal">
+            <h3>Nightcode</h3>
+            <div class="kv">
+              <div><strong>WWW:</strong> <a href="https://www.nightcode.pl" target="_blank" rel="noopener">www.nightcode.pl</a></div>
+<div><strong>Телефон:</strong> <a href="tel:+48519096947">+48 519 096 947</a></div>
+<div><strong>Email:</strong> <a href="mailto:kontakt@nightcode.pl">kontakt@nightcode.pl</a></div>
             </div>
+            <p class="small" style="margin-top:12px">
+              Wdrożenia i integracje robimy u klienta. Możemy też zapewnić tablet.
+            </p>
+          </div>
 
-            <div class="row">
-              <label>
-                <span>Тип сервиса</span>
-                <select name="type" required>
-                  <option value="" selected disabled>Выбрать…</option>
-                  <option>Сервис / ремонт</option>
-                  <option>Кузов / покраска</option>
-                  <option>Шины</option>
-                  <option>Детейлинг</option>
-                  <option>Другое</option>
+          <div class="contactCard reveal">
+            <h3>Напишите нам</h3>
+            <form id="contactForm" novalidate>
+              <div class="formRow">
+                <div class="field">
+                  <label for="name">Имя</label>
+                  <input id="name" name="name" type="text" autocomplete="name" />
+                </div>
+                <div class="field">
+                  <label for="phone">Телефон</label>
+                  <input id="phone" name="phone" type="tel" autocomplete="tel" />
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="type">Тип сервиса</label>
+                <select id="type" name="type">
+                  <option value="">Выберите…</option>
+<option value="mechanics">Механика / сервис</option>
+<option value="body">Кузов / покраска</option>
+<option value="tires">Шины / шиномонтаж</option>
+<option value="detailing">Детейлинг</option>
+<option value="diag">Диагностика / электроника</option>
+<option value="other">Другое</option>
                 </select>
-              </label>
-              <label><span>Телефон (необязательно)</span><input name="phone" type="tel" autocomplete="tel" placeholder="+7 900 000 00 00" /></label>
-            </div>
+              </div>
 
-            <label><span>Сообщение</span><textarea name="message" rows="5" placeholder="Напр.: 15 авто/день, фото после ремонта + PDF, планшеты 10”." required></textarea></label>
+              <div class="field">
+                <label for="msg">Сообщение</label>
+                <textarea id="msg" name="msg"></textarea>
+              </div>
 
-            <div class="actions">
               <button class="btn btn--primary" type="submit">Отправить</button>
-              <p class="hint" id="formHint" role="status" aria-live="polite"></p>
-            </div>
-            <p class="legal">Демо-форма — подключите отправку в `scripts.js`.</p>
-          </form>
-
-          <aside class="side">
-            <div class="side__card"><h3>На демо</h3><ul class="ticks"><li>Процесс на планшете</li><li>Шаблоны</li><li>Отчёт PDF/ссылка</li></ul></div>
-            <div class="side__card"><h3>Контакты</h3><p class="muted">Замените на свои данные:</p><p><strong>Email:</strong> kontakt@twojadomena.pl<br /><strong>Тел.:</strong> +48 000 000 000</p></div>
-          </aside>
+              <div class="notice" id="formNotice" tabindex="-1">Спасибо! Эта форма демонстрационная — пожалуйста, свяжитесь с нами по телефону или email для демо.</div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="foot">
-    <div class="wrap foot__inner">
-      <p>© <span id="year"></span> FotoNaprawa. Все права защищены.</p>
-      <div class="foot__links"><a href="#top">Наверх</a><a href="#contact">Контакты</a></div>
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div>© <span id="year"></span> FotoNaprawa. Внедрение и интеграции: <a href="https://www.nightcode.pl" target="_blank" rel="noopener">nightcode.pl</a>.</div>
+      <div class="small">
+        <a href="https://www.nightcode.pl" target="_blank" rel="noopener">www.nightcode.pl</a>
+      </div>
     </div>
   </footer>
 
-  <script src="scripts.js" defer></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
