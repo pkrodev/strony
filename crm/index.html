@@ -4,31 +4,29 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>WarsztatCRM – CRM dla warsztatów i firm usługowych</title>
-  <meta name="description" content="WarsztatCRM to nowoczesny CRM z naciskiem na warsztaty: zlecenia, historia pojazdu, klienci, terminy, magazyn, zdjęcia, SMS i raporty. Prosty w użyciu, szybki w wdrożeniu." />
+  <title>WarsztatCRM – CRM dla warsztatów i serwisów</title>
+  <meta name="description" content="WarsztatCRM to CRM dla warsztatów i firm usługowych: zlecenia, klienci, historia pojazdu, terminarz, magazyn części, zdjęcia, powiadomienia i raporty. Licencja jednorazowa + dożywotni serwis." />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#0b1020" />
   <link rel="canonical" href="https://twojadomena.pl/warsztatcrm/index.html" />
 
-  <!-- Hreflang -->
   <link rel="alternate" hreflang="pl" href="https://twojadomena.pl/warsztatcrm/index.html" />
   <link rel="alternate" hreflang="en" href="https://twojadomena.pl/warsztatcrm/index-en.html" />
   <link rel="alternate" hreflang="es" href="https://twojadomena.pl/warsztatcrm/index-es.html" />
   <link rel="alternate" hreflang="ru" href="https://twojadomena.pl/warsztatcrm/index-ru.html" />
   <link rel="alternate" hreflang="x-default" href="https://twojadomena.pl/warsztatcrm/index.html" />
 
-  <!-- OG -->
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="pl_PL" />
-  <meta property="og:title" content="WarsztatCRM – CRM dla warsztatów i firm usługowych" />
-  <meta property="og:description" content="Zlecenia, klienci, historia pojazdu, terminy, magazyn, zdjęcia, SMS i raporty. Jeden system – pełny porządek." />
+  <meta property="og:title" content="WarsztatCRM – CRM dla warsztatów i serwisów" />
+  <meta property="og:description" content="WarsztatCRM to CRM dla warsztatów i firm usługowych: zlecenia, klienci, historia pojazdu, terminarz, magazyn części, zdjęcia, powiadomienia i raporty. Licencja jednorazowa + dożywotni serwis." />
   <meta property="og:url" content="https://twojadomena.pl/warsztatcrm/index.html" />
-  <meta property="og:image" content="pic1.png" />
+  <meta property="og:image" content="pic1.jpg" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="WarsztatCRM – CRM dla warsztatów" />
-  <meta name="twitter:description" content="Zlecenia, klienci, historia pojazdu, terminy, magazyn, zdjęcia, SMS i raporty." />
-  <meta name="twitter:image" content="pic1.png" />
+  <meta name="twitter:title" content="WarsztatCRM – CRM dla warsztatów i serwisów" />
+  <meta name="twitter:description" content="WarsztatCRM to CRM dla warsztatów i firm usługowych: zlecenia, klienci, historia pojazdu, terminarz, magazyn części, zdjęcia, powiadomienia i raporty. Licencja jednorazowa + dożywotni serwis." />
+  <meta name="twitter:image" content="pic1.jpg" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -38,10 +36,8 @@
 
   <header class="top" id="top">
     <div class="wrap top__inner">
-      <a class="brand" href="#top" aria-label="WarsztatCRM – góra strony">
+      <a class="brand" href="#top" aria-label="WarsztatCRM">
         <img class="brand__logo" src="logo.png" alt="WarsztatCRM" />
-        <span class="brand__name">Warsztat<span class="accent">CRM</span></span>
-        <span class="brand__tag">porządek w zleceniach</span>
       </a>
 
       <nav class="nav" aria-label="Nawigacja">
@@ -52,16 +48,17 @@
 
         <ul class="nav__menu" id="navMenu">
           <li><a href="#features">Funkcje</a></li>
-          <li><a href="#workflow">Workflow</a></li>
-          <li><a href="#screens">Ekrany</a></li>
+          <li><a href="#license">Licencja</a></li>
+          <li><a href="#workflow">Proces</a></li>
+<li><a href="#security">Bezpieczeństwo</a></li>
           <li><a href="#faq">FAQ</a></li>
-          <li><a class="btn btn--primary btn--small" href="#contact">Poproś o demo</a></li>
+          <li><a class="btn btn--primary btn--small" href="#contact">Kontakt</a></li>
 
-          <li class="lang" aria-label="Wersje językowe">
-            <a class="lang__a is-active" href="index.html" aria-current="page">PL</a>
-            <a class="lang__a" href="index-en.html">EN</a>
-            <a class="lang__a" href="index-es.html">ES</a>
-            <a class="lang__a" href="index-ru.html">RU</a>
+          <li class="lang" aria-label="Languages">
+            <a class="lang__link is-active" href="index.html" aria-current="page">PL</a>
+            <a class="lang__link" href="index-en.html">EN</a>
+            <a class="lang__link" href="index-es.html">ES</a>
+            <a class="lang__link" href="index-ru.html">RU</a>
           </li>
         </ul>
       </nav>
@@ -69,305 +66,334 @@
   </header>
 
   <main id="main">
-    <!-- HERO (pic1.png w CSS) -->
-    <section class="hero" aria-label="Wprowadzenie">
+    <section class="hero" aria-label="Hero">
       <div class="hero__bg" aria-hidden="true"></div>
       <div class="hero__veil" aria-hidden="true"></div>
       <div class="hero__grid" aria-hidden="true"></div>
 
       <div class="wrap hero__content">
-        <p class="kicker">
-          <span class="dot"></span> CRM dla warsztatów • web • tablet • telefon
-        </p>
+        <p class="kicker"><span class="dot"></span> CRM dla warsztatów • web • tablet • mobile</p>
 
         <h1 class="hero__title">
-          CRM, który działa jak dobrze napisany workflow.
-          <span class="hero__title2">Zlecenia → części → zdjęcia → SMS → raport.</span>
+          Porządek w zleceniach. Spokój w warsztacie.
+          <span class="hero__title2">Zlecenia → części → zdjęcia → powiadomienia → raport.</span>
         </h1>
 
-        <p class="hero__lead">
-          WarsztatCRM to CRM ogólnego przeznaczenia, dopracowany pod realia warsztatu:
-          historia pojazdu, statusy napraw, magazyn, terminy, zdjęcia “przed/po”, automatyczne powiadomienia i raporty.
-        </p>
+        <p class="hero__lead">WarsztatCRM porządkuje codzienną pracę: przyjęcie auta, statusy napraw, historia pojazdu, magazyn części i komunikacja z klientem. Dostosujemy pola, statusy i wydruki pod Twój proces.</p>
 
         <div class="hero__cta">
-          <a class="btn btn--primary" href="#contact">Chcę demo</a>
-          <a class="btn btn--ghost" href="#screens">Zobacz ekrany</a>
-          <a class="btn btn--ghost" href="#workflow">Jak działa</a>
+          <a class="btn btn--primary" href="#contact">Umów prezentację</a>
+          <a class="btn btn--ghost" href="#features">Zobacz funkcje</a>
         </div>
 
-        <div class="badges">
-          <span class="badge">Zlecenia + statusy</span>
-          <span class="badge">Baza klientów</span>
-          <span class="badge">Historia pojazdu</span>
-          <span class="badge">Magazyn części</span>
-          <span class="badge">SMS/e-mail</span>
-          <span class="badge">Raporty</span>
-        </div>
-
-        <div class="terminal reveal" aria-label="Przykład danych">
-          <div class="terminal__top">
-            <span class="terminal__lamp r"></span>
-            <span class="terminal__lamp y"></span>
-            <span class="terminal__lamp g"></span>
-            <span class="terminal__title">workorder.json</span>
-          </div>
-          <pre class="terminal__code"><code>{
-  "plate": "PO 12345",
-  "vehicle": { "brand": "Skoda", "model": "Octavia", "year": 2018 },
-  "status": "Ready for pickup",
-  "tasks": ["oil+filters", "brake check", "tire storage"],
-  "photos": ["before", "after"],
-  "notify": ["sms", "email"]
-}</code></pre>
-        </div>
+        <p class="hero__note">Licencja jednorazowa • Konfiguracja pod proces • Dożywotni serwis</p>
       </div>
     </section>
 
-    <!-- FEATURES -->
     <section class="section" id="features">
       <div class="wrap">
         <header class="head">
-          <h2>Funkcje, które spinają pracę warsztatu</h2>
-          <p>Nie kolejny “system”. Tylko szybkie narzędzia do obsługi zleceń i komunikacji z klientem.</p>
+          <h2>Najważniejsze funkcje w jednym systemie</h2>
+          <p>Bez arkuszy, zeszytów i „pamiętania w głowie”. Masz wszystko w jednym miejscu i widać, co jest do zrobienia.</p>
         </header>
 
         <div class="cards reveal">
           <article class="card">
-            <h3>Zlecenia napraw + statusy</h3>
-            <p>Twórz zlecenia, ustawiaj etapy (przyjęte / w trakcie / części / gotowe) i pilnuj terminów.</p>
+            <h3>Zlecenia i statusy</h3>
+            <p>Twórz zlecenia, kontroluj etapy naprawy i terminy. Każdy w zespole widzi, co jest „na teraz”.</p>
             <ul class="list">
-              <li>Checklisty usług</li>
-              <li>Priorytety i SLA</li>
-              <li>Widok “dziś / jutro”</li>
+              <li>Konfigurowalne statusy</li>
+<li>Checklisty i notatki</li>
+<li>Widok dzień/tydzień</li>
             </ul>
           </article>
 
           <article class="card">
             <h3>Klienci i pojazdy</h3>
-            <p>Jedna karta klienta + wiele aut. Historia wizyt i powtarzalne usterki w sekundę.</p>
+            <p>Jedna baza klientów i aut. Wyszukiwanie po VIN / rejestracji i szybki podgląd historii.</p>
             <ul class="list">
-              <li>VIN / rejestracja</li>
-              <li>Notatki i zgody</li>
-              <li>Archiwum dokumentów</li>
+              <li>Historia napraw</li>
+<li>Zgody i dane kontaktowe</li>
+<li>Dokumenty i zdjęcia</li>
             </ul>
           </article>
 
           <article class="card">
             <h3>Magazyn części</h3>
-            <p>Stan, rezerwacje do zleceń, progi minimalne i szybkie wydania na stanowisko.</p>
+            <p>Stany, rezerwacje pod zlecenia i alerty niskiego stanu — bez ręcznego liczenia.</p>
             <ul class="list">
-              <li>Rezerwacje</li>
-              <li>Alerty braku</li>
-              <li>Raport zużycia</li>
+              <li>Rezerwacje pod auto</li>
+<li>Przyjęcia i wydania</li>
+<li>Raport zużycia</li>
             </ul>
           </article>
 
           <article class="card">
-            <h3>Zdjęcia + raport dla klienta</h3>
-            <p>Dodawaj zdjęcia “przed/po”, opis, a potem wygeneruj raport PDF lub link.</p>
+            <h3>Zdjęcia i dokumentacja</h3>
+            <p>Dodawaj zdjęcia „przed/po” i generuj raport dla klienta (PDF lub link).</p>
             <ul class="list">
-              <li>Dowód wykonania</li>
               <li>Mniej sporów</li>
-              <li>Wyższe zaufanie</li>
+<li>Więcej zaufania</li>
+<li>Archiwum zleceń</li>
             </ul>
           </article>
 
           <article class="card">
-            <h3>SMS / e-mail automatycznie</h3>
-            <p>Powiadomienia o statusie: “części zamówione”, “auto gotowe”, “prosimy o odbiór”.</p>
+            <h3>Powiadomienia</h3>
+            <p>Automatyczne wiadomości o postępie: części zamówione, auto gotowe, przypomnienia.</p>
             <ul class="list">
-              <li>Szablony</li>
-              <li>Historia wysyłek</li>
-              <li>Automaty po statusie</li>
+              <li>Szablony wiadomości</li>
+<li>Historia wysyłek</li>
+<li>Automaty na statusach</li>
             </ul>
           </article>
 
           <article class="card">
-            <h3>Raporty i KPI</h3>
-            <p>Obroty, czas napraw, powroty, ilość zleceń, wykorzystanie stanowisk – bez excela.</p>
+            <h3>Raporty i wyniki</h3>
+            <p>Raportuj zlecenia, obroty i obciążenie stanowisk — bez Excela.</p>
             <ul class="list">
               <li>Dashboard</li>
-              <li>Eksport CSV</li>
-              <li>Filtry</li>
+<li>Eksport CSV</li>
+<li>Filtry i zakresy</li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- WORKFLOW -->
-    <section class="section section--alt" id="workflow">
+    <section class="section section--alt" id="license">
       <div class="wrap">
         <header class="head">
-          <h2>Workflow “od przyjęcia do wydania”</h2>
-          <p>Tak, żeby każdy w zespole widział dokładnie, co robić dalej.</p>
+          <h2>Licencja jednorazowa + dożywotni serwis</h2>
+          <p>Kupujesz raz. System działa u Ciebie, a my dbamy o wdrożenie, konfigurację i wsparcie.</p>
+        </header>
+
+        <div class="cards reveal">
+          <article class="card card--soft">
+            <h3>Co kupujesz</h3>
+            <p>Jednorazowa licencja na WarsztatCRM + konfiguracja pod Twój proces.</p>
+            <ul class="list list--compact">
+              <li>Brak abonamentu</li>
+<li>Możliwość rozbudowy</li>
+<li>Szablony i pola na życzenie</li>
+            </ul>
+          </article>
+
+          <article class="card card--soft">
+            <h3>Wdrożenie</h3>
+            <p>Pomagamy uruchomić system i przenieść startowe dane (np. lista klientów/pojazdów).</p>
+            <ul class="list list--compact">
+              <li>Instalacja na hostingu/VPS lub lokalnie</li>
+<li>Konfiguracja statusów i widoków</li>
+<li>Szkolenie z obsługi</li>
+            </ul>
+          </article>
+
+          <article class="card card--soft">
+            <h3>Dożywotni serwis</h3>
+            <p>Wsparcie, poprawki i rozwój w ramach ustaleń serwisowych.</p>
+            <ul class="list list--compact">
+              <li>Pomoc w problemach dnia codziennego</li>
+<li>Aktualizacje i poprawki</li>
+<li>Custom pod Twój warsztat</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="workflow">
+      <div class="wrap">
+        <header class="head">
+          <h2>Prosty proces od przyjęcia do wydania</h2>
+          <p>WarsztatCRM prowadzi krok po kroku — każdy w zespole wie, co jest „następne”.</p>
         </header>
 
         <ol class="flow reveal">
           <li class="flow__item">
             <span class="flow__n">01</span>
             <div>
-              <h3>Przyjęcie auta</h3>
-              <p>Dodaj klienta/pojazd, opisz zgłoszenie, zrób zdjęcia wstępne i ustaw termin.</p>
+              <h3>Przyjęcie</h3>
+              <p>Dodaj klienta i auto, opisz usterkę, zrób zdjęcia i ustaw termin.</p>
             </div>
           </li>
           <li class="flow__item">
             <span class="flow__n">02</span>
             <div>
-              <h3>Wycena i zgoda</h3>
-              <p>Dodaj kosztorys, uzyskaj akceptację, zarezerwuj części do zlecenia.</p>
+              <h3>Wycena i akceptacja</h3>
+              <p>Zbuduj kosztorys, zanotuj ustalenia i zarezerwuj części.</p>
             </div>
           </li>
           <li class="flow__item">
             <span class="flow__n">03</span>
             <div>
-              <h3>Naprawa</h3>
-              <p>Checklisty, notatki, zdjęcia “po” i automatyczne aktualizacje statusów.</p>
+              <h3>Realizacja</h3>
+              <p>Mechanik pracuje na checklistach, dodaje notatki i aktualizuje status.</p>
             </div>
           </li>
           <li class="flow__item">
             <span class="flow__n">04</span>
             <div>
               <h3>Wydanie i raport</h3>
-              <p>Wygeneruj raport, wyślij SMS “auto gotowe”, domknij zlecenie i archiwizuj.</p>
+              <p>Wyślij powiadomienie, wygeneruj raport i zamknij zlecenie.</p>
             </div>
           </li>
         </ol>
       </div>
     </section>
-
-    <!-- SCREENS (pic2.png, pic3.png) -->
-    <section class="section" id="screens">
+<section class="section" id="security">
       <div class="wrap">
         <header class="head">
-          <h2>Ekrany systemu</h2>
-          <p>Twoje grafiki: używamy <strong>pic2.png</strong> i <strong>pic3.png</strong> jako mockupy.</p>
+          <h2>Twoje dane, Twoje zasady</h2>
+          <p>Możemy wdrożyć system na Twoim hostingu/VPS lub serwerze lokalnym. Dostęp, kopie zapasowe i retencja danych są konfigurowalne.</p>
         </header>
 
-        <div class="screens reveal">
-          <figure class="shot">
-            <img src="pic2.png" alt="Widok zleceń i statusów w WarsztatCRM" loading="lazy" />
-            <figcaption>Tablica zleceń: statusy, terminy, priorytety.</figcaption>
-          </figure>
+        <div class="cards reveal">
+          <article class="card">
+            <h3>Wdrożenie u Ciebie</h3>
+            <p>System może działać na Twoim serwerze lokalnym lub na VPS/hostingu – decyzja należy do Ciebie.</p>
+            <ul class="list">
+              <li>Dane nie muszą opuszczać firmy</li>
+<li>Możliwość pracy w sieci lokalnej</li>
+<li>Dopasowanie do polityki IT</li>
+            </ul>
+          </article>
 
-          <figure class="shot">
-            <img src="pic3.jpg" alt="Karta klienta i pojazdu w WarsztatCRM" loading="lazy" />
-            <figcaption>Karta klienta/pojazdu: historia, notatki, zdjęcia i dokumenty.</figcaption>
-          </figure>
-        </div>
+          <article class="card">
+            <h3>Uprawnienia i dostęp</h3>
+            <p>Możemy przygotować role (np. recepcja / mechanik / właściciel) i ograniczyć dostęp do danych.</p>
+            <ul class="list">
+              <li>Widoczność wg roli</li>
+<li>Logi aktywności (opcjonalnie)</li>
+<li>Zasady haseł</li>
+            </ul>
+          </article>
 
-        <div class="ctaBar reveal">
-          <div>
-            <strong>Chcesz dopasować CRM do swojego procesu?</strong>
-            <p class="muted">Dodamy Twoje statusy, szablony i raporty – bez komplikacji.</p>
-          </div>
-          <a class="btn btn--primary btn--small" href="#contact">Umów demo</a>
+          <article class="card">
+            <h3>Kopie i retencja</h3>
+            <p>Ustalamy kopie zapasowe oraz czas przechowywania danych i zdjęć.</p>
+            <ul class="list">
+              <li>Backup automatyczny</li>
+<li>Eksport danych</li>
+<li>Retencja wg potrzeb</li>
+            </ul>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- FAQ -->
     <section class="section section--alt" id="faq">
       <div class="wrap">
         <header class="head">
-          <h2>FAQ</h2>
-          <p>Najczęstsze pytania przed startem.</p>
+          <h2>FAQ — pytania, które słyszymy najczęściej</h2>
+          <p>Jeśli czegoś nie ma w standardzie, zwykle da się to dodać w ramach customizacji.</p>
         </header>
 
         <div class="faq reveal">
           <details class="faq__item">
-            <summary>Czy WarsztatCRM działa na tablecie i telefonie?</summary>
-            <div class="faq__body">
-              <p>Tak. To aplikacja webowa. Mechanik może pracować na tablecie, a właściciel podejrzeć dane z telefonu.</p>
-            </div>
+            <summary>Czy to jest abonament?</summary>
+            <div class="faq__body"><p>Nie. WarsztatCRM sprzedajemy jako licencję jednorazową. W ramach wdrożenia konfigurujemy system, a serwis realizujemy dożywotnio na uzgodnionych zasadach.</p></div>
           </details>
-
           <details class="faq__item">
-            <summary>Czy mogę mieć własne statusy zleceń?</summary>
-            <div class="faq__body">
-              <p>Tak. Statusy i checklisty są konfigurowalne (np. “oczekuje na części”, “diagnostyka”, “gotowe”).</p>
-            </div>
+            <summary>Czy działa na telefonie i tablecie?</summary>
+            <div class="faq__body"><p>Tak. To aplikacja webowa — działa w przeglądarce i dopasowuje się do ekranu.</p></div>
           </details>
-
           <details class="faq__item">
-            <summary>Czy mogę wysyłać klientowi raport ze zdjęciami?</summary>
-            <div class="faq__body">
-              <p>Tak. Zdjęcia “przed/po” + opis można wysłać jako link lub PDF (w zależności od wdrożenia).</p>
-            </div>
+            <summary>Czy mogę zmienić statusy i pola zleceń?</summary>
+            <div class="faq__body"><p>Tak. Statusy, pola, checklisty i szablony można dopasować do Twojego procesu.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Czy mogę trzymać dane lokalnie?</summary>
+            <div class="faq__body"><p>Tak. Możemy wdrożyć system lokalnie (on‑premise) lub na Twoim VPS/hostingu.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Czy są powiadomienia SMS/e‑mail?</summary>
+            <div class="faq__body"><p>Tak — konfigurujemy szablony i automaty (np. „auto gotowe”). Integrację z bramką SMS dobieramy do potrzeb.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Czy jest magazyn części i rezerwacje?</summary>
+            <div class="faq__body"><p>Tak. Możesz prowadzić stany, rezerwować części pod zlecenia i ustawić alerty niskiego stanu.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Czy mogę dodawać zdjęcia i robić raport dla klienta?</summary>
+            <div class="faq__body"><p>Tak. Zdjęcia „przed/po” można przypinać do zlecenia, a raport udostępnić jako PDF lub link.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Czy są raporty i eksport danych?</summary>
+            <div class="faq__body"><p>Tak. Dostępne są raporty oraz eksport (np. CSV) — zakres dostosujemy do tego, co chcesz mierzyć.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Czy da się przenieść dane ze starego systemu?</summary>
+            <div class="faq__body"><p>Zwykle tak. Najczęściej zaczynamy od importu klientów/pojazdów, a resztę ustalamy indywidualnie.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Ile użytkowników może korzystać?</summary>
+            <div class="faq__body"><p>To zależy od wdrożenia i licencji. Dobieramy to pod wielkość warsztatu i liczbę stanowisk.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Czy można dodać integracje?</summary>
+            <div class="faq__body"><p>Tak. Jeśli potrzebujesz integracji (np. z innym CRM, fakturami, API) — zrobimy to jako rozszerzenie.</p></div>
+          </details>
+          <details class="faq__item">
+            <summary>Ile trwa wdrożenie?</summary>
+            <div class="faq__body"><p>Najczęściej start można zrobić szybko (dni), a dopracowanie procesu i szablonów robimy iteracyjnie.</p></div>
           </details>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT -->
-    <section class="section contact" id="contact" aria-label="Kontakt">
+    <section class="section contact" id="contact" aria-label="Contact">
       <div class="wrap">
         <header class="head head--invert">
-          <h2>Poproś o demo</h2>
-          <p>Napisz, ile zleceń robisz dziennie i jak wygląda Twój proces. Dopasujemy CRM.</p>
+          <h2>Umów prezentację</h2>
+          <p>Napisz, jak działa Twój warsztat i czego potrzebujesz — pokażemy dopasowany wariant.</p>
         </header>
 
         <div class="contact__grid reveal">
           <form class="form" id="leadForm" novalidate>
             <div class="row">
-              <label>
-                <span>Imię i nazwisko</span>
-                <input name="name" type="text" autocomplete="name" placeholder="Jan Kowalski" required />
-              </label>
-              <label>
-                <span>E-mail</span>
-                <input name="email" type="email" autocomplete="email" placeholder="jan@warsztat.pl" required />
-              </label>
+              <label><span>Imię i nazwisko</span><input name="name" type="text" autocomplete="name" required /></label>
+              <label><span>E-mail</span><input name="email" type="email" autocomplete="email" required /></label>
             </div>
 
             <div class="row">
               <label>
-                <span>Typ firmy</span>
+                <span>Typ działalności</span>
                 <select name="type" required>
                   <option value="" selected disabled>Wybierz…</option>
-                  <option>Warsztat / serwis</option>
-                  <option>Blacharnia / lakiernia</option>
-                  <option>Opony / wulkanizacja</option>
-                  <option>Flota / firma usługowa</option>
-                  <option>Inne</option>
+                  <option>Warsztat / serwis</option><option>Blacharnia / lakiernia</option><option>Wulkanizacja</option><option>Flota / usługi</option><option>Inne</option>
                 </select>
               </label>
-              <label>
-                <span>Telefon (opcjonalnie)</span>
-                <input name="phone" type="tel" autocomplete="tel" placeholder="+48 123 456 789" />
-              </label>
+              <label><span>Telefon (opcjonalnie)</span><input name="phone" type="tel" autocomplete="tel" placeholder="+48 123 456 789" /></label>
             </div>
 
-            <label>
-              <span>Wiadomość</span>
-              <textarea name="message" rows="5" placeholder="Np. 25 zleceń dziennie, 4 stanowiska, statusy: diagnostyka/części/naprawa/test/wydanie. Potrzebuję SMS i raportów." required></textarea>
-            </label>
+            <label><span>Wiadomość</span><textarea name="message" rows="5" placeholder="Np. 15 zleceń dziennie, statusy: diagnoza/części/naprawa/test/wydanie. Potrzebuję powiadomień SMS i raportów." required></textarea></label>
 
             <div class="actions">
-              <button class="btn btn--primary" type="submit">Wyślij</button>
+              <button class="btn btn--primary" type="submit">Wyślij (demo)</button>
               <p class="hint" id="formHint" role="status" aria-live="polite"></p>
             </div>
-
-            <p class="legal">Formularz demo — podepnij wysyłkę w `scripts.js`.</p>
+            <p class="legal">To jest formularz demo — podłącz wysyłkę w scripts.js.</p>
           </form>
 
-          <aside class="side">
+          <aside class="side" aria-label="Side">
             <div class="side__card">
-              <h3>Na demo pokażemy</h3>
+              <h3>Co pokażemy na prezentacji</h3>
               <ul class="ticks">
-                <li>Tablicę zleceń i statusy</li>
-                <li>Kartę klienta + historię pojazdu</li>
-                <li>Magazyn i rezerwacje</li>
-                <li>Powiadomienia SMS/e-mail</li>
+                <li>Tablica zleceń i statusy</li>
+<li>Profil klienta i auta + historia</li>
+<li>Magazyn i rezerwacje</li>
+<li>Zdjęcia „przed/po” + raport</li>
+<li>Powiadomienia i szablony</li>
+<li>Raporty i eksport</li>
               </ul>
             </div>
 
             <div class="side__card">
               <h3>Kontakt</h3>
-              <p class="muted">Podmień na swoje dane:</p>
-              <p><strong>E-mail:</strong> kontakt@twojadomena.pl<br />
-                 <strong>Telefon:</strong> +48 000 000 000</p>
+              <p class="muted"><a href="https://www.nightcode.pl" target="_blank" rel="noopener">nightcode.pl</a></p>
+              <p><strong>Email:</strong> <a href="mailto:kontakt@nightcode.pl">kontakt@nightcode.pl</a><br />
+                 <strong>Telefon:</strong> <a href="tel:+48519096947">+48 519 096 947</a></p>
             </div>
           </aside>
         </div>
@@ -377,38 +403,31 @@
 
   <footer class="foot">
     <div class="wrap foot__inner">
-      <p>© <span id="year"></span> WarsztatCRM. Wszelkie prawa zastrzeżone.</p>
+      <p>© <span id="year"></span> <a href="https://www.nightcode.pl" target="_blank" rel="noopener">nightcode.pl</a> — WarsztatCRM. Wszelkie prawa zastrzeżone.</p>
       <div class="foot__links">
-        <a href="#top">Góra</a>
         <a href="#contact">Kontakt</a>
-      </div>
+</div>
     </div>
   </footer>
 
-  <!-- JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@graph":[
+    "@context": "https://schema.org",
+    "@graph": [
       {
-        "@type":"Organization",
-        "name":"WarsztatCRM",
-        "url":"https://twojadomena.pl/warsztatcrm/index.html",
-        "logo":"logo.png"
+        "@type": "Organization",
+        "name": "nightcode.pl",
+        "url": "https://nightcode.pl/",
+        "email": "kontakt@nightcode.pl",
+        "telephone": "+48 519 096 947"
       },
       {
-        "@type":"SoftwareApplication",
-        "name":"WarsztatCRM",
-        "applicationCategory":"BusinessApplication",
-        "operatingSystem":"Web",
-        "description":"CRM ogólnego przeznaczenia z naciskiem na warsztaty: zlecenia, statusy, klienci, historia pojazdu, magazyn części, zdjęcia, powiadomienia SMS/e-mail i raporty.",
-        "offers":{
-          "@type":"Offer",
-          "price":"0",
-          "priceCurrency":"PLN",
-          "availability":"https://schema.org/InStock",
-          "url":"https://twojadomena.pl/warsztatcrm/index.html#contact"
-        }
+        "@type": "SoftwareApplication",
+        "name": "WarsztatCRM",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "description": "WarsztatCRM to CRM dla warsztatów i firm usługowych: zlecenia, klienci, historia pojazdu, terminarz, magazyn części, zdjęcia, powiadomienia i raporty. Licencja jednorazowa + dożywotni serwis.",
+        "url": "https://twojadomena.pl/warsztatcrm/index.html"
       }
     ]
   }
