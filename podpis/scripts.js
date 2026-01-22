@@ -55,36 +55,132 @@ if (bg) {
   if (p && typeof p.catch === "function") p.catch(() => {});
 }
 
-
-  // Form demo messages per language
-  const MESSAGES = {
-    pl: { missing: "Uzupełnij wymagane pola (imię, e-mail, rola, wiadomość).", ok: "Dzięki! To formularz demo — podepnij wysyłkę w scripts.js." },
-    en: { missing: "Please fill required fields (name, email, role, message).", ok: "Thanks! Demo form — connect sending in scripts.js." },
-    es: { missing: "Completa los campos obligatorios (nombre, email, rol, mensaje).", ok: "¡Gracias! Formulario demo — conecta el envío en scripts.js." },
-    ru: { missing: "Заполните обязательные поля (имя, email, роль, сообщение).", ok: "Спасибо! Демо-форма — подключите отправку в scripts.js." }
-  };
-
-  const lang = (document.documentElement.getAttribute("lang") || "en").slice(0,2);
-  const msg = MESSAGES[lang] || MESSAGES.en;
+  // Lead form (deployment-ready)
+  // 1) Jeśli masz backend/CRM: ustaw endpoint POST JSON:
+  //    window.NIGHTCODE_LEAD_ENDPOINT = "https://twoj-backend.pl/api/lead";
+  // 2) Jeśli nie — zadziała fallback przez mailto do adresu z <html data-lead-email="...">.
 
   const form = $("#leadForm");
   const hint = $("#formHint");
-  if (form) {
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const name = form.elements["name"]?.value?.trim();
-      const email = form.elements["email"]?.value?.trim();
-      const role = form.elements["role"]?.value?.trim();
-      const message = form.elements["message"]?.value?.trim();
 
-      if (!name || !email || !role || !message) {
+  const MESSAGES = {
+    pl: {
+      missing: "Uzupełnij wymagane pola (imię, e-mail, rola, wiadomość).",
+      sending: "Wysyłam…",
+      ok: "Dzięki! Zgłoszenie wysłane. Wrócimy do Ciebie najszybciej jak to możliwe.",
+      fail: "Nie udało się wysłać automatycznie. Otwieram e-mail z gotową wiadomością…"
+    },
+    en: {
+      missing: "Please fill in required fields (name, email, role, message).",
+      sending: "Sending…",
+      ok: "Thanks! Your request has been sent.",
+      fail: "Couldn't send automatically. Opening an email draft…"
+    },
+    es: {
+      missing: "Completa los campos obligatorios (nombre, correo, rol, mensaje).",
+      sending: "Enviando…",
+      ok: "¡Gracias! Tu solicitud ha sido enviada.",
+      fail: "No se pudo enviar automáticamente. Abriendo un borrador de correo…"
+    },
+    ru: {
+      missing: "Заполните обязательные поля (имя, email, роль, сообщение).",
+      sending: "Отправляю…",
+      ok: "Спасибо! Заявка отправлена.",
+      fail: "Не удалось отправить автоматически. Открываю черновик письма…"
+    }
+  };
+
+  const getMsg = () => {
+    const lang = (document.documentElement.getAttribute("lang") || "pl").toLowerCase();
+    return MESSAGES[lang] || MESSAGES.pl;
+  };
+
+  const buildPayload = (formEl) => {
+    const v = (n) => formEl.elements[n]?.value?.trim() || "";
+    return {
+      product: "Cyfrowy Podpis",
+      page: location.href,
+      name: v("name"),
+      email: v("email"),
+      role: v("role"),
+      phone: v("phone"),
+      company: v("company"),
+      lang: (document.documentElement.getAttribute("lang") || "pl").toLowerCase(),
+      message: v("message"),
+      createdAt: new Date().toISOString()
+    };
+  };
+
+  const toMailto = (to, payload) => {
+    const subject = "Prośba o demo – Cyfrowy Podpis";
+    const body =
+`Imię i nazwisko: ${payload.name}
+E-mail: ${payload.email}
+Telefon: ${payload.phone || "-"}
+Firma: ${payload.company || "-"}
+Rola: ${payload.role}
+
+Wiadomość:
+${payload.message}
+
+Strona: ${payload.page}
+`;
+    const href = `mailto:${encodeURIComponent(to)}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = href;
+  };
+
+  const postJSON = async (endpoint, payload) => {
+    const res = await fetch(endpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    return true;
+  };
+
+  if (form) {
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const msg = getMsg();
+
+      const payload = buildPayload(form);
+
+      if (!payload.name || !payload.email || !payload.role || !payload.message) {
         if (hint) hint.textContent = msg.missing;
         return;
       }
 
-      // TODO: fetch(...) do backendu / CRM / e-mail
-      if (hint) hint.textContent = msg.ok;
-      form.reset();
+      const endpoint =
+        document.documentElement.dataset.leadEndpoint ||
+        window.NIGHTCODE_LEAD_ENDPOINT ||
+        "";
+
+      const leadEmail =
+        document.documentElement.dataset.leadEmail ||
+        "kontakt@nightcode.pl";
+
+      const submitBtn = form.querySelector('button[type="submit"]');
+      if (submitBtn) submitBtn.disabled = true;
+      if (hint) hint.textContent = msg.sending;
+
+      try {
+        if (endpoint) {
+          await postJSON(endpoint, payload);
+          if (hint) hint.textContent = msg.ok;
+          form.reset();
+        } else {
+          // No backend configured – fallback to mailto draft
+          if (hint) hint.textContent = msg.ok;
+          toMailto(leadEmail, payload);
+          form.reset();
+        }
+      } catch (err) {
+        if (hint) hint.textContent = msg.fail;
+        toMailto(leadEmail, payload);
+      } finally {
+        if (submitBtn) submitBtn.disabled = false;
+      }
     });
   }
 })();
