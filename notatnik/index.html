@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Notatnik dla CRM-ów — aplikacja dla warsztatów (Integra i inne)</title>
+  <meta name="description" content="Aplikacja Notatnik dla CRM-ów: twórz rozbudowane notatki do zleceń w CRM (np. Integra). Mniej chaosu, mniej telefonów, więcej kontroli nad historią napraw." />
+
+  <!-- Open Graph (opcjonalnie) -->
+  <meta property="og:title" content="Notatnik dla CRM-ów — aplikacja dla warsztatów" />
+  <meta property="og:description" content="Rozbudowane notatki do zleceń w CRM (np. Integra). Standard, porządek i szybsza obsługa klienta." />
+  <meta property="og:type" content="website" />
+  <!-- <meta property="og:image" content="og-image.jpg" /> -->
+
+  <style>
+    :root{
+      --bg:#0b0f17;
+      --card:#111827cc;
+      --card2:#0f172acc;
+      --text:#e5e7eb;
+      --muted:#a7b0bf;
+      --line:#243042;
+      --accent:#22c55e;
+      --accent2:#60a5fa;
+      --shadow: 0 18px 50px rgba(0,0,0,.45);
+      --radius: 20px;
+      --max: 1100px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans";
+      color:var(--text);
+      background:
+        radial-gradient(1200px 700px at 20% 10%, rgba(96,165,250,.12), transparent 60%),
+        radial-gradient(900px 500px at 70% 0%, rgba(34,197,94,.12), transparent 55%),
+        var(--bg);
+      line-height:1.45;
+    }
+    a{color:inherit}
+    .container{max-width:var(--max); margin:0 auto; padding:0 18px}
+
+    .nav{
+      position:sticky; top:0; z-index:50;
+      background: rgba(11,15,23,.6);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(36,48,66,.55);
+    }
+    .nav-inner{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:12px 0;
+      gap:14px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px; min-width: 240px;
+    }
+    .logo{
+      width:42px; height:42px; border-radius:12px;
+      border:1px dashed rgba(229,231,235,.35);
+      background: rgba(255,255,255,.06);
+      display:grid; place-items:center;
+      overflow:hidden;
+      flex: 0 0 auto;
+    }
+    .logo img{width:100%; height:100%; object-fit:contain; display:block}
+    .brand-title{display:flex; flex-direction:column}
+    .brand-title strong{font-size:14px; letter-spacing:.2px}
+    .brand-title span{font-size:12px; color:var(--muted)}
+    .nav-links{
+      display:flex; flex-wrap:wrap;
+      gap:10px 14px; align-items:center; justify-content:flex-end;
+    }
+    .nav-links a{
+      text-decoration:none;
+      color:var(--muted);
+      padding:8px 10px;
+      border-radius:12px;
+    }
+    .nav-links a:hover{color:var(--text); background: rgba(255,255,255,.06)}
+
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      padding:12px 14px;
+      border-radius:14px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+      text-decoration:none;
+      cursor:pointer;
+      transition: transform .06s ease, background .2s ease, border .2s ease;
+      user-select:none;
+      white-space:nowrap;
+    }
+    .btn:hover{background: rgba(255,255,255,.09); border-color: rgba(255,255,255,.22)}
+    .btn:active{transform: translateY(1px)}
+    .btn-primary{
+      background: linear-gradient(135deg, rgba(34,197,94,.95), rgba(96,165,250,.90));
+      border-color: rgba(255,255,255,.20);
+      color: #06111a;
+      font-weight: 800;
+    }
+
+    .pill{
+      display:inline-flex; gap:10px; align-items:center;
+      border:1px solid var(--line);
+      padding:8px 12px; border-radius:999px;
+      color:var(--muted);
+      background: rgba(17,24,39,.55);
+      backdrop-filter: blur(10px);
+    }
+
+    .hero{
+      position:relative;
+      overflow:hidden;
+      border-bottom: 1px solid rgba(36,48,66,.55);
+    }
+.hero-bg{
+  position:absolute;
+  inset:0;
+  overflow:hidden;
+  transform: scale(1.05); /* lekki zoom, żeby blur nie robił krawędzi */
+}
+
+/* WIDEO */
+.hero-video{
+  position:absolute;
+  inset:-20px;            /* zapas na blur */
+  width:calc(100% + 40px);
+  height:calc(100% + 40px);
+  object-fit:cover;
+  object-position: center 10%;
+
+  /* MOCNE ROZMYCIE + przyciemnienie */
+  filter: brightness(0.45) saturate(1.05);
+  transform: scale(1.08);
+}
+
+/* NAKŁADKA (dodatkowe przyciemnienie + klimat) */
+.hero-bg::after{
+  content:"";
+  position:absolute;
+  inset:0;
+
+  /* mocna ciemna warstwa + gradient */
+  background:
+    radial-gradient(900px 500px at 20% 10%, rgba(96,165,250,.12), transparent 60%),
+    radial-gradient(900px 500px at 70% 0%, rgba(34,197,94,.10), transparent 55%),
+    linear-gradient(180deg, rgba(11,15,23,.55), rgba(11,15,23,.92));
+
+  /* „mocniej” jeśli chcesz: zwiększ opacity w rgba */
+  pointer-events:none;
+}
+
+
+    .hero-inner{
+      position:relative;
+      padding:56px 0 34px;
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:18px;
+      align-items:stretch;
+    }
+    @media (max-width: 900px){
+      .hero-inner{grid-template-columns:1fr; padding:44px 0 26px}
+      .brand{min-width:unset}
+    }
+    h1{
+      margin:12px 0 10px;
+      font-size: clamp(30px, 4vw, 48px);
+      line-height:1.05;
+      letter-spacing:-.5px;
+    }
+    .lead{color:var(--muted); font-size: 16px; max-width: 62ch}
+    .hero-actions{display:flex; gap:10px; flex-wrap:wrap; margin-top:18px}
+
+    .kpis{
+      display:grid; gap:10px;
+      background: rgba(17,24,39,.55);
+      border:1px solid rgba(36,48,66,.65);
+      border-radius: var(--radius);
+      padding:14px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(12px);
+    }
+    .kpi{
+      display:flex; gap:12px; align-items:flex-start;
+      padding:10px 10px;
+      border-radius: 14px;
+      border:1px solid rgba(255,255,255,.06);
+      background: rgba(15,23,42,.55);
+    }
+    .dot{
+      width:11px; height:11px; border-radius:50%;
+      background: var(--accent);
+      margin-top:6px;
+      box-shadow: 0 0 0 5px rgba(34,197,94,.15);
+      flex: 0 0 auto;
+    }
+    .kpi strong{display:block; font-size:14px}
+    .kpi span{display:block; color:var(--muted); font-size:12.5px; margin-top:2px}
+
+    .section{padding:44px 0}
+    .grid-3{display:grid; grid-template-columns: repeat(3, 1fr); gap:14px;}
+    @media (max-width: 900px){.grid-3{grid-template-columns:1fr}}
+
+    .split{display:grid; grid-template-columns: 1fr 1fr; gap:14px;}
+    @media (max-width: 900px){.split{grid-template-columns:1fr}}
+
+    .card{
+      background: rgba(17,24,39,.55);
+      border:1px solid rgba(36,48,66,.65);
+      border-radius: var(--radius);
+      padding:16px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+    .card h3{margin:4px 0 8px; font-size:16px}
+    .card p{margin:0; color:var(--muted); font-size:14px}
+
+    .list{margin:0; padding-left:18px; color:var(--muted);}
+    .list li{margin:8px 0}
+
+    .badge{
+      display:inline-flex; gap:8px; align-items:center;
+      padding:8px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .hr{height:1px; background: rgba(36,48,66,.55); margin:14px 0}
+    .muted{color:var(--muted)}
+    .small{font-size:12px; color:var(--muted)}
+
+    /* FORM */
+    label{display:block; font-size:12px; color: var(--muted); margin:10px 0 6px}
+    input, select, textarea{
+      width:100%;
+      border-radius: 14px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+      color: var(--text);
+      padding: 12px 12px;
+      outline: none;
+    }
+    input::placeholder, textarea::placeholder{color: rgba(167,176,191,.75)}
+    textarea{min-height: 110px; resize: vertical}
+    .form-grid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    @media (max-width: 900px){.form-grid{grid-template-columns:1fr}}
+    .form-actions{display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-top:12px}
+    .success{
+      display:none;
+      margin-top: 10px;
+      padding: 10px 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(34,197,94,.25);
+      background: rgba(34,197,94,.10);
+      color: rgba(229,231,235,.95);
+      font-size: 13px;
+    }
+    .note{
+      border-left: 3px solid rgba(96,165,250,.55);
+      padding: 10px 12px;
+      border-radius: 12px;
+      background: rgba(96,165,250,.08);
+      color: rgba(229,231,235,.92);
+      font-size: 13px;
+      margin-top: 10px;
+    }
+
+    footer{
+      padding:28px 0 44px;
+      border-top: 1px solid rgba(36,48,66,.55);
+      color: var(--muted);
+    }
+
+
+    /* ===== FOOTER FIX ===== */
+.footer-split{
+  display:grid;
+  grid-template-columns: 1fr auto; /* lewa szeroka, prawa dopasowana do treści */
+  gap: 24px;
+  align-items: start;
+}
+
+.footer-right{
+  text-align: right;
+  justify-self: end;
+}
+
+.footer-disclaimer{
+  margin-top: 14px;
+  max-width: 90ch;
+}
+
+@media (max-width: 900px){
+  .footer-split{ grid-template-columns: 1fr; }
+  .footer-right{ text-align: left; justify-self: start; }
+}
+
+  </style>
+</head>
+
+<body>
+  <!-- NAV -->
+  <div class="nav">
+    <div class="container">
+      <div class="nav-inner">
+        <div class="brand">
+          <div class="logo" title="Miejsce na logo">
+            <!-- PODMIEŃ src NA SWOJE LOGO -->
+            <img src="logo2.png" alt="Logo (placeholder)"
+              onerror="this.style.display='none'; this.parentElement.textContent='LOGO'; this.parentElement.style.color='rgba(229,231,235,.7)'; this.parentElement.style.fontWeight='800';" />
+          </div>
+          <div class="brand-title">
+            <strong>Notatnik dla CRM-ów</strong>
+            <span>Aplikacja dla warsztatów</span>
+          </div>
+        </div>
+
+        <div class="nav-links">
+          <a href="#korzysci">Korzyści</a>
+          <a href="#funkcje">Funkcje</a>
+          <a href="#crm">CRM</a>
+          <a href="#zamow">Zamów dostęp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-bg" aria-hidden="true">
+  <video class="hero-video" autoplay muted loop playsinline preload="metadata">
+    <source src="film1.mp4" type="video/mp4" />
+  </video>
+</div>
+
+    <div class="container">
+      <div class="hero-inner">
+        <div>
+          <div class="pill">🛠️ Warsztat • 🧾 Zlecenia • 📌 Porządek w notatkach</div>
+
+          <h1>Rozbudowane notatki do zleceń w CRM.<br/>Bez chaosu. Bez domysłów.</h1>
+
+          <p class="lead">
+            <strong>Notatnik dla CRM-ów</strong> to aplikacja, która pomaga tworzyć
+            <strong>czytelne, kompletne i powtarzalne notatki</strong> do zleceń w CRM (np. Integra).
+            Koniec z “gdzie to jest zapisane?”, “kto z kim gadał?” i “co było wymienione?”.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#zamow">Zamów dostęp</a>
+            <a class="btn" href="#funkcje">Zobacz funkcje</a>
+            <a class="btn" href="#crm">Jakie CRM?</a>
+          </div>
+
+          <div class="hr"></div>
+
+        </div>
+
+        <aside class="kpis" aria-label="Szybkie efekty">
+          <div class="kpi">
+            <div class="dot"></div>
+            <div>
+              <strong>Jedna notatka = pełna historia</strong>
+              <span>Diagnoza, czynności, części, zalecenia, ustalenia z klientem w jednym miejscu.</span>
+            </div>
+          </div>
+
+          <div class="kpi">
+            <div class="dot" style="background: var(--accent2); box-shadow: 0 0 0 5px rgba(96,165,250,.14)"></div>
+            <div>
+              <strong>Mniej telefonów i pytań “co było?”</strong>
+              <span>Gdy notatka jest konkretna, obsługa klienta i reklamacje są prostsze.</span>
+            </div>
+          </div>
+
+          <div class="kpi">
+            <div class="dot" style="background: #fbbf24; box-shadow: 0 0 0 5px rgba(251,191,36,.14)"></div>
+            <div>
+              <strong>Standard w całym zespole</strong>
+              <span>Każde zlecenie opisane podobnie — szybciej się wraca do tematu.</span>
+            </div>
+          </div>
+
+          <div class="kpi" title="Miejsce na mini-zrzut ekranu / mockup">
+            <div class="dot" style="background:#e879f9; box-shadow: 0 0 0 5px rgba(232,121,249,.12)"></div>
+            <div>
+              <strong>Mockup / screen</strong>
+              <span>Tu dodaj obraz: ekran aplikacji, przykład notatki, widok szablonu.</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </header>
+
+  <!-- KORZYŚCI -->
+  <section id="korzysci" class="section">
+    <div class="container">
+      <h2 style="margin:0 0 12px; font-size:24px;">Co zyskuje warsztat</h2>
+      <p class="muted" style="margin:0 0 16px; max-width:80ch;">
+        To rozwiązanie jest “warsztatowe”: ma skracać gadanie i szukanie, a zwiększać kontrolę nad zleceniami.
+      </p>
+
+      <div class="grid-3">
+        <div class="card">
+          <h3>✅ Koniec z chaosem w notatkach</h3>
+          <p>Notatki są czytelne i kompletne: co było zgłoszone, co sprawdzone, co wymienione, co zalecone.</p>
+        </div>
+        <div class="card">
+          <h3>✅ Mniej reklamacji i sporów</h3>
+          <p>Masz zapis ustaleń, zgód klienta, wniosków z diagnozy i zaleceń — bez “na gębę”.</p>
+        </div>
+        <div class="card">
+          <h3>✅ Szybszy follow-up</h3>
+          <p>Przypomnienia i zalecenia po naprawie nie giną. Łatwiej oddzwonić, domknąć temat, wrócić klienta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUNKCJE -->
+  <section id="funkcje" class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="split">
+        <div class="card">
+          <h2 style="margin:0 0 10px; font-size:22px;">Najważniejsze funkcje</h2>
+          <ul class="list">
+            <li><strong>Szablony notatek do zleceń</strong> (diagnoza / czynności / części / zalecenia)</li>
+            <li><strong>Checklisty</strong> (przyjęcie, kontrola po naprawie, wydanie auta)</li>
+            <li><strong>Ustalenia z klientem</strong> (zgody, decyzje, terminy, kosztorys)</li>
+            <li><strong>Reklamacje i powroty</strong> — gotowy układ wpisu, żeby nie tracić czasu</li>
+            <li><strong>Szybkie notatki serwisowe</strong> do wklejenia w CRM</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h2 style="margin:0 0 10px; font-size:22px;">Jak to działa (prosto)</h2>
+          <ol class="list">
+            <li>Wchodzisz do aplikacji i wybierasz typ wpisu (np. diagnoza / naprawa / wydanie).</li>
+            <li>Uzupełniasz gotowe sekcje (żeby nic nie pominąć).</li>
+            <li>Gotową notatkę przypinasz do zlecenia w CRM (np. Integra) — według Twojego procesu.</li>
+            <li>Masz porządek: klient, zlecenie, historia, ustalenia — wszystko czytelne.</li>
+          </ol>
+          <div class="hr"></div>
+          <div class="badge">⚡ Szybkie wdrożenie</div>
+          <div class="badge" style="margin-left:8px;">📱 Czytelne w biegu</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CRM -->
+  <section id="crm" class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="card">
+        <h2 style="margin:0 0 10px; font-size:22px;">Obsługiwane CRM (przykłady)</h2>
+        <p class="muted" style="margin:0 0 12px;">
+          Cel: żebyś mógł robić porządne notatki niezależnie od systemu w warsztacie.
+        </p>
+
+        <div style="display:flex; flex-wrap:wrap; gap:8px;">
+          <span class="badge">Integra (np. Integra Car 7)</span>
+          <span class="badge">MotoWarsztat</span>
+          <span class="badge">Warsztat24</span>
+          <span class="badge">mpWarsztat</span>
+          <span class="badge">eSowa</span>
+          <span class="badge">…i inne CRM warsztatowe</span>
+        </div>
+
+        <div class="hr"></div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM / CTA -->
+  <section id="zamow" class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="split">
+        <div class="card">
+          <h2 style="margin:0 0 10px; font-size:22px;">Zamów dostęp</h2>
+          <p class="muted" style="margin:0 0 12px;">
+            Zostaw kontakt — wrócimy z informacją o dostępie i dalszych krokach.
+          </p>
+
+          <!--
+            FORMULARZ: domyślnie działa jako "mailto" (bez backendu).
+            Jeśli masz endpoint (np. WordPress / własne API / Formspree / Netlify Forms),
+            ustaw action na swój adres i usuń JS mailto poniżej.
+          -->
+          <form id="contactForm" action="#" method="post" novalidate>
+            <div class="form-grid">
+              <div>
+                <label for="name">Imię i nazwisko</label>
+                <input id="name" name="name" type="text" placeholder="np. Jan Kowalski" required />
+              </div>
+              <div>
+                <label for="phone">Telefon</label>
+                <input id="phone" name="phone" type="tel" placeholder="np. 500 000 000" required />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="np. warsztat@firma.pl" required />
+              </div>
+              <div>
+                <label for="crmUsed">Z jakiego CRM korzystasz?</label>
+                <select id="crmUsed" name="crmUsed" required>
+                  <option value="" selected disabled>Wybierz</option>
+                  <option>Integra</option>
+                  <option>MotoWarsztat</option>
+                  <option>Warsztat24</option>
+                  <option>mpWarsztat</option>
+                  <option>eSowa</option>
+                  <option>Inny</option>
+                </select>
+              </div>
+            </div>
+
+            <label for="workshop">Nazwa warsztatu (opcjonalnie)</label>
+            <input id="workshop" name="workshop" type="text" placeholder="np. Auto-Serwis Nowak" />
+
+            <label for="message">Wiadomość</label>
+            <textarea id="message" name="message" placeholder="Napisz krótko: czego najbardziej potrzebujesz w notatkach? (chaos, reklamacje, follow-up, części, terminy…)"></textarea>
+
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Zamów dostęp</button>
+              <a class="btn" href="tel:519096947">Zadzwoń: 519 096 947</a>
+              <a class="btn" href="mailto:kontakt@nightcode.pl">Email: kontakt@nightcode.pl</a>
+            </div>
+
+            <div id="successMsg" class="success">Dzięki! Otworzyłem wiadomość do wysłania. Jeśli masz backend formularza, podepnij action i wyłącz mailto w JS.</div>
+
+            <div class="small" style="margin-top:10px;">
+              Kontakt: Nightcode — <a href="https://www.nightcode.pl" target="_blank" rel="noreferrer">www.nightcode.pl</a>
+            </div>
+          </form>
+        </div>
+
+        <div class="card">
+          <h3 style="margin:0 0 8px;">Kiedy to się sprawdza najbardziej?</h3>
+          <ul class="list">
+            <li>zlecenia “z historią” i wieloma drobnymi ustaleniami</li>
+            <li>reklamacje, powroty, spory o zakres prac</li>
+            <li>sporo kontaktu z klientem (telefon, SMS, “dogadanie”)</li>
+            <li>tematy z częściami, terminami, dopłatami</li>
+          </ul>
+
+          <div class="hr"></div>
+          <h3 style="margin:0 0 8px;">Co dostaniesz po kontakcie?</h3>
+          <p class="muted" style="margin:0;">
+            Informację o dostępie, krótkie instrukcje startowe i propozycję ustawienia aplikacji pod Twoje zlecenia w CRM.
+          </p>
+
+          <div class="hr"></div>
+          <div class="badge">🧩 Pod warsztat, nie korpo</div>
+          <div class="badge" style="margin-left:8px;">🛠️ Pod zlecenia, nie “ładne notatki”</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-split">
+      <div>
+        <strong>Notatnik dla CRM-ów</strong>
+        <div class="small">Aplikacja do tworzenia rozbudowanych notatek do zleceń w CRM.</div>
+        <div class="hr"></div>
+        <div class="small">© <span id="year"></span> Nightcode</div>
+      </div>
+
+      <div class="footer-right">
+        <strong>Kontakt</strong>
+        <div class="small">WWW: <a href="https://www.nightcode.pl" target="_blank" rel="noreferrer">www.nightcode.pl</a></div>
+        <div class="small">Email: <a href="mailto:kontakt@nightcode.pl">kontakt@nightcode.pl</a></div>
+        <div class="small">Telefon: <a href="tel:519096947">519 096 947</a></div>
+      </div>
+    </div>
+
+    <div class="hr"></div>
+    <div class="small footer-disclaimer">
+      *Wszelkie znaki towarowe należą do ich właścicieli. Wzmianki służą opisaniu kompatybilności/zastosowania.
+    </div>
+  </div>
+</footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Płynne przewijanie po anchorach
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const id = a.getAttribute('href');
+        if (!id || id === '#') return;
+        const el = document.querySelector(id);
+        if (!el) return;
+        e.preventDefault();
+        el.scrollIntoView({behavior:'smooth', block:'start'});
+      });
+    });
+
+    // FORM: fallback bez backendu → mailto do kontakt@nightcode.pl
+    const form = document.getElementById('contactForm');
+    const success = document.getElementById('successMsg');
+
+    form.addEventListener('submit', (e) => {
+      const action = (form.getAttribute('action') || '').trim();
+
+      // Jeśli podepniesz backend (action != "#"), usuń ten if i pozwól na normalne wysłanie.
+      if (!action || action === '#') {
+        e.preventDefault();
+
+        const name = document.getElementById('name').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const crmUsed = document.getElementById('crmUsed').value.trim();
+        const workshop = document.getElementById('workshop').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        if (!name || !phone || !email || !crmUsed) {
+          alert('Uzupełnij: imię, telefon, email i CRM.');
+          return;
+        }
+
+        const subject = encodeURIComponent('Zamów dostęp — Notatnik dla CRM-ów');
+        const body = encodeURIComponent(
+          `Imię i nazwisko: ${name}\n` +
+          `Telefon: ${phone}\n` +
+          `Email: ${email}\n` +
+          `CRM: ${crmUsed}\n` +
+          `Warsztat: ${workshop || '-'}\n\n` +
+          `Wiadomość:\n${message || '-'}\n`
+        );
+
+        window.location.href = `mailto:kontakt@nightcode.pl?subject=${subject}&body=${body}`;
+        success.style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html>
