@@ -1,31 +1,36 @@
+<!-- index-en.html -->
 <!doctype html>
-<html lang="en">
+<html lang="en" data-lead-email="kontakt@nightcode.pl">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <title>Digital Signature for Businesses – sign documents remotely in 60 seconds</title>
-  <meta name="description" content="Digital signature for business documents: company car handover, tire storage confirmations, service protocols and acknowledgements. Sign remotely on phone/tablet with a complete audit trail." />
+  <meta name="description" content="A digital signature for fast signing of business documents: company car handover, tire storage at the mechanic, protocols and confirmations. Remote from phone/tablet, full audit trail." />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#0b1f3a" />
-  <link rel="canonical" href="https://twojadomena.pl/cyfrowy-podpis/index-en.html" />
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="canonical" href="https://www.nightcode.pl/cyfrowy-podpis/index-en.html" />
 
-  <link rel="alternate" hreflang="pl" href="https://twojadomena.pl/cyfrowy-podpis/index.html" />
-  <link rel="alternate" hreflang="en" href="https://twojadomena.pl/cyfrowy-podpis/index-en.html" />
-  <link rel="alternate" hreflang="es" href="https://twojadomena.pl/cyfrowy-podpis/index-es.html" />
-  <link rel="alternate" hreflang="ru" href="https://twojadomena.pl/cyfrowy-podpis/index-ru.html" />
-  <link rel="alternate" hreflang="x-default" href="https://twojadomena.pl/cyfrowy-podpis/index.html" />
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="pl" href="https://www.nightcode.pl/cyfrowy-podpis/index.html" />
+  <link rel="alternate" hreflang="en" href="https://www.nightcode.pl/cyfrowy-podpis/index-en.html" />
+  <link rel="alternate" hreflang="es" href="https://www.nightcode.pl/cyfrowy-podpis/index-es.html" />
+  <link rel="alternate" hreflang="ru" href="https://www.nightcode.pl/cyfrowy-podpis/index-ru.html" />
+  <link rel="alternate" hreflang="x-default" href="https://www.nightcode.pl/cyfrowy-podpis/index.html" />
 
+  <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="en_US" />
-  <meta property="og:title" content="Digital Signature – fast business document signing" />
-  <meta property="og:description" content="Sign protocols, car handovers and storage confirmations on your phone. Audit trail, logs, exports and integrations." />
-  <meta property="og:url" content="https://twojadomena.pl/cyfrowy-podpis/index-en.html" />
+  <meta property="og:title" content="Digital Signature – fast signing of business documents" />
+  <meta property="og:site_name" content="Nightcode" />
+  <meta property="og:description" content="Sign protocols, car handovers and tire deposits from your phone. Audit trail, logs, exports and integrations." />
+  <meta property="og:url" content="https://www.nightcode.pl/cyfrowy-podpis/index-en.html" />
   <meta property="og:image" content="og-cover.jpg" />
 
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Digital Signature – fast business document signing" />
-  <meta name="twitter:description" content="Remote signing that saves time and keeps your operations in order." />
+  <meta name="twitter:title" content="Digital Signature – fast signing of business documents" />
+  <meta name="twitter:description" content="Sign documents remotely, save time and keep your company organized." />
   <meta name="twitter:image" content="og-cover.jpg" />
 
   <link rel="stylesheet" href="style.css" />
@@ -37,8 +42,8 @@
   <header class="topbar" id="top">
     <div class="wrap topbar__inner">
       <a class="logo" href="#top" aria-label="Back to top">
-        <span class="logo__mark" aria-hidden="true"></span>
-        <span class="logo__text">SignDesk</span>
+        <img class="logo__img" src="logo.png" alt="Digital Signature" />
+        <span class="logo__text">Digital Signature</span>
       </a>
 
       <nav class="nav" aria-label="Navigation">
@@ -48,14 +53,15 @@
         </button>
 
         <ul class="nav__menu" id="navMenu">
-          <li><a href="#benefits">Benefits</a></li>
-          <li><a href="#usecases">Use cases</a></li>
-          <li><a href="#security">Security</a></li>
-          <li><a href="#remote">Remote</a></li>
+          <li><a href="#korzysci">Benefits</a></li>
+          <li><a href="#jakdziala">How it works</a></li>
+          <li><a href="#zastosowania">Use cases</a></li>
+          <li><a href="#bezpieczenstwo">Security</a></li>
+          <li><a href="#zdalnie">Devices</a></li>
           <li><a href="#faq">FAQ</a></li>
-          <li><a class="btn btn--primary btn--small" href="#contact">Request a demo</a></li>
+          <li><a class="btn btn--primary btn--small" href="#kontakt">Request a demo</a></li>
 
-          <li class="lang" aria-label="Languages">
+          <li class="lang" aria-label="Language versions">
             <a class="lang__a" href="index.html">PL</a>
             <a class="lang__a is-active" href="index-en.html" aria-current="page">EN</a>
             <a class="lang__a" href="index-es.html">ES</a>
@@ -67,7 +73,8 @@
   </header>
 
   <main id="main">
-    <section class="hero" aria-label="Intro">
+    <!-- HERO with background video -->
+    <section class="hero" aria-label="Introduction">
       <div class="hero__media" aria-hidden="true">
         <video class="hero__video" autoplay muted loop playsinline preload="metadata" poster="hero-poster.jpg" id="bgVideo">
           <source src="bg-office.mp4" type="video/mp4" />
@@ -77,131 +84,237 @@
       </div>
 
       <div class="wrap hero__content">
-        <p class="kicker">Digital signature • workflow • audit</p>
+        <p class="kicker">digital signature • workflow • audit</p>
         <h1 class="hero__title">
           Sign business documents without printing.
-          <span class="hero__accent">Remote, fast, with a full audit trail.</span>
+          <span class="hero__accent">Remote, fast, with a complete history.</span>
         </h1>
         <p class="hero__lead">
-          “Who drives the company car today?”, “Are the tires stored at the mechanic?”, “Who received the equipment?” —
-          signed and searchable in one place.
+          “Who’s driving the car today?”, “Were the tires left at the mechanic?”, “Who picked up the equipment?” —
+          everything signed and stored in one place.
         </p>
 
         <div class="hero__cta">
-          <a class="btn btn--primary" href="#contact">Request a demo</a>
-          <a class="btn btn--ghost" href="#usecases">See use cases</a>
+          <a class="btn btn--primary" href="#kontakt">Request a demo</a>
+          <a class="btn btn--ghost" href="#zastosowania">See use cases</a>
         </div>
 
         <div class="exec reveal" role="note" aria-label="Executive summary">
-          <div class="exec__item"><div class="exec__kpi">-70%</div><div class="exec__txt">less paperwork</div></div>
-          <div class="exec__item"><div class="exec__kpi">60s</div><div class="exec__txt">from send to sign</div></div>
-          <div class="exec__item"><div class="exec__kpi">100%</div><div class="exec__txt">who/when/device audit</div></div>
+          <div class="exec__item">
+            <div class="exec__kpi">-70%</div>
+            <div class="exec__txt">less paperwork and manual entries</div>
+          </div>
+          <div class="exec__item">
+            <div class="exec__kpi">60s</div>
+            <div class="exec__txt">from sending to signature</div>
+          </div>
+          <div class="exec__item">
+            <div class="exec__kpi">100%</div>
+            <div class="exec__txt">audit trail: who, when, on what device</div>
+          </div>
         </div>
 
-        <p class="hero__note">*Indicative values – depends on your process and volume.</p>
+        <p class="hero__note">*Indicative values — depend on the process and number of documents.</p>
       </div>
     </section>
 
-    <section class="section" id="benefits">
+    <!-- How it works -->
+    <section class="section section--alt" id="jakdziala">
       <div class="wrap">
         <header class="head">
-          <h2>CEO-friendly benefits</h2>
-          <p>Faster decisions, clear accountability, and reduced operational risk.</p>
+          <h2>How Digital Signature works</h2>
+          <p>A simple process for the team and full control for the company. Everything runs in the browser — no installation.</p>
+        </header>
+
+        <div class="grid2 reveal" aria-label="4 implementation steps">
+          <div class="panel">
+            <h3>1) We turn your document into a template</h3>
+            <p>We set up fields, checklists, required photos and signing roles. A template prepared once saves work for months.</p>
+            <div class="tags">
+              <span class="tag">fields</span><span class="tag">checklists</span><span class="tag">attachments</span>
+            </div>
+          </div>
+
+          <div class="panel">
+            <h3>2) Send for signature with a single link</h3>
+            <p>An employee or customer gets an SMS/email link and signs immediately on a phone, tablet or computer.</p>
+            <div class="tags">
+              <span class="tag">SMS/email</span><span class="tag">status</span><span class="tag">no printing</span>
+            </div>
+          </div>
+
+          <div class="panel">
+            <h3>3) Signature + real-time status</h3>
+            <p>See what’s sent, opened and signed. No more chasing and calls: every document has a clear stage.</p>
+            <div class="tags">
+              <span class="tag">sent</span><span class="tag">opened</span><span class="tag">signed</span>
+            </div>
+          </div>
+
+          <div class="panel">
+            <h3>4) PDF, export and archive</h3>
+            <p>After signing, the document is stored in history and you can download it as PDF or export data to CSV / your system.</p>
+            <div class="tags">
+              <span class="tag">PDF</span><span class="tag">CSV</span><span class="tag">API</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bar reveal">
+          <div>
+            <strong>For the demo:</strong> we take your real document (e.g., car, tires, equipment) and show the end-to-end process.
+          </div>
+          <a class="btn btn--primary btn--small" href="#kontakt">Request a demo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="section" id="korzysci">
+      <div class="wrap">
+        <header class="head">
+          <h2>Benefits for CEOs and management</h2>
+          <p>Control, decision speed and risk reduction — without making life harder for the team.</p>
         </header>
 
         <div class="cards cards--3 reveal">
           <article class="card">
-            <h3>Faster approvals</h3>
-            <p>Sign from phone, tablet or desktop. No more “waiting on a desk”.</p>
-            <ul class="bullets"><li>Automatic reminders</li><li>Templates</li><li>Minutes, not days</li></ul>
+            <h3>Faster approvals, less downtime</h3>
+            <p>Sign from a phone, tablet or computer. Documents don’t “wait on a desk”.</p>
+            <ul class="bullets">
+              <li>Automatic reminders</li>
+              <li>Templates and quick forms</li>
+              <li>Sign in a minute</li>
+            </ul>
           </article>
+
           <article class="card">
-            <h3>Order & traceability</h3>
-            <p>Know who signed, when, which version and from what device.</p>
-            <ul class="bullets"><li>Version history</li><li>PDF/CSV export</li><li>Searchable archive</li></ul>
+            <h3>Order and accountability</h3>
+            <p>Clear: who signed, when, which version, and from which device.</p>
+            <ul class="bullets">
+              <li>Change and version history</li>
+              <li>PDF/CSV export</li>
+              <li>Document search</li>
+            </ul>
           </article>
+
           <article class="card">
-            <h3>Lower risk</h3>
-            <p>Standardized protocols reduce errors and disputes.</p>
-            <ul class="bullets"><li>Required fields</li><li>Attachments & photos</li><li>One source of truth</li></ul>
+            <h3>Less operational risk</h3>
+            <p>Standardized protocols = fewer mistakes and disputes.</p>
+            <ul class="bullets">
+              <li>Enforced fields and checklists</li>
+              <li>Attachments: photos, notes</li>
+              <li>Single source of truth</li>
+            </ul>
           </article>
         </div>
 
         <div class="bar reveal">
-          <div><strong>Best practice:</strong> start with 2–3 documents, then expand.</div>
-          <a class="btn btn--primary btn--small" href="#contact">Talk to us</a>
+          <div>
+            <strong>Practical note:</strong> start with 2–3 documents (e.g., car, tires, equipment),
+            then add more processes.
+          </div>
+          <a class="btn btn--primary btn--small" href="#kontakt">Schedule a call</a>
         </div>
       </div>
     </section>
 
-    <section class="section section--alt" id="usecases">
+    <!-- Use cases -->
+    <section class="section section--alt" id="zastosowania">
       <div class="wrap">
         <header class="head">
-          <h2>What you can sign</h2>
-          <p>Real-world “office” documents that keep operations clean and auditable.</p>
+          <h2>Example documents you can sign</h2>
+          <p>Business-like, but very practical — perfect for companies with fleets, service and warehouses.</p>
         </header>
 
         <div class="grid2 reveal">
           <div class="panel">
-            <h3>Company car handover</h3>
-            <p>Driver, mileage, fuel, damages, photos, checklist – signed on the spot.</p>
-            <div class="tags"><span class="tag">fleet</span><span class="tag">audit</span><span class="tag">photos</span></div>
+            <h3>Company car – who’s driving today?</h3>
+            <p>Vehicle handover protocol: driver, odometer, damage, fuel, photos.</p>
+            <div class="tags">
+              <span class="tag">fleet</span><span class="tag">H&amp;S</span><span class="tag">audit</span>
+            </div>
           </div>
+
           <div class="panel">
-            <h3>Tire storage confirmation</h3>
-            <p>Size, quantity, condition, dates – signed by employee/customer.</p>
-            <div class="tags"><span class="tag">workshop</span><span class="tag">storage</span><span class="tag">trace</span></div>
+            <h3>Tires at the mechanic – deposit and pickup</h3>
+            <p>Confirmation of tire storage: size, quantity, date, condition, customer/employee signature.</p>
+            <div class="tags">
+              <span class="tag">workshop</span><span class="tag">service</span><span class="tag">order</span>
+            </div>
           </div>
+
           <div class="panel">
-            <h3>Equipment & tools issuance</h3>
-            <p>Tablets, keys, meters, tools – accountability with a checklist.</p>
-            <div class="tags"><span class="tag">IT</span><span class="tag">assets</span><span class="tag">warehouse</span></div>
+            <h3>Equipment and tool issuance</h3>
+            <p>Tablet, keys, meters, tools — a signature with a checklist and responsibility.</p>
+            <div class="tags">
+              <span class="tag">warehouse</span><span class="tag">IT</span><span class="tag">asset</span>
+            </div>
           </div>
+
           <div class="panel">
-            <h3>Service completion protocol</h3>
-            <p>Checklist + attachments + customer signature – no printing needed.</p>
-            <div class="tags"><span class="tag">service</span><span class="tag">PDF</span><span class="tag">records</span></div>
+            <h3>Service completion report</h3>
+            <p>Checklists, attachments and a customer signature after the work — without printing.</p>
+            <div class="tags">
+              <span class="tag">services</span><span class="tag">work orders</span><span class="tag">PDF</span>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="security">
+    <!-- Security / compliance -->
+    <section class="section" id="bezpieczenstwo">
       <div class="wrap">
         <header class="head">
-          <h2>Security & compliance</h2>
-          <p>Simple UX for teams, strong foundations for the business.</p>
+          <h2>Security and compliance</h2>
+          <p>Simple UI for employees, solid foundations for the company.</p>
         </header>
 
         <div class="cols reveal">
           <div class="col card card--line">
             <h3>Audit trail</h3>
-            <p>Timestamp, signer, device, status and document version logs.</p>
-            <ul class="bullets"><li>Roles & signers list</li><li>Immutable event log</li><li>Exports for audits</li></ul>
+            <p>Signature logs: date/time, person, device, status, document version.</p>
+            <ul class="bullets">
+              <li>List of signatures and roles</li>
+              <li>Tamper-proof event log</li>
+              <li>Export for audits/accounting</li>
+            </ul>
           </div>
+
           <div class="col card card--line">
-            <h3>Permissions & workflow</h3>
-            <p>Documents won’t move forward without required steps.</p>
-            <ul class="bullets"><li>Employee / manager / customer</li><li>Workflow templates</li><li>Mandatory checklists</li></ul>
+            <h3>Permissions and process</h3>
+            <p>The document won’t move forward without required fields and approvals.</p>
+            <ul class="bullets">
+              <li>Roles: employee / manager / customer</li>
+              <li>Process templates</li>
+              <li>Enforced checklists</li>
+            </ul>
           </div>
+
           <div class="col card card--line">
             <h3>Integrations</h3>
-            <p>Connect to your stack and stop re-typing data.</p>
-            <ul class="bullets"><li>API / webhooks</li><li>PDF/CSV</li><li>Job/order system integration</li></ul>
+            <p>Connect to existing tools. Data can flow without retyping.</p>
+            <ul class="bullets">
+              <li>API / webhooks</li>
+              <li>PDF/CSV</li>
+              <li>Work order system integration</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section section--alt" id="remote">
+    <!-- Remote signing: second video -->
+    <section class="section section--alt" id="zdalnie">
       <div class="wrap">
         <header class="head">
-          <h2>Remote signing saves hours every week</h2>
-          <p>Choose the device, sign anywhere, track status in real time.</p>
+          <h2>Sign anywhere: phone, tablet, computer</h2>
+          <p>Send a signing link and instantly know the document stage. Fewer calls, less chasing, more order.</p>
         </header>
 
         <div class="remote reveal">
-          <div class="remote__media">
+          <div class="remote__media" aria-label="Video: signing on tablet and phone">
             <video class="remote__video" autoplay muted loop playsinline preload="metadata" poster="devices-poster.jpg">
               <source src="devices.mp4" type="video/mp4" />
             </video>
@@ -209,92 +322,188 @@
 
           <div class="remote__copy">
             <div class="mini">
-              <div class="mini__title">Time savings</div>
+              <div class="mini__title">How does it save time?</div>
               <ul class="check">
-                <li>No office returns for signatures</li>
-                <li>Customers sign on mobile and get a PDF instantly</li>
-                <li>Status: sent / opened / signed</li>
+                <li>Sign in the field (service, warehouse, fleet) without returning to the office</li>
+                <li>The customer signs on their phone — instantly receives a PDF</li>
+                <li>Live status: sent / opened / signed (no follow-ups)</li>
+                <li>Fewer errors thanks to checklists and required fields</li>
               </ul>
             </div>
 
             <div class="mini">
-              <div class="mini__title">Example</div>
+              <div class="mini__title">Real-life example</div>
               <p class="muted">
-                A driver receives a company car, adds photos and mileage, signs on phone — you close the process in minutes.
+                A driver picks up a company car: takes photos of the condition, completes the checklist,
+                signs on the phone. You immediately get a complete protocol and close the process without extra calls.
               </p>
-              <a class="btn btn--primary btn--small" href="#contact">See demo</a>
+              <a class="btn btn--primary btn--small" href="#kontakt">See the demo</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- FAQ -->
     <section class="section" id="faq">
       <div class="wrap">
         <header class="head">
           <h2>FAQ</h2>
-          <p>Common pre-deployment questions.</p>
+          <p>Most common questions before rollout.</p>
         </header>
 
         <div class="faq reveal">
-          <details class="faq__item"><summary>Is it hard for employees?</summary><div class="faq__body"><p>No — templates guide users step by step.</p></div></details>
-          <details class="faq__item"><summary>Can we start small?</summary><div class="faq__body"><p>Yes, start with 1–3 documents and expand later.</p></div></details>
-          <details class="faq__item"><summary>What does a customer receive?</summary><div class="faq__body"><p>A signed PDF and an email confirmation (or link), stored in the archive.</p></div></details>
+          <details class="faq__item">
+            <summary>Is it complicated for employees?</summary>
+            <div class="faq__body">
+              <p>No. Signing takes a few clicks, and templates guide you step by step (fields + checklists).</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Can I start with a single document?</summary>
+            <div class="faq__body">
+              <p>Yes — we recommend starting with 1–3 most common processes and expanding later.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>What does the customer receive after signing?</summary>
+            <div class="faq__body">
+              <p>A PDF with signatures and an email confirmation (or a link). Everything is stored in history.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Can I collect multiple signatures on one document?</summary>
+            <div class="faq__body">
+              <p>Yes. A document can go through multiple roles (e.g., employee → customer → manager). Every signature and status is visible in history.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Can I enforce a checklist and required fields?</summary>
+            <div class="faq__body">
+              <p>Yes. A template can require completing fields (e.g., odometer, VIN, number of tires) and ticking a checklist — without that, the document can’t be finalized.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Does it work on phones and tablets without installing an app?</summary>
+            <div class="faq__body">
+              <p>Yes — signing happens in the browser. You send a link, and the recipient signs on a phone, tablet or computer.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>What about attachments: photos, notes, files?</summary>
+            <div class="faq__body">
+              <p>You can add attachments (e.g., damage photos, confirmations, notes). This significantly reduces disputes about “who saw what”.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Can I search for a document by driver, vehicle or date?</summary>
+            <div class="faq__body">
+              <p>Yes. Documents are stored in the archive and can be searched by field data (e.g., name, license plate, date, status).</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Are there integrations with other systems?</summary>
+            <div class="faq__body">
+              <p>Yes — integrations are possible via CSV export, API or webhooks (e.g., work orders, CRM, ERP). On the demo we define what data should sync automatically.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>What does implementation look like and where is it best to start?</summary>
+            <div class="faq__body">
+              <p>It’s best to start with 1–3 most common documents. We set templates, roles, checklists and run a short training — then we add more processes.</p>
+            </div>
+          </details>
+
+          <details class="faq__item">
+            <summary>Can I use my own logo and branding?</summary>
+            <div class="faq__body">
+              <p>Yes — depending on the implementation variant, we can prepare a branded view (logo, colors, document names).</p>
+            </div>
+          </details>
+
         </div>
       </div>
     </section>
 
-    <section class="section section--contact" id="contact">
+    <!-- Contact -->
+    <section class="section section--contact" id="kontakt">
       <div class="wrap">
         <header class="head head--light">
           <h2>Request a demo</h2>
-          <p>Tell us which documents you sign and who signs them (employee/customer/manager).</p>
+          <p>Write 2 sentences: what documents you sign and who should sign (employee/customer/manager).</p>
         </header>
 
         <div class="contact reveal">
           <form class="form" id="leadForm" novalidate>
             <div class="row">
-              <label><span>Full name</span><input name="name" type="text" autocomplete="name" placeholder="John Smith" required /></label>
-              <label><span>Email</span><input name="email" type="email" autocomplete="email" placeholder="john@company.com" required /></label>
+              <label>
+                <span>Full name</span>
+                <input name="name" type="text" autocomplete="name" placeholder="John Smith" required />
+              </label>
+              <label>
+                <span>Email</span>
+                <input name="email" type="email" autocomplete="email" placeholder="john@company.com" required />
+              </label>
             </div>
 
             <div class="row">
               <label>
                 <span>Role</span>
                 <select name="role" required>
-                  <option value="" selected disabled>Select…</option>
+                  <option value="" selected disabled>Choose…</option>
                   <option>CEO / Owner</option>
-                  <option>Operations / Admin</option>
-                  <option>HR / Finance</option>
+                  <option>Operations / Administration</option>
+                  <option>HR / Accounting</option>
                   <option>IT</option>
                 </select>
               </label>
-              <label><span>Phone (optional)</span><input name="phone" type="tel" autocomplete="tel" placeholder="+1 555 123 456" /></label>
+              <label>
+                <span>Phone (optional)</span>
+                <input name="phone" type="tel" autocomplete="tel" placeholder="+48 123 456 789" />
+              </label>
             </div>
 
-            <label><span>Message</span><textarea name="message" rows="5" placeholder="E.g., car handover + tire storage; employee & customer signing; CSV export." required></textarea></label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" placeholder="E.g. company car handover protocol + tire storage; employee and customer sign; we want CSV export." required></textarea>
+            </label>
 
             <div class="actions">
               <button class="btn btn--primary" type="submit">Send</button>
               <p class="hint" id="formHint" role="status" aria-live="polite"></p>
             </div>
 
-            <p class="legal">Demo form – connect sending in `scripts.js` (fetch to backend).</p>
           </form>
 
           <aside class="aside">
             <div class="aside__card">
-              <h3>After the demo</h3>
+              <h3>What will you get after the demo?</h3>
               <ul class="check">
-                <li>Suggested templates</li>
-                <li>Implementation & integration plan</li>
-                <li>Licensing options</li>
+                <li>A proposal of 1–3 templates for your processes (to start)</li>
+                <li>A step-by-step map: who signs and when</li>
+                <li>Checklists and required fields (so nothing is missing)</li>
+                <li>An implementation plan and integration options (CSV / API / webhook)</li>
+                <li>A rough estimate and recommended licensing option</li>
+                <li>A list of quick wins — what to improve in 7 days</li>
               </ul>
             </div>
             <div class="aside__card">
               <h3>Contact</h3>
-              <p class="muted">Replace with your details:</p>
-              <p><strong>Email:</strong> contact@twojadomena.pl<br/><strong>Phone:</strong> +48 000 000 000</p>
+              <p class="muted">Reach out if you prefer a call instead of the form:</p>
+              <p>
+                <strong>Phone:</strong> <a href="tel:+48519096947">+48 519 096 947</a><br/>
+                <strong>Email:</strong> <a href="mailto:kontakt@nightcode.pl">kontakt@nightcode.pl</a><br/>
+                <strong>Website:</strong> <a href="https://www.nightcode.pl" target="_blank" rel="noopener">www.nightcode.pl</a>
+              </p>
             </div>
           </aside>
         </div>
@@ -304,22 +513,124 @@
 
   <footer class="foot">
     <div class="wrap foot__inner">
-      <p>© <span id="year"></span> SignDesk. All rights reserved.</p>
-      <div class="foot__links"><a href="#top">Top</a><a href="#contact">Contact</a></div>
+      <div class="foot__brand">
+        <p>© <span id="year"></span> Nightcode – Digital Signature. All rights reserved.</p>
+        <p class="foot__meta">
+          <a href="https://www.nightcode.pl" target="_blank" rel="noopener">www.nightcode.pl</a> ·
+          <a href="mailto:kontakt@nightcode.pl">kontakt@nightcode.pl</a> ·
+          <a href="tel:+48519096947">+48 519 096 947</a>
+        </p>
+      </div>
+      <div class="foot__links">
+        <a href="#kontakt">Contact</a>
+      </div>
     </div>
   </footer>
 
+  <!-- JSON-LD: Organization + SoftwareApplication + FAQPage -->
   <script type="application/ld+json">
   {
-    "@context":"https://schema.org",
-    "@graph":[
-      {"@type":"Organization","name":"SignDesk","url":"https://twojadomena.pl/cyfrowy-podpis/index-en.html","logo":"og-cover.jpg"},
-      {"@type":"SoftwareApplication","name":"SignDesk – Digital Signature","applicationCategory":"BusinessApplication","operatingSystem":"Web",
-       "description":"Digital signature for business documents: car handovers, tire storage confirmations, equipment issuance and service protocols. Remote signing on phone/tablet with a complete audit trail.",
-       "offers":{"@type":"Offer","price":"0","priceCurrency":"PLN","availability":"https://schema.org/InStock","url":"https://twojadomena.pl/cyfrowy-podpis/index-en.html#contact"}
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "Nightcode",
+      "url": "https://www.nightcode.pl",
+      "logo": "https://www.nightcode.pl/logo.png"
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Digital Signature",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "description": "A digital signature for signing business documents: company car handover protocols, tire storage, equipment issuance, service confirmations. Remote from phone/tablet, with a complete audit history.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "PLN",
+        "availability": "https://schema.org/InStock",
+        "url": "https://www.nightcode.pl/cyfrowy-podpis/index-en.html#kontakt"
       }
-    ]
-  }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is it complicated for employees?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Signing takes a few clicks, and templates guide you step by step (fields + checklists)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I start with a single document?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — we recommend starting with 1–3 most common processes and expanding later."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the customer receive after signing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A PDF with signatures and an email confirmation (or a link). Everything is stored in history."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I collect multiple signatures on one document?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A document can go through multiple roles (e.g., employee → customer → manager). Every signature and status is visible in history."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I enforce a checklist and required fields?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A template can require completing fields and checklists — without that, the document can’t be finalized."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work on phones and tablets without installing an app?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — signing happens in the browser. You send a link, and the recipient signs on a phone, tablet or computer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What about attachments: photos, notes, files?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can add attachments (e.g., damage photos, notes), which reduces disputes and speeds up settlements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are there integrations with other systems?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — integrations are possible via CSV export, API or webhooks. On the demo we define what data should sync automatically."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does implementation look like and where is it best to start?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It’s best to start with 1–3 documents. We set templates, roles, checklists and run a short training — then we add more processes."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 
   <script src="scripts.js" defer></script>
