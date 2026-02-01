@@ -37,16 +37,42 @@ button,input,select,textarea{font:inherit;}
   backdrop-filter:blur(10px);
   border-bottom:1px solid var(--border);
 }
-.header__inner{display:flex;align-items:center;justify-content:space-between;padding:.85rem 0;gap:1rem;}
+.header__inner{
+  display:flex;
+  align-items:center;
+  justify-content:center;   /* <-- centrowanie całej grupy */
+  padding:.85rem 0;
+  gap:1rem;
+}
+
 
 .brand{display:inline-flex;align-items:center;gap:.6rem;}
 .brand__img{width:160px;height:46px;object-fit:contain;}
-.brand__text{font-weight:800;letter-spacing:-0.02em;}
-.brand__thin{font-weight:600;color:var(--muted);margin-left:.1rem;}
+
 
 .nav{display:flex;align-items:center;gap:1rem;}
-.nav__menu{list-style:none;display:flex;gap:1rem;align-items:center;margin:0;padding:0;}
-.nav__menu a{padding:.55rem .7rem;border-radius:999px;color:rgba(15,23,42,0.85);}
+.nav__menu{
+  list-style:none;
+  display:flex;
+  gap:1rem;
+  align-items:center;
+  margin:0;
+  padding:0;
+  flex-wrap:nowrap;        /* <-- wszystko w jednym wierszu */
+}
+
+.nav__menu > li{flex:0 0 auto;}
+
+.nav__menu a{
+  padding:.55rem .7rem;
+  border-radius:999px;
+  color:rgba(15,23,42,0.85);
+  white-space:nowrap;      /* <-- "Jak działa" nie złamie się */
+  display:inline-flex;
+  align-items:center;
+}
+
+
 .nav__menu a:hover{background:rgba(15,23,42,0.05);}
 
 .nav__toggle{display:none;width:42px;height:42px;border-radius:14px;background:rgba(15,23,42,0.04);border:1px solid var(--border);cursor:pointer;}
@@ -195,6 +221,7 @@ input:focus,select:focus,textarea:focus{border-color:rgba(37,99,235,0.55);box-sh
   .hero__stats{grid-template-columns:1fr;}
 }
 @media (max-width:760px){
+  .header__inner{justify-content:space-between;}
   .nav__toggle{display:inline-grid;place-items:center;}
   .nav__menu{
     position:absolute;right:1rem;top:62px;width:min(360px,calc(100% - 2rem));
